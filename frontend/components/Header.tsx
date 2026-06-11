@@ -25,6 +25,12 @@ export function Header() {
 
         <div className="flex items-center gap-3">
           <Link
+            href="/leaderboard"
+            className="hidden text-xs text-slate-400 hover:text-white sm:block"
+          >
+            Leaderboard
+          </Link>
+          <Link
             href="/#how"
             className="hidden text-xs text-slate-400 hover:text-white sm:block"
           >
