@@ -31,6 +31,12 @@ export function Header() {
             Leaderboard
           </Link>
           <Link
+            href="/matches"
+            className="hidden text-xs text-slate-400 hover:text-white sm:block"
+          >
+            Open matches
+          </Link>
+          <Link
             href="/#how"
             className="hidden text-xs text-slate-400 hover:text-white sm:block"
           >
