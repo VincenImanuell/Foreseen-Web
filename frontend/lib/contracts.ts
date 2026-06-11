@@ -1,5 +1,6 @@
 import type { Address } from "viem";
 import { rpsCoreAbi, rpsStatsAbi } from "./abi";
+import { rpsRankedAbi } from "./rankedAbi";
 
 /**
  * RPSCore v2 — the live, matchmaking-first match engine on Celo mainnet.
@@ -11,6 +12,10 @@ export const RPS_CORE_ADDRESS = (process.env.NEXT_PUBLIC_RPS_CORE_ADDRESS ??
 /** RPSStats — tamper-proof on-chain behavioral profile used for scouting. */
 export const RPS_STATS_ADDRESS = (process.env.NEXT_PUBLIC_RPS_STATS_ADDRESS ??
   "0x0f5F94A4f5C72CAc4D6E69a6DD89341c7b1a475A") as Address;
+
+/** RPSRanked — on-chain ranked progression (streaks, tiers, streak multiplier). */
+export const RPS_RANKED_ADDRESS = (process.env.NEXT_PUBLIC_RPS_RANKED_ADDRESS ??
+  "0x8230D28C9a8Fbda2490F830c6cBc1cE3056096cb") as Address;
 
 /**
  * Full v2 (matchmaking-first) system on Celo mainnet — shown in the landing footer.
@@ -34,4 +39,9 @@ export const rpsStats = {
   abi: rpsStatsAbi,
 } as const;
 
-export { rpsCoreAbi, rpsStatsAbi };
+export const rpsRanked = {
+  address: RPS_RANKED_ADDRESS,
+  abi: rpsRankedAbi,
+} as const;
+
+export { rpsCoreAbi, rpsStatsAbi, rpsRankedAbi };
