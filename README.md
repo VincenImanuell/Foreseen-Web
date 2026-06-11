@@ -10,6 +10,29 @@ Built for the **Proof of Ship (POS) — Games & Interactive** program on Celo.
 
 ---
 
+## The web app — a live, SDK-powered portal
+
+This repo's frontend is a **public, wallet-free window** into Foreseen, built
+entirely on the published [`@foreseen/sdk`](https://www.npmjs.com/package/@foreseen/sdk)
+— the same package anyone can `npm install` to build on the protocol. Every page
+below reads live from Celo mainnet through the SDK; no backend, no indexer.
+
+| Route | What it shows | SDK call |
+|---|---|---|
+| `/leaderboard` | Players ranked by wins (W–L–D, win%, favorite throw) | `nextMatchId` · `getMatch` · `getPlayerStats` |
+| `/player/[address]` | Full scouting report — distribution, tells, suggested counter | `analyzeOpponent` |
+| `/matches` | Live lobby of matches waiting for an opponent | `getOpenMatches` |
+| `/play` | Connect a wallet and play (matchmake → scout → commit → reveal) | wagmi |
+
+```ts
+import { Foreseen } from "@foreseen/sdk";
+
+const rps = new Foreseen({ network: "celo" }); // read-only, no key
+const read = await rps.analyzeOpponent("0x…");  // distribution, tells, suggested counter
+```
+
+---
+
 ## Not gambling — a game of skill
 
 **Foreseen is a competitive mind-sport, not a game of chance.** The distinction is deliberate and structural:
@@ -68,7 +91,7 @@ A mind sport needs a single source of truth. If a server could fake or hide stat
 ```
 contracts/   # Foundry smart contracts (RPSCore, RPSStats, RPSRanked, RPSSoulbound, RPSTreasury)
 frontend/    # Next.js + wagmi + MiniPay dapp (live on Celo mainnet)
-sdk/         # @foreseen/sdk — TypeScript SDK + bot module  (coming soon)
+sdk/         # @foreseen/sdk — TypeScript SDK + bot module  (published on npm)
 ```
 
 ## Getting started (contracts)
@@ -106,7 +129,7 @@ Both verified on Blockscout. `RPSCore` feeds `RPSStats` on settlement and the st
 
 ## Status
 
-The full v1 contract system (Core, Stats, Ranked, Soulbound, Treasury) is **live on Celo mainnet** and the Next.js dapp is wired to it. SDK + bot ecosystem next. See the design doc in `Foreseen_Brainstorm.md`.
+The full v2 contract system (Core, Stats, Ranked, Soulbound, Treasury) is **live on Celo mainnet**, the Next.js dapp is wired to it, and [`@foreseen/sdk`](https://www.npmjs.com/package/@foreseen/sdk) is **published on npm** and powers the read-only portal (leaderboard, scouting, open matches). See the design doc in `Foreseen_Brainstorm.md`.
 
 ---
 
