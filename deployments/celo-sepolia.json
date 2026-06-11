@@ -1,0 +1,26 @@
+{
+  "network": "celo-sepolia",
+  "chainId": 11142220,
+  "rpc": "https://forno.celo-sepolia.celo-testnet.org",
+  "explorer": "https://celo-sepolia.blockscout.com",
+  "contracts": {
+    "RPSCore": {
+      "address": "0x208f098639059dF8E19a4F6836908b3cc56CdFf9",
+      "treasury": "0x197090716C28750B20318CC07697c26d43f4158d",
+      "stats": "0x6F57AC8C61A2ed3C84446Ca6e5a1Ab68f10Dd7C7",
+      "deployer": "0x197090716C28750B20318CC07697c26d43f4158d",
+      "txHash": "0xb23107e136c7d79d51e8f666d47018f9aeb558b6c8e570abf08d07b590fcedc5",
+      "verified": true
+    },
+    "RPSStats": {
+      "address": "0x6F57AC8C61A2ed3C84446Ca6e5a1Ab68f10Dd7C7",
+      "recorder": "0x208f098639059dF8E19a4F6836908b3cc56CdFf9",
+      "recorderLocked": true,
+      "deployer": "0x197090716C28750B20318CC07697c26d43f4158d",
+      "verified": true
+    }
+  },
+  "previousDeployments": {
+    "RPSCore_standalone_v0": "0x5d56F5d6a63e94b4F622F80AB840d4eE474edd38"
+  }
+}
