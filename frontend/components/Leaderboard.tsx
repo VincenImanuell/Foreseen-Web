@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useQuery } from "@tanstack/react-query";
 import { dominantMove, MOVE_NAME, type PlayerStats } from "@foreseen/sdk";
 import { type Address, getAddress } from "viem";
@@ -123,14 +124,13 @@ export function Leaderboard() {
                     {MEDAL[i] ?? i + 1}
                   </td>
                   <td className="py-2.5 pr-2">
-                    <a
-                      href={`https://celoscan.io/address/${r.address}`}
-                      target="_blank"
-                      rel="noreferrer"
+                    <Link
+                      href={`/player/${r.address}`}
                       className="font-mono text-xs text-slate-300 hover:text-oracle-cyan"
+                      title="View scouting report"
                     >
-                      {shortAddress(r.address)} ↗
-                    </a>
+                      {shortAddress(r.address)} 🔍
+                    </Link>
                   </td>
                   <td className="py-2.5 pr-2 text-right font-mono text-xs">
                     <span className="text-emerald-300">{r.stats.wins.toString()}</span>
