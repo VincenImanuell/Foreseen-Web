@@ -44,6 +44,15 @@ function Tell({ when, move }: { when: string; move: Move | null }) {
   );
 }
 
+function Metric({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="stat-card">
+      <div className="text-xs text-slate-500">{label}</div>
+      <div className="mt-1 font-mono text-sm text-slate-200">{value}</div>
+    </div>
+  );
+}
+
 /**
  * Full scouting report for one address, read through `@foreseen/sdk`'s
  * `analyzeOpponent` — the same call a bot or another dapp would make. Pure
