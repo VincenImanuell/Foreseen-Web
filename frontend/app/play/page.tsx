@@ -22,6 +22,12 @@ const ARENA_STATS = [
   ["Game", "Skill"],
 ];
 
+const TABLE_RULES = [
+  "Match stake exactly to join.",
+  "Scout before committing.",
+  "Reveal before the deadline.",
+];
+
 export default function Play() {
   const mounted = useMounted();
   const { isConnected } = useAccount();
