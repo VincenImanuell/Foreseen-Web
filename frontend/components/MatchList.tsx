@@ -77,7 +77,7 @@ function Section({
         <p className="text-sm text-slate-400">{hint}</p>
       </div>
       {entries.length === 0 ? (
-        <div className="card text-sm text-slate-500">{empty}</div>
+        <div className="surface-soft p-5 text-sm text-slate-500">{empty}</div>
       ) : (
         <div className="grid gap-3 sm:grid-cols-2">
           {entries.map((e) => (
