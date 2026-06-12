@@ -51,6 +51,13 @@ export function LandingShowcase() {
           ))}
         </div>
 
+        <div className="surface panel-grid mt-6 overflow-hidden p-5">
+          <div className="flex items-center justify-between">
+            <span className="eyebrow">Commit preview</span>
+            <span className="chip">sealed move</span>
+          </div>
+        </div>
+
         <div className="mt-8 text-center">
           <Link href="/play" className="btn-primary">
             Enter the arena
