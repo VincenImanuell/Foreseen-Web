@@ -41,6 +41,14 @@ export default function Play() {
             Matchmake → scout → commit → reveal. A game of skill, not gambling:
             no RNG, no house. Stakes are real CELO — play responsibly.
           </p>
+          <div className="mt-4 grid gap-2 sm:grid-cols-3">
+            {ARENA_STATS.map(([label, value]) => (
+              <div key={label} className="stat-card">
+                <div className="text-xs text-slate-500">{label}</div>
+                <div className="mt-1 font-display text-lg font-bold">{value}</div>
+              </div>
+            ))}
+          </div>
           <div className="mt-4 grid gap-2 sm:grid-cols-4">
             {PHASES.map(([t, d]) => (
               <div
