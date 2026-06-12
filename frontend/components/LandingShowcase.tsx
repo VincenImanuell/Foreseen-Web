@@ -19,6 +19,8 @@ const SIGNALS = [
   },
 ];
 
+const MOVES = ["Rock", "Paper", "Scissors"];
+
 export function LandingShowcase() {
   return (
     <section className="border-t border-white/5 px-4 py-20">
