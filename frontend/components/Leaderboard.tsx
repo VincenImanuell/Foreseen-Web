@@ -72,6 +72,17 @@ function LeaderboardSkeleton() {
   );
 }
 
+function TopPlayer({ row }: { row: Row }) {
+  return (
+    <div className="mb-4 rounded-xl border border-oracle-gold/20 bg-oracle-gold/[0.05] p-4">
+      <div className="text-xs text-slate-500">Current read</div>
+      <div className="mt-1 font-mono text-sm text-oracle-gold">
+        {shortAddress(row.address)}
+      </div>
+    </div>
+  );
+}
+
 export function Leaderboard() {
   const { data, isLoading, isError, refetch, isFetching } = useQuery({
     queryKey: ["sdk-leaderboard"],
