@@ -52,9 +52,7 @@ export function OpenMatches() {
       </div>
 
       {isLoading && (
-        <div className="py-10 text-center text-sm text-slate-500">
-          Reading the lobby via <code className="text-oracle-cyan">@foreseen/sdk</code>…
-        </div>
+        <LobbySkeleton />
       )}
 
       {isError && (
