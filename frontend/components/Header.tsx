@@ -37,7 +37,11 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="hidden text-xs text-slate-400 hover:text-white sm:block"
+              className={`hidden rounded-full px-3 py-1.5 text-xs transition sm:block ${
+                pathname === item.href
+                  ? "bg-white/10 text-white"
+                  : "text-slate-400 hover:bg-white/5 hover:text-white"
+              }`}
             >
               {item.label}
             </Link>
