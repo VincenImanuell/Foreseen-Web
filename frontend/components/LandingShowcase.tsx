@@ -82,6 +82,9 @@ export function LandingShowcase() {
           <Link href="/play" className="btn-primary">
             Enter the arena
           </Link>
+          <Link href="/matches" className="btn-ghost ml-3">
+            Watch lobby
+          </Link>
         </div>
       </div>
     </section>
