@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { OpenMatches } from "@/components/OpenMatches";
+import { SiteFooter } from "@/components/SiteFooter";
 
 export const metadata = {
   title: "Open matches — Foreseen",
@@ -27,10 +28,7 @@ export default function MatchesPage() {
         <OpenMatches />
       </div>
 
-      <footer className="border-t border-white/10 py-6 text-center text-xs text-slate-500">
-        Foreseen · Celo mainnet · skill-based mind-sport, not gambling · real CELO
-        stakes
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
