@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { RPS_CORE_ADDRESS } from "@/lib/contracts";
+import { shortAddress } from "@/lib/rps";
 
 export function SiteFooter() {
   return (
@@ -18,6 +20,14 @@ export function SiteFooter() {
           <Link href="/leaderboard" className="hover:text-oracle-cyan">
             Leaderboard
           </Link>
+          <a
+            href={`https://celoscan.io/address/${RPS_CORE_ADDRESS}`}
+            target="_blank"
+            rel="noreferrer"
+            className="font-mono hover:text-oracle-cyan"
+          >
+            {shortAddress(RPS_CORE_ADDRESS)} ↗
+          </a>
         </nav>
       </div>
     </footer>
