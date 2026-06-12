@@ -95,8 +95,10 @@ export function ScoutCard({ address }: { address: string }) {
       </div>
 
       {isLoading && (
-        <div className="py-10 text-center text-sm text-slate-500">
-          Reading on-chain history via <code className="text-oracle-cyan">@foreseen/sdk</code>…
+        <div className="space-y-2 py-2">
+          {[0, 1, 2].map((i) => (
+            <div key={i} className="h-12 animate-pulse rounded-xl bg-white/[0.06]" />
+          ))}
         </div>
       )}
 
