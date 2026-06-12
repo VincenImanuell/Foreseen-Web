@@ -7,6 +7,12 @@ import { shortAddress } from "@/lib/rps";
 import { ConnectButton } from "./ConnectButton";
 import { Logo } from "./Logo";
 
+const NAV_ITEMS = [
+  { href: "/play", label: "Arena" },
+  { href: "/matches", label: "Matches" },
+  { href: "/leaderboard", label: "Leaderboard" },
+];
+
 export function Header() {
   const pathname = usePathname();
 
