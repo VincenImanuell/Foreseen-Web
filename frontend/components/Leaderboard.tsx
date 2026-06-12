@@ -76,8 +76,13 @@ function TopPlayer({ row }: { row: Row }) {
   return (
     <div className="mb-4 rounded-xl border border-oracle-gold/20 bg-oracle-gold/[0.05] p-4">
       <div className="text-xs text-slate-500">Current read</div>
-      <div className="mt-1 font-mono text-sm text-oracle-gold">
-        {shortAddress(row.address)}
+      <div className="mt-1 flex flex-wrap items-center justify-between gap-3">
+        <div className="font-mono text-sm text-oracle-gold">
+          {shortAddress(row.address)}
+        </div>
+        <div className="font-mono text-xs text-slate-400">
+          {row.stats.wins.toString()} wins · {Math.round(row.winRate * 100)}%
+        </div>
       </div>
     </div>
   );
