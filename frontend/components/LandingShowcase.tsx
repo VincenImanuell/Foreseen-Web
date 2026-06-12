@@ -35,6 +35,20 @@ export function LandingShowcase() {
           </p>
         </Reveal>
 
+        <div className="mt-10 grid gap-4 md:grid-cols-3">
+          {SIGNALS.map((signal) => (
+            <div key={signal.label} className="stat-card">
+              <div className="text-xs text-slate-500">{signal.label}</div>
+              <div className="mt-2 font-display text-xl font-bold text-white">
+                {signal.value}
+              </div>
+              <p className="mt-2 text-sm leading-6 text-slate-400">
+                {signal.body}
+              </p>
+            </div>
+          ))}
+        </div>
+
         <div className="mt-8 text-center">
           <Link href="/play" className="btn-primary">
             Enter the arena
