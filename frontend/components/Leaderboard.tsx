@@ -88,7 +88,7 @@ export function Leaderboard() {
         <button
           onClick={() => refetch()}
           disabled={isFetching}
-          className="rounded-lg border border-white/10 px-2.5 py-1 text-[11px] text-slate-400 transition hover:text-white disabled:opacity-50"
+          className="focus-ring rounded-lg border border-white/10 px-2.5 py-1 text-[11px] text-slate-400 transition hover:text-white disabled:opacity-50"
         >
           {isFetching ? "Refreshing…" : "Refresh"}
         </button>
