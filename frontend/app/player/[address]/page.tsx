@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Header } from "@/components/Header";
+import { PageIntro } from "@/components/PageIntro";
 import { ScoutCard } from "@/components/ScoutCard";
 import { SiteFooter } from "@/components/SiteFooter";
 
@@ -28,13 +29,12 @@ export default function PlayerPage({
           </Link>
         </div>
 
-        <h1 className="mb-1 font-display text-2xl font-bold tracking-tight sm:text-3xl">
-          Scouting report
-        </h1>
-        <p className="mb-6 text-sm text-slate-400">
-          Everything the chain reveals about this player — read the pattern, then
-          pick the move that beats their habit, or bluff against it.
-        </p>
+        <PageIntro
+          eyebrow="Opponent read"
+          title="Scouting report"
+          body="Everything the chain reveals about this player: read the pattern, then pick the move that beats their habit, or bluff against it."
+          chips={["Move distribution", "Win/loss tells", "Suggested counter"]}
+        />
 
         <ScoutCard address={params.address} />
       </div>
