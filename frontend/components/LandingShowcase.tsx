@@ -78,11 +78,11 @@ export function LandingShowcase() {
           </div>
         </div>
 
-        <div className="mt-8 text-center">
+        <div className="mt-8 flex flex-wrap justify-center gap-3 text-center">
           <Link href="/play" className="btn-primary">
             Enter the arena
           </Link>
-          <Link href="/matches" className="btn-ghost ml-3">
+          <Link href="/matches" className="btn-ghost">
             Watch lobby
           </Link>
         </div>
