@@ -50,11 +50,14 @@ export default function Play() {
             ))}
           </div>
           <div className="mt-4 grid gap-2 sm:grid-cols-4">
-            {PHASES.map(([t, d]) => (
+            {PHASES.map(([t, d], index) => (
               <div
                 key={t}
                 className="rounded-xl border border-white/10 bg-panel/60 p-3"
               >
+                <div className="mb-2 grid h-7 w-7 place-items-center rounded-full bg-oracle-cyan/10 font-mono text-[11px] text-oracle-cyan">
+                  {index + 1}
+                </div>
                 <div className="text-xs font-semibold text-oracle-cyan">{t}</div>
                 <div className="mt-1 text-[11px] leading-snug text-slate-400">
                   {d}
