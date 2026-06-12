@@ -12,6 +12,11 @@ const SIGNALS = [
     value: "Move tells",
     body: "Read distribution and post-win habits before committing blind.",
   },
+  {
+    label: "Clock state",
+    value: "90 sec",
+    body: "Deadline context stays visible during scouting and reveal windows.",
+  },
 ];
 
 export function LandingShowcase() {
