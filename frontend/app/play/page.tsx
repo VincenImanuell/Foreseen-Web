@@ -16,6 +16,12 @@ const PHASES = [
   ["4 · Reveal", "Both reveal within 90s. The contract settles & pays the winner."],
 ];
 
+const ARENA_STATS = [
+  ["Network", "Celo"],
+  ["Windows", "90s"],
+  ["Game", "Skill"],
+];
+
 export default function Play() {
   const mounted = useMounted();
   const { isConnected } = useAccount();
