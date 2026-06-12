@@ -7,6 +7,11 @@ const SIGNALS = [
     value: "Open seats",
     body: "See whether the table is quiet or crowded before you stake.",
   },
+  {
+    label: "Opponent signal",
+    value: "Move tells",
+    body: "Read distribution and post-win habits before committing blind.",
+  },
 ];
 
 export function LandingShowcase() {
