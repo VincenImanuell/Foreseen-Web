@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LandingShowcase } from "@/components/LandingShowcase";
 import { Logo } from "@/components/Logo";
 import { Reveal } from "@/components/Reveal";
 import { RPS_CORE_ADDRESS, CELO_MAINNET_CONTRACTS } from "@/lib/contracts";
@@ -280,6 +281,8 @@ export default function Landing() {
           </div>
         </div>
       </section>
+
+      <LandingShowcase />
 
       {/* ---- Final CTA ---- */}
       <section className="border-t border-white/5 px-4 py-24">
