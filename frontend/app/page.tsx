@@ -70,6 +70,9 @@ export default function Landing() {
             </span>
           </div>
           <div className="flex items-center gap-5 text-sm text-slate-300">
+            <Link href="/matches" className="hidden hover:text-white md:inline">
+              Matches
+            </Link>
             <a href="#how" className="hidden hover:text-white sm:inline">
               How to play
             </a>
