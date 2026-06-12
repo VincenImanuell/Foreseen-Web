@@ -46,6 +46,12 @@ export function Header() {
               {item.label}
             </Link>
           ))}
+          <Link
+            href="/#how"
+            className="hidden rounded-full px-3 py-1.5 text-xs text-slate-500 transition hover:bg-white/5 hover:text-white md:block"
+          >
+            How
+          </Link>
           <a
             href={`https://celoscan.io/address/${RPS_CORE_ADDRESS}`}
             target="_blank"
