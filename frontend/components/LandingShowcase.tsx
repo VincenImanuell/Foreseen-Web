@@ -56,6 +56,14 @@ export function LandingShowcase() {
             <span className="eyebrow">Commit preview</span>
             <span className="chip">sealed move</span>
           </div>
+          <div className="mt-5 grid gap-3 sm:grid-cols-3">
+            {MOVES.map((move) => (
+              <div key={move} className="rounded-xl border border-white/10 bg-void/55 p-4">
+                <div className="text-sm font-semibold text-slate-200">{move}</div>
+                <div className="mt-2 h-2 rounded-full bg-white/10" />
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="mt-8 text-center">
