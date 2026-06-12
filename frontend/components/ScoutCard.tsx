@@ -127,6 +127,12 @@ export function ScoutCard({ address }: { address: string }) {
                 </span>
               </div>
 
+              <div className="grid gap-3 sm:grid-cols-3">
+                <Metric label="Win rate" value={`${Math.round(data.winRate * 100)}%`} />
+                <Metric label="Matches" value={data.stats.totalMatches.toString()} />
+                <Metric label="Favorite" value={moveLabel(data.dominantMove)} />
+              </div>
+
               <div className="space-y-2">
                 <Bar label="Rock" emoji="🪨" pct={data.distribution.rock} />
                 <Bar label="Paper" emoji="📄" pct={data.distribution.paper} />
