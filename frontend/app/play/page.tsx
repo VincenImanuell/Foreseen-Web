@@ -39,14 +39,18 @@ export default function Play() {
 
       <div className="mx-auto max-w-5xl px-4 py-8">
         <section className="mb-6">
-          <div className="eyebrow">Live arena</div>
-          <h1 className="mt-2 font-display text-2xl font-bold tracking-tight sm:text-3xl">
-            The arena
-          </h1>
-          <p className="mt-1 max-w-2xl text-sm text-slate-400">
-            Matchmake → scout → commit → reveal. A game of skill, not gambling:
-            no RNG, no house. Stakes are real CELO — play responsibly.
-          </p>
+          <div className="grid gap-5 lg:grid-cols-[1fr_280px]">
+            <div>
+              <div className="eyebrow">Live arena</div>
+              <h1 className="mt-2 font-display text-2xl font-bold tracking-tight sm:text-3xl">
+                The arena
+              </h1>
+              <p className="mt-1 max-w-2xl text-sm text-slate-400">
+                Matchmake → scout → commit → reveal. A game of skill, not gambling:
+                no RNG, no house. Stakes are real CELO — play responsibly.
+              </p>
+            </div>
+          </div>
           <div className="mt-4 grid gap-2 sm:grid-cols-3">
             {ARENA_STATS.map(([label, value]) => (
               <div key={label} className="stat-card">
