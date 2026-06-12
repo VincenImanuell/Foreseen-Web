@@ -2,9 +2,10 @@ type PageIntroProps = {
   eyebrow: string;
   title: string;
   body: string;
+  chips?: string[];
 };
 
-export function PageIntro({ eyebrow, title, body }: PageIntroProps) {
+export function PageIntro({ eyebrow, title, body, chips = [] }: PageIntroProps) {
   return (
     <section className="mb-6">
       <div className="eyebrow">{eyebrow}</div>
@@ -12,6 +13,15 @@ export function PageIntro({ eyebrow, title, body }: PageIntroProps) {
         {title}
       </h1>
       <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-400">{body}</p>
+      {chips.length > 0 && (
+        <div className="mt-4 flex flex-wrap gap-2">
+          {chips.map((chip) => (
+            <span key={chip} className="chip">
+              {chip}
+            </span>
+          ))}
+        </div>
+      )}
     </section>
   );
 }
