@@ -4,6 +4,7 @@ import { useAccount } from "wagmi";
 import { CreateMatch } from "@/components/CreateMatch";
 import { Header } from "@/components/Header";
 import { MatchList } from "@/components/MatchList";
+import { SiteFooter } from "@/components/SiteFooter";
 import { Withdraw } from "@/components/Withdraw";
 import { useMatches } from "@/components/useMatches";
 import { useMounted } from "@/components/useMounted";
@@ -62,10 +63,7 @@ export default function Play() {
         </div>
       </div>
 
-      <footer className="border-t border-white/10 py-6 text-center text-xs text-slate-500">
-        Foreseen · Celo mainnet · skill-based mind-sport, not gambling · real
-        CELO stakes
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
