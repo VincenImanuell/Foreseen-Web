@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Header } from "@/components/Header";
 import { ScoutCard } from "@/components/ScoutCard";
+import { SiteFooter } from "@/components/SiteFooter";
 
 export const metadata = {
   title: "Scouting report — Foreseen",
@@ -38,10 +39,7 @@ export default function PlayerPage({
         <ScoutCard address={params.address} />
       </div>
 
-      <footer className="border-t border-white/10 py-6 text-center text-xs text-slate-500">
-        Foreseen · Celo mainnet · skill-based mind-sport, not gambling · real CELO
-        stakes
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
