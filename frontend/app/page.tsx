@@ -134,6 +134,9 @@ export default function Landing() {
               <Link href="/leaderboard" className="btn-ghost !px-6 !py-3 text-base">
                 🏆 Leaderboard
               </Link>
+              <Link href="/matches" className="btn-ghost !px-6 !py-3 text-base">
+                ⚔️ Open matches
+              </Link>
               <a href="#how" className="btn-ghost !px-6 !py-3 text-base">
                 How to play
               </a>
