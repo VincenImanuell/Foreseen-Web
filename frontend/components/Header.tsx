@@ -18,7 +18,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-20 border-b border-white/10 bg-void/70 backdrop-blur">
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <Link href="/" className="group flex items-center gap-3">
           <Logo size={36} />
           <div className="leading-tight">
