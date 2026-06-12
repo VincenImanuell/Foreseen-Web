@@ -51,6 +51,12 @@ const FEATURES = [
   },
 ];
 
+const TRUST_CHIPS = [
+  "Not gambling — pure skill",
+  "Provably fair commit-reveal",
+  "Soulbound ranks",
+];
+
 export default function Landing() {
   return (
     <main className="overflow-x-hidden">
