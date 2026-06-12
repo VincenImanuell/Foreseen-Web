@@ -72,7 +72,7 @@ export function OpenMatches() {
           {data.map((m: MatchView) => (
             <li
               key={m.id.toString()}
-              className="flex items-center gap-3 rounded-xl border border-white/10 bg-void/40 px-3 py-2.5"
+              className="flex items-center gap-3 rounded-xl border border-white/10 bg-void/40 px-3 py-2.5 transition hover:border-oracle-cyan/30 hover:bg-white/[0.04]"
             >
               <span className="font-mono text-[11px] text-slate-500">
                 #{m.id.toString()}
