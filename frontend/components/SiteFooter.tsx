@@ -7,8 +7,9 @@ export function SiteFooter() {
     <footer className="border-t border-white/10 px-4 py-8 text-xs text-slate-500">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
         <span>
-          Foreseen · Celo mainnet · skill-based mind-sport, not gambling · real
-          CELO stakes
+          <span className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-emerald-400" />
+          Foreseen · Celo mainnet · skill-based mind-sport, not gambling ·
+          real CELO stakes
         </span>
         <nav className="flex items-center gap-4">
           <Link href="/play" className="hover:text-oracle-cyan">
