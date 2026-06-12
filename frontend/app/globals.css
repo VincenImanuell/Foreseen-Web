@@ -88,6 +88,12 @@ body {
     @apply rounded-2xl border border-white/10 bg-white/[0.04] p-4;
   }
 
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2
+           focus-visible:ring-oracle-cyan/70 focus-visible:ring-offset-2
+           focus-visible:ring-offset-void;
+  }
+
   /* Headline gradient — purple → cyan → gold, animated shimmer. */
   .text-gradient {
     @apply bg-clip-text text-transparent;
