@@ -95,9 +95,7 @@ export function Leaderboard() {
       </div>
 
       {isLoading && (
-        <div className="py-10 text-center text-sm text-slate-500">
-          Reading the chain via <code className="text-oracle-cyan">@foreseen/sdk</code>…
-        </div>
+        <LeaderboardSkeleton />
       )}
 
       {isError && (
