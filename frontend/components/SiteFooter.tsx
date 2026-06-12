@@ -11,7 +11,7 @@ export function SiteFooter() {
           Foreseen · Celo mainnet · skill-based mind-sport, not gambling ·
           real CELO stakes
         </span>
-        <nav className="flex items-center gap-4">
+        <nav className="flex flex-wrap items-center justify-center gap-4">
           <Link href="/play" className="hover:text-oracle-cyan">
             Arena
           </Link>
