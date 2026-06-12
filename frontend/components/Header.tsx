@@ -1,12 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { RPS_CORE_ADDRESS } from "@/lib/contracts";
 import { shortAddress } from "@/lib/rps";
 import { ConnectButton } from "./ConnectButton";
 import { Logo } from "./Logo";
 
 export function Header() {
+  const pathname = usePathname();
+
   return (
     <header className="sticky top-0 z-20 border-b border-white/10 bg-void/70 backdrop-blur">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
