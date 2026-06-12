@@ -21,6 +21,7 @@ const SIGNALS = [
 
 const MOVES = ["Rock", "Paper", "Scissors"];
 const MOVE_EMOJI = ["🪨", "📄", "✂️"];
+const MOVE_WIDTHS = ["72%", "42%", "58%"];
 
 export function LandingShowcase() {
   return (
@@ -62,7 +63,12 @@ export function LandingShowcase() {
               <div key={move} className="rounded-xl border border-white/10 bg-void/55 p-4">
                 <div className="text-2xl">{MOVE_EMOJI[index]}</div>
                 <div className="text-sm font-semibold text-slate-200">{move}</div>
-                <div className="mt-2 h-2 rounded-full bg-white/10" />
+                <div className="meter-track mt-3">
+                  <div
+                    className="meter-fill"
+                    style={{ width: MOVE_WIDTHS[index] }}
+                  />
+                </div>
               </div>
             ))}
           </div>
