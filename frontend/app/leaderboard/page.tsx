@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Leaderboard } from "@/components/Leaderboard";
+import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
 
 export const metadata = {
@@ -14,17 +15,12 @@ export default function LeaderboardPage() {
       <Header />
 
       <div className="mx-auto max-w-5xl px-4 py-8">
-        <section className="mb-6">
-          <h1 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
-            Leaderboard
-          </h1>
-          <p className="mt-1 max-w-2xl text-sm text-slate-400">
-            Every revealed match writes a tamper-proof record on-chain. This board
-            ranks players by wins, read live from Celo mainnet through the published{" "}
-            <code className="text-oracle-cyan">@foreseen/sdk</code> — the same client
-            anyone can <code>npm install</code> to build on Foreseen.
-          </p>
-        </section>
+        <PageIntro
+          eyebrow="Player signal"
+          title="Leaderboard"
+          body="Every revealed match writes a tamper-proof record on-chain. This board ranks players by wins, read live from Celo mainnet through the published @foreseen/sdk client."
+          chips={["Ranked by wins", "On-chain stats", "No indexer"]}
+        />
 
         <Leaderboard />
       </div>
