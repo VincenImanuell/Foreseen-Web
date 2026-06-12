@@ -14,6 +14,16 @@ function fmtCelo(wei: bigint): string {
   return n.toLocaleString(undefined, { maximumFractionDigits: 4 });
 }
 
+function LobbySkeleton() {
+  return (
+    <div className="space-y-2 py-2">
+      {[0, 1, 2].map((i) => (
+        <div key={i} className="h-11 animate-pulse rounded-xl bg-white/[0.06]" />
+      ))}
+    </div>
+  );
+}
+
 /**
  * Live lobby of matches waiting for an opponent, read through `@foreseen/sdk`'s
  * `getOpenMatches`. Wallet-free: anyone can watch the table fill. To actually
