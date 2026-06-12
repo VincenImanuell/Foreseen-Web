@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { OpenMatches } from "@/components/OpenMatches";
+import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
 
 export const metadata = {
@@ -14,16 +15,12 @@ export default function MatchesPage() {
       <Header />
 
       <div className="mx-auto max-w-3xl px-4 py-8">
-        <section className="mb-6">
-          <h1 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
-            Open matches
-          </h1>
-          <p className="mt-1 max-w-2xl text-sm text-slate-400">
-            Matches currently waiting for a challenger, read live from Celo mainnet
-            through <code className="text-oracle-cyan">@foreseen/sdk</code>. Scout an
-            opener before you decide to take the seat.
-          </p>
-        </section>
+        <PageIntro
+          eyebrow="Live lobby"
+          title="Open matches"
+          body="Matches currently waiting for a challenger, read live from Celo mainnet through @foreseen/sdk. Scout an opener before you decide to take the seat."
+          chips={["Celo mainnet", "Wallet-free read", "SDK powered"]}
+        />
 
         <OpenMatches />
       </div>
