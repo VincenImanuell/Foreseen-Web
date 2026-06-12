@@ -33,24 +33,15 @@ export function Header() {
         </Link>
 
         <div className="flex items-center gap-3">
-          <Link
-            href="/leaderboard"
-            className="hidden text-xs text-slate-400 hover:text-white sm:block"
-          >
-            Leaderboard
-          </Link>
-          <Link
-            href="/matches"
-            className="hidden text-xs text-slate-400 hover:text-white sm:block"
-          >
-            Open matches
-          </Link>
-          <Link
-            href="/#how"
-            className="hidden text-xs text-slate-400 hover:text-white sm:block"
-          >
-            How to play
-          </Link>
+          {NAV_ITEMS.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="hidden text-xs text-slate-400 hover:text-white sm:block"
+            >
+              {item.label}
+            </Link>
+          ))}
           <a
             href={`https://celoscan.io/address/${RPS_CORE_ADDRESS}`}
             target="_blank"
