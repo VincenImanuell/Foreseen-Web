@@ -145,7 +145,10 @@ export function Leaderboard() {
             </thead>
             <tbody className="divide-y divide-white/5">
               {data.map((r, i) => (
-                <tr key={r.address} className="text-slate-200">
+                <tr
+                  key={r.address}
+                  className="text-slate-200 transition hover:bg-white/[0.03]"
+                >
                   <td className="py-2.5 pr-2 font-mono text-slate-400">
                     {MEDAL[i] ?? i + 1}
                   </td>
