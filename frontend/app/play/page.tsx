@@ -50,6 +50,14 @@ export default function Play() {
                 no RNG, no house. Stakes are real CELO — play responsibly.
               </p>
             </div>
+            <div className="surface-soft p-4">
+              <div className="eyebrow">Table rules</div>
+              <ul className="mt-3 space-y-2 text-sm text-slate-300">
+                {TABLE_RULES.map((rule) => (
+                  <li key={rule}>• {rule}</li>
+                ))}
+              </ul>
+            </div>
           </div>
           <div className="mt-4 grid gap-2 sm:grid-cols-3">
             {ARENA_STATS.map(([label, value]) => (
