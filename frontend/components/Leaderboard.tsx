@@ -122,8 +122,10 @@ export function Leaderboard() {
       )}
 
       {!isLoading && !isError && data && data.length > 0 && (
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
+        <>
+          <TopPlayer row={data[0]} />
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
             <thead>
               <tr className="text-left text-[11px] uppercase tracking-wide text-slate-500">
                 <th className="pb-2 pr-2 font-medium">#</th>
@@ -170,8 +172,9 @@ export function Leaderboard() {
                 </tr>
               ))}
             </tbody>
-          </table>
-        </div>
+            </table>
+          </div>
+        </>
       )}
 
       <p className="mt-4 text-[11px] leading-snug text-slate-600">
