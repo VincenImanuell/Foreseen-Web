@@ -141,10 +141,12 @@ export default function Landing() {
           </Reveal>
 
           <Reveal delay={240}>
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs text-slate-500">
-              <span>⚖️ Not gambling — pure skill</span>
-              <span>🔐 Provably fair commit–reveal</span>
-              <span>🏅 Soulbound ranks</span>
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
+              {TRUST_CHIPS.map((chip) => (
+                <span key={chip} className="chip">
+                  {chip}
+                </span>
+              ))}
             </div>
           </Reveal>
         </div>
