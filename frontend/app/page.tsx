@@ -79,6 +79,9 @@ export default function Landing() {
             <a href="#mindsport" className="hidden hover:text-white sm:inline">
               The read
             </a>
+            <Link href="/leaderboard" className="hidden hover:text-white md:inline">
+              Leaderboard
+            </Link>
             <Link href="/play" className="btn-primary !py-2">
               Launch App
             </Link>
