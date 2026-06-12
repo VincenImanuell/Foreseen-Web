@@ -1,6 +1,14 @@
 import Link from "next/link";
 import { Reveal } from "./Reveal";
 
+const SIGNALS = [
+  {
+    label: "Lobby pressure",
+    value: "Open seats",
+    body: "See whether the table is quiet or crowded before you stake.",
+  },
+];
+
 export function LandingShowcase() {
   return (
     <section className="border-t border-white/5 px-4 py-20">
