@@ -83,6 +83,9 @@ export default function Landing() {
             <Link href="/leaderboard" className="hidden hover:text-white md:inline">
               Leaderboard
             </Link>
+            <Link href="/guide" className="hidden hover:text-white md:inline">
+              Guide
+            </Link>
             <Link href="/play" className="btn-primary !py-2">
               Launch App
             </Link>
