@@ -368,6 +368,7 @@ export function MatchCard({
 
           {revealOver && (
             <button
+              type="button"
               className="btn-gold w-full"
               disabled={busy}
               onClick={() => doClaim("claimRevealTimeout")}
