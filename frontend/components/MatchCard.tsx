@@ -292,6 +292,7 @@ export function MatchCard({
 
           {commitOver && (
             <button
+              type="button"
               className="btn-gold w-full"
               disabled={busy}
               onClick={() => doClaim("claimCommitTimeout")}
