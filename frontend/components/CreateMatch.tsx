@@ -74,7 +74,7 @@ export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
                 key={preset}
                 type="button"
                 onClick={() => setBet(preset)}
-                className={`rounded-full border px-2 py-1 text-[11px] transition ${
+                className={`focus-ring rounded-full border px-2 py-1 text-[11px] transition ${
                   bet === preset
                     ? "border-oracle-cyan/40 bg-oracle-cyan/10 text-oracle-cyan"
                     : "border-white/10 text-slate-400 hover:text-white"
