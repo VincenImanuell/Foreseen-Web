@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function MatchesPage() {
   return (
-    <main>
+    <main aria-label="Open matches lobby">
       <Header />
 
       <div className="mx-auto max-w-3xl px-4 py-8">
