@@ -79,6 +79,10 @@ body {
     @apply btn border border-oracle-purple/50 text-oracle-purple hover:bg-oracle-purple/10;
   }
 
+  .btn-sm {
+    @apply btn px-3 py-1.5 text-xs;
+  }
+
   .input {
     @apply w-full rounded-xl border border-white/10 bg-void/60 px-3 py-2.5
            text-sm outline-none transition focus:border-oracle-purple/70;
