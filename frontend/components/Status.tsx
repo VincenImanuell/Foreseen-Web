@@ -24,6 +24,7 @@ export function StatusBanner({ status }: { status: TxStatus }) {
   };
   return (
     <div
+      role={status.kind === "error" ? "alert" : "status"}
       className={`mt-3 rounded-xl border px-3 py-2 text-sm ${styles[status.kind]}`}
     >
       {status.kind === "pending" && "⏳ "}
