@@ -51,6 +51,7 @@ export function OpenMatches() {
           ⚔️ Waiting for an opponent
         </div>
         <button
+          type="button"
           onClick={() => refetch()}
           disabled={isFetching}
           aria-label="Refresh open matches"
