@@ -75,6 +75,10 @@ body {
     @apply btn bg-rose-600 text-white hover:bg-rose-500;
   }
 
+  .btn-outline {
+    @apply btn border border-oracle-purple/50 text-oracle-purple hover:bg-oracle-purple/10;
+  }
+
   .input {
     @apply w-full rounded-xl border border-white/10 bg-void/60 px-3 py-2.5
            text-sm outline-none transition focus:border-oracle-purple/70;
