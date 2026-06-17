@@ -62,6 +62,10 @@ const config: Config = {
         "600": "600ms",
         "800": "800ms",
       },
+      borderRadius: {
+        "3xl": "1.5rem",
+        "4xl": "2rem",
+      },
       animation: {
         float: "float 6s ease-in-out infinite",
         glowPulse: "glowPulse 5s ease-in-out infinite",
