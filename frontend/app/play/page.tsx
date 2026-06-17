@@ -67,7 +67,7 @@ export default function Play() {
                     : "Not connected"}
                 </div>
               </div>
-              <ul className="mt-3 space-y-2 text-sm text-slate-300">
+              <ul role="list" className="mt-3 space-y-2 text-sm text-slate-300">
                 {SESSION_CHECKS.map((check) => (
                   <li key={check}>• {check}</li>
                 ))}
