@@ -48,6 +48,7 @@ export function ConnectButton() {
         ● Celo
       </span>
       <button
+        type="button"
         className="btn-ghost font-mono"
         onClick={() => disconnect()}
         title="Disconnect"
