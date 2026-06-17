@@ -33,6 +33,7 @@ export function ConnectButton() {
   if (chainId !== celo.id) {
     return (
       <button
+        type="button"
         className="btn-gold"
         onClick={() => switchChain({ chainId: celo.id })}
       >
