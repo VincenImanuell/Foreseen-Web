@@ -67,6 +67,7 @@ function MovePicker({
     <div className="grid grid-cols-3 gap-2">
       {MOVES.map((m) => (
         <button
+          type="button"
           key={m.value}
           disabled={disabled}
           onClick={() => onPick(m.value)}
