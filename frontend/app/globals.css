@@ -37,7 +37,7 @@ body {
 
 @layer components {
   .card {
-    @apply rounded-2xl border border-white/10 bg-panel/80 p-5 backdrop-blur;
+    @apply rounded-2xl border border-white/10 bg-panel/80 p-5 backdrop-blur transition-colors hover:border-white/20;
   }
 
   .surface {
