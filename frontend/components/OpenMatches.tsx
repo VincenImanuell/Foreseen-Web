@@ -112,7 +112,7 @@ export function OpenMatches() {
               </span>
               <Link
                 href={`/player/${m.playerA}`}
-                className="font-mono text-xs text-slate-300 hover:text-oracle-cyan"
+                className="focus-ring rounded font-mono text-xs text-slate-300 transition-colors hover:text-oracle-cyan"
                 title="Scout the opener"
               >
                 {shortAddress(m.playerA)} 🔍
