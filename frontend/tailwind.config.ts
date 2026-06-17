@@ -57,6 +57,11 @@ const config: Config = {
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
       },
+      transitionDuration: {
+        "400": "400ms",
+        "600": "600ms",
+        "800": "800ms",
+      },
       animation: {
         float: "float 6s ease-in-out infinite",
         glowPulse: "glowPulse 5s ease-in-out infinite",
