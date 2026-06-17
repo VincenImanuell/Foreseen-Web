@@ -26,7 +26,7 @@ export function StatusBanner({ status }: { status: TxStatus }) {
     <div
       role={status.kind === "error" ? "alert" : "status"}
       aria-live={status.kind === "error" ? "assertive" : "polite"}
-      className={`mt-3 rounded-xl border px-3 py-2 text-sm ${styles[status.kind]}`}
+      className={`mt-3 animate-slideUp rounded-xl border px-3 py-2 text-sm ${styles[status.kind]}`}
     >
       {status.kind === "pending" && "⏳ "}
       {status.kind === "success" && "✓ "}
