@@ -75,7 +75,7 @@ export default function GuidePage() {
 
         <div className="mt-8 flex flex-wrap gap-3">
           <Link href="/play" className="btn-primary">
-            Launch app
+            👁 Launch app
           </Link>
           <a href="/#mindsport" className="btn-ghost">
             Read the mind-sport layer
