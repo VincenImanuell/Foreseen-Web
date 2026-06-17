@@ -66,6 +66,7 @@ export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
             min="0"
             step="0.001"
             value={bet}
+            aria-label="Bet amount in CELO"
             onChange={(e) => setBet(e.target.value)}
           />
           <div className="mt-2 flex gap-1.5">
