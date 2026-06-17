@@ -50,7 +50,7 @@ export function Withdraw({ onChanged }: { onChanged?: () => void }) {
     <div className="card" aria-busy={busy}>
       <div className="flex items-center justify-between gap-4">
         <div>
-          <div className="text-sm text-slate-400">Claimable balance</div>
+          <div className="eyebrow mb-1">Claimable balance</div>
           <div className="font-display text-2xl font-bold text-oracle-gold">
             {formatEther(amount)} <span className="text-base">CELO</span>
           </div>
