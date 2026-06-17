@@ -58,6 +58,7 @@ export function Header() {
             href={`https://celoscan.io/address/${RPS_CORE_ADDRESS}`}
             target="_blank"
             rel="noreferrer"
+            title="Open RPSCore on Celoscan"
             className="hidden font-mono text-[11px] text-slate-500 hover:text-oracle-cyan sm:block"
           >
             {shortAddress(RPS_CORE_ADDRESS)} ↗
