@@ -41,7 +41,7 @@ export default function Play() {
   const { entries, refetch, isLoading } = useMatches();
 
   return (
-    <main>
+    <main aria-label="Arena — play Foreseen">
       <Header />
 
       <div className="mx-auto max-w-5xl px-4 py-8">
