@@ -87,6 +87,7 @@ export function ScoutCard({ address }: { address: string }) {
             href={`https://celoscan.io/address/${address}`}
             target="_blank"
             rel="noreferrer"
+            aria-label="View on Celoscan"
             className="focus-ring rounded transition-colors hover:text-oracle-cyan"
           >
             ↗
