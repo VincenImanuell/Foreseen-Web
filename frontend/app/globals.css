@@ -184,7 +184,11 @@ body {
     .animate-float,
     .animate-glowPulse,
     .animate-spinSlow,
-    .animate-shimmer {
+    .animate-shimmer,
+    .animate-fadeIn,
+    .animate-slideUp,
+    .animate-slideDown,
+    .animate-pulse {
       animation: none !important;
     }
   }
