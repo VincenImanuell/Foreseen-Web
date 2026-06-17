@@ -41,7 +41,7 @@ export function LandingShowcase() {
 
         <div className="mt-10 grid gap-4 md:grid-cols-3">
           {SIGNALS.map((signal) => (
-            <div key={signal.label} className="stat-card">
+            <div key={signal.label} className="stat-card transition-colors hover:border-white/20">
               <div className="text-xs text-slate-500">{signal.label}</div>
               <div className="mt-2 font-display text-xl font-bold text-white">
                 {signal.value}
