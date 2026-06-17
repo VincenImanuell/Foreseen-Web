@@ -219,7 +219,7 @@ export function MatchCard({
             {formatEther(match.bet)} CELO
           </div>
           <div className="text-[11px] text-slate-500">per player</div>
-          <div className="mt-1 text-[11px] text-slate-400">
+          <div className="mt-1 text-[11px] font-medium text-slate-300">
             {formatEther(pot)} CELO pot
           </div>
         </div>
