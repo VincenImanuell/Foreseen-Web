@@ -14,6 +14,10 @@ function fmtCelo(wei: bigint): string {
   return n.toLocaleString(undefined, { maximumFractionDigits: 4 });
 }
 
+function sumBets(matches: MatchView[] | undefined): bigint {
+  return matches?.reduce((total, match) => total + match.bet, 0n) ?? 0n;
+}
+
 function LobbySkeleton() {
   return (
     <div className="space-y-2 py-2">
@@ -35,6 +39,7 @@ export function OpenMatches() {
     queryFn: () => foreseen.getOpenMatches({ limit: 20 }),
     staleTime: 10_000,
   });
+  const rankedCount = data?.filter((m) => m.mode === Mode.Ranked).length ?? 0;
 
   return (
     <div className="rounded-2xl border border-white/10 bg-panel/60 p-4 sm:p-6">
@@ -50,6 +55,29 @@ export function OpenMatches() {
           {isFetching ? "Refreshing…" : "Refresh"}
         </button>
       </div>
+
+      {!isLoading && !isError && data && (
+        <div className="mb-4 grid gap-2 sm:grid-cols-3">
+          <div className="stat-card !rounded-xl !p-3">
+            <div className="text-[11px] text-slate-500">Open tables</div>
+            <div className="mt-1 font-display text-lg font-bold">
+              {data.length}
+            </div>
+          </div>
+          <div className="stat-card !rounded-xl !p-3">
+            <div className="text-[11px] text-slate-500">Ranked</div>
+            <div className="mt-1 font-display text-lg font-bold">
+              {rankedCount}
+            </div>
+          </div>
+          <div className="stat-card !rounded-xl !p-3">
+            <div className="text-[11px] text-slate-500">Waiting stake</div>
+            <div className="mt-1 font-display text-lg font-bold">
+              {fmtCelo(sumBets(data))} CELO
+            </div>
+          </div>
+        </div>
+      )}
 
       {isLoading && (
         <LobbySkeleton />
