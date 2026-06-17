@@ -96,6 +96,10 @@ body {
     @apply badge bg-amber-500/15 text-amber-300;
   }
 
+  .badge-info {
+    @apply badge bg-oracle-cyan/15 text-oracle-cyan;
+  }
+
   .eyebrow {
     @apply text-xs font-semibold uppercase tracking-wide text-oracle-cyan;
   }
