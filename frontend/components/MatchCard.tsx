@@ -243,7 +243,7 @@ export function MatchCard({
       {match.state === MatchState.WaitingForOpponent && (
         <div className="mt-3">
           {isA ? (
-            <button className="btn-ghost w-full" disabled={busy} onClick={doCancel}>
+            <button type="button" className="btn-ghost w-full" disabled={busy} onClick={doCancel}>
               Cancel & refund my bet
             </button>
           ) : (
