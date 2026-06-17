@@ -139,6 +139,10 @@ body {
     @apply text-oracle-cyan transition-colors hover:text-oracle-cyan/80 focus-ring rounded;
   }
 
+  .skeleton {
+    @apply animate-pulse rounded-xl bg-white/[0.06];
+  }
+
   .divider-fade {
     @apply h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent;
   }
