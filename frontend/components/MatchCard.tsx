@@ -271,6 +271,7 @@ export function MatchCard({
               </div>
               <MovePicker value={pickMove} onPick={setPickMove} disabled={busy} />
               <button
+                type="button"
                 className="btn-primary w-full"
                 disabled={busy || pickMove === null}
                 onClick={doCommit}
