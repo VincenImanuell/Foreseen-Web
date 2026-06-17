@@ -12,16 +12,16 @@ export function SiteFooter() {
           real CELO stakes
         </span>
         <nav aria-label="Footer navigation" className="flex flex-wrap items-center justify-center gap-4">
-          <Link href="/play" className="transition-colors hover:text-oracle-cyan">
+          <Link href="/play" className="focus-ring rounded transition-colors hover:text-oracle-cyan">
             Arena
           </Link>
-          <Link href="/matches" className="transition-colors hover:text-oracle-cyan">
+          <Link href="/matches" className="focus-ring rounded transition-colors hover:text-oracle-cyan">
             Matches
           </Link>
-          <Link href="/leaderboard" className="transition-colors hover:text-oracle-cyan">
+          <Link href="/leaderboard" className="focus-ring rounded transition-colors hover:text-oracle-cyan">
             Leaderboard
           </Link>
-          <Link href="/guide" className="transition-colors hover:text-oracle-cyan">
+          <Link href="/guide" className="focus-ring rounded transition-colors hover:text-oracle-cyan">
             Guide
           </Link>
           <a
@@ -29,7 +29,7 @@ export function SiteFooter() {
             target="_blank"
             rel="noreferrer"
             title="Open RPSCore on Celoscan"
-            className="font-mono hover:text-oracle-cyan"
+            className="focus-ring rounded font-mono transition-colors hover:text-oracle-cyan"
           >
             {shortAddress(RPS_CORE_ADDRESS)} ↗
           </a>
