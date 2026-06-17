@@ -8,6 +8,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { Withdraw } from "@/components/Withdraw";
 import { useMatches } from "@/components/useMatches";
 import { useMounted } from "@/components/useMounted";
+import { shortAddress } from "@/lib/rps";
 
 const PHASES = [
   ["1 · Matchmake", "Open a match or join one. Bets are escrowed — no move yet."],
@@ -28,9 +29,15 @@ const TABLE_RULES = [
   "Reveal before the deadline.",
 ];
 
+const SESSION_CHECKS = [
+  "Use the wallet that opened or joined the match.",
+  "Keep your reveal salt in this browser session.",
+  "Check the network before every wallet confirmation.",
+];
+
 export default function Play() {
   const mounted = useMounted();
-  const { isConnected } = useAccount();
+  const { address, isConnected } = useAccount();
   const { entries, refetch, isLoading } = useMatches();
 
   return (
@@ -51,12 +58,33 @@ export default function Play() {
               </p>
             </div>
             <div className="surface-soft p-4">
-              <div className="eyebrow">Table rules</div>
+              <div className="eyebrow">Session check</div>
+              <div className="mt-2 rounded-xl border border-white/10 bg-void/35 px-3 py-2">
+                <div className="text-[11px] text-slate-500">Wallet</div>
+                <div className="mt-1 font-mono text-xs text-slate-300">
+                  {mounted && isConnected && address
+                    ? shortAddress(address)
+                    : "Not connected"}
+                </div>
+              </div>
               <ul className="mt-3 space-y-2 text-sm text-slate-300">
-                {TABLE_RULES.map((rule) => (
-                  <li key={rule}>• {rule}</li>
+                {SESSION_CHECKS.map((check) => (
+                  <li key={check}>• {check}</li>
                 ))}
               </ul>
+            </div>
+          </div>
+          <div className="mt-4 surface-soft p-4">
+            <div className="eyebrow">Table rules</div>
+            <div className="mt-3 grid gap-2 sm:grid-cols-3">
+              {TABLE_RULES.map((rule) => (
+                <div
+                  key={rule}
+                  className="rounded-xl border border-white/10 bg-void/35 px-3 py-2 text-sm text-slate-300"
+                >
+                  {rule}
+                </div>
+              ))}
             </div>
           </div>
           <div className="mt-4 grid gap-2 sm:grid-cols-3">
