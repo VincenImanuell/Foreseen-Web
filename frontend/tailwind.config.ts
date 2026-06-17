@@ -56,6 +56,8 @@ const config: Config = {
         glowPulse: "glowPulse 5s ease-in-out infinite",
         spinSlow: "spinSlow 40s linear infinite",
         shimmer: "shimmer 6s linear infinite",
+        fadeIn: "fadeIn 0.4s ease-out both",
+        slideUp: "slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both",
       },
     },
   },
