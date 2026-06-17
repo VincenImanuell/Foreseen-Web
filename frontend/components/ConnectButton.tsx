@@ -20,6 +20,7 @@ export function ConnectButton() {
     const injected = connectors[0];
     return (
       <button
+        type="button"
         className="btn-primary"
         disabled={!injected || isPending}
         onClick={() => injected && connect({ connector: injected })}
