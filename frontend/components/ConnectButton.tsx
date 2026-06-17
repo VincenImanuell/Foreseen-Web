@@ -45,8 +45,9 @@ export function ConnectButton() {
 
   return (
     <div className="flex items-center gap-2">
-      <span className="badge bg-oracle-cyan/15 text-oracle-cyan">
-        ● Celo
+      <span className="badge flex items-center gap-1.5 bg-oracle-cyan/15 text-oracle-cyan">
+        <span className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-oracle-cyan" />
+        Celo
       </span>
       <button
         type="button"
