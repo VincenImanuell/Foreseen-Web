@@ -13,7 +13,7 @@ export function ConnectButton() {
   const { switchChain } = useSwitchChain();
 
   if (!mounted) {
-    return <div className="h-10 w-36 rounded-xl bg-white/5" />;
+    return <div className="h-9 w-32 animate-pulse rounded-xl bg-white/5" />;
   }
 
   if (!isConnected) {
