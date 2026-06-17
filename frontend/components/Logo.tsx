@@ -29,6 +29,7 @@ export function Logo({
         width={size}
         height={size}
         loading="lazy"
+        draggable={false}
         className="relative rounded-full object-cover ring-1 ring-white/15"
         style={{ width: size, height: size }}
       />
