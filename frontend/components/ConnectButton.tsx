@@ -23,6 +23,7 @@ export function ConnectButton() {
         type="button"
         className="btn-primary"
         disabled={!injected || isPending}
+        aria-busy={isPending}
         onClick={() => injected && connect({ connector: injected })}
       >
         {isPending ? "Connecting…" : "Connect Wallet"}
