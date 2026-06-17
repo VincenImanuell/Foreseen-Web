@@ -59,6 +59,7 @@ export function Withdraw({ onChanged }: { onChanged?: () => void }) {
           </p>
         </div>
         <button
+          type="button"
           className="btn-gold"
           disabled={amount === 0n || busy}
           onClick={handleWithdraw}
