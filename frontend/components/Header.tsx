@@ -39,7 +39,7 @@ export function Header() {
               key={item.href}
               href={item.href}
               aria-current={pathname === item.href ? "page" : undefined}
-              className={`focus-ring hidden rounded-full px-3 py-1.5 text-xs transition sm:block ${
+              className={`focus-ring hidden rounded-full px-3 py-1.5 text-xs font-medium transition sm:block ${
                 pathname === item.href
                   ? "bg-white/10 text-white"
                   : "text-slate-400 hover:bg-white/5 hover:text-white"
