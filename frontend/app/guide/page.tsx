@@ -32,6 +32,12 @@ const SECTIONS = [
   },
 ];
 
+export const metadata = {
+  title: "Guide — Foreseen",
+  description:
+    "Player, builder, and safety guide for Foreseen's on-chain Rock Paper Scissors flow on Celo.",
+};
+
 export default function GuidePage() {
   return (
     <main>
