@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function LeaderboardPage() {
   return (
-    <main>
+    <main aria-label="Leaderboard">
       <Header />
 
       <div className="mx-auto max-w-5xl px-4 py-8">
