@@ -87,7 +87,7 @@ export function ScoutCard({ address }: { address: string }) {
             href={`https://celoscan.io/address/${address}`}
             target="_blank"
             rel="noreferrer"
-            className="hover:text-oracle-cyan"
+            className="focus-ring rounded transition-colors hover:text-oracle-cyan"
           >
             ↗
           </a>
