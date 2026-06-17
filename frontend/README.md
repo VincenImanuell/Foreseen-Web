@@ -1,6 +1,6 @@
 # Foreseen — Frontend
 
-Playable on-chain Rock Paper Scissors on **Celo Sepolia**. Built with Next.js
+Playable on-chain Rock Paper Scissors on **Celo mainnet**. Built with Next.js
 (App Router), wagmi + viem. Connects to the live, verified `RPSCore` contract —
 no backend, no database, no API keys.
 
@@ -23,17 +23,16 @@ Requires Node 18+.
 
 ```bash
 cd frontend
-cp .env.example .env.local      # optional — defaults already point at the live contract
+cp .env.example .env.local      # optional — defaults already point at mainnet
 npm install                     # or: pnpm install
 npm run dev
 ```
 
 Open http://localhost:3000.
 
-You'll need a wallet on **Celo Sepolia** (chain id `11142220`) with some test
-CELO. Grab free test CELO from a Celo Sepolia faucet, add the network to your
-wallet (the app will prompt to switch), and play. To play a full match end-to-end
-yourself, open a match in one wallet and join from a second wallet/browser.
+You'll need a wallet on **Celo mainnet** (chain id `42220`) with CELO for stake
+and gas. To play a full match end-to-end yourself, open a match in one wallet
+and join from a second wallet/browser.
 
 ## Deploy to Vercel (free, no card)
 
@@ -51,11 +50,13 @@ All env vars are public (no secrets):
 
 | Variable | Default | Purpose |
 | --- | --- | --- |
-| `NEXT_PUBLIC_RPS_CORE_ADDRESS` | `0x208f098639059dF8E19a4F6836908b3cc56CdFf9` | RPSCore on Celo Sepolia |
-| `NEXT_PUBLIC_CELO_SEPOLIA_RPC` | `https://forno.celo-sepolia.celo-testnet.org` | Public RPC |
+| `NEXT_PUBLIC_RPS_CORE_ADDRESS` | `0x4DFc92FF97378D0F5E82d44EB968cb7793C5b90e` | RPSCore on Celo mainnet |
+| `NEXT_PUBLIC_RPS_STATS_ADDRESS` | `0x0f5F94A4f5C72CAc4D6E69a6DD89341c7b1a475A` | RPSStats on Celo mainnet |
+| `NEXT_PUBLIC_CELO_RPC` | `https://forno.celo.org` | Public Celo mainnet RPC |
 
 ## Notes
 
-- Testnet only. No real funds. (Per project policy: never mainnet.)
-- The contract address above is the integrated v1 (RPSCore + RPSStats). If you
-  redeploy the full 5-contract system, update `NEXT_PUBLIC_RPS_CORE_ADDRESS`.
+- Mainnet uses real CELO. Keep stake, pot, deadlines, and withdrawal state
+  visible near wallet actions.
+- The contract addresses above are the live v2 system. If you redeploy, update
+  `NEXT_PUBLIC_RPS_CORE_ADDRESS` and `NEXT_PUBLIC_RPS_STATS_ADDRESS` together.
