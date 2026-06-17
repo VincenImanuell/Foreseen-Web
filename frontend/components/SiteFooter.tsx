@@ -28,6 +28,7 @@ export function SiteFooter() {
             href={`https://celoscan.io/address/${RPS_CORE_ADDRESS}`}
             target="_blank"
             rel="noreferrer"
+            title="Open RPSCore on Celoscan"
             className="font-mono hover:text-oracle-cyan"
           >
             {shortAddress(RPS_CORE_ADDRESS)} ↗
