@@ -102,6 +102,7 @@ export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
       </div>
 
       <button
+        type="button"
         className="btn-primary mt-4 w-full"
         disabled={!canSubmit}
         onClick={handleCreate}
