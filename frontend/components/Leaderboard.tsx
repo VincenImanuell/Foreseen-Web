@@ -149,7 +149,7 @@ export function Leaderboard() {
               {data.map((r, i) => (
                 <tr
                   key={r.address}
-                  className="text-slate-200 transition hover:bg-white/[0.03]"
+                  className={`text-slate-200 transition hover:bg-white/[0.03] ${i === 0 ? "bg-oracle-gold/[0.03]" : i === 1 ? "bg-white/[0.015]" : i === 2 ? "bg-white/[0.01]" : ""}`}
                 >
                   <td className="py-2.5 pr-2 font-mono text-slate-400">
                     {MEDAL[i] ?? i + 1}
