@@ -58,6 +58,12 @@ const TRUST_CHIPS = [
   "Soulbound ranks",
 ];
 
+const NPM_LINKS = [
+  ["npm package", "https://www.npmjs.com/package/@foreseen/sdk"],
+  ["SDK README", "https://github.com/VincenImanuell/foreseen/tree/main/sdk"],
+  ["Examples", "https://github.com/VincenImanuell/foreseen/tree/main/sdk/examples"],
+];
+
 export default function Landing() {
   return (
     <main className="overflow-x-hidden">
@@ -350,6 +356,19 @@ export default function Landing() {
               <pre className="mt-3 overflow-x-auto rounded-xl border border-white/10 bg-void/70 p-4 text-sm text-slate-200">
                 <code>npm install @foreseen/sdk viem</code>
               </pre>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {NPM_LINKS.map(([label, href]) => (
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="chip hover:border-oracle-cyan/40 hover:text-white"
+                  >
+                    {label} ↗
+                  </a>
+                ))}
+              </div>
               <p className="mt-4 text-xs leading-5 text-slate-400">
                 Use the package for legitimate integrations and AI-readable
                 documentation, not fake download or activity loops.
