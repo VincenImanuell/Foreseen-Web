@@ -348,6 +348,7 @@ export function MatchCard({
                     onChange={(e) => setManualSalt(e.target.value)}
                   />
                   <button
+                    type="button"
                     className="btn-primary mt-2 w-full"
                     disabled={busy || manualMove === null || !manualSalt}
                     onClick={doReveal}
