@@ -96,7 +96,7 @@ export function ScoutCard({ address }: { address: string }) {
 
       {isLoading && (
         <div className="space-y-2 py-2">
-          {[0, 1, 2].map((i) => (
+          {[0, 1, 2, 3, 4].map((i) => (
             <div key={i} className="h-12 animate-pulse rounded-xl bg-white/[0.06]" />
           ))}
         </div>
