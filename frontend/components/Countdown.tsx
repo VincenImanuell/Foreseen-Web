@@ -19,7 +19,7 @@ export function Countdown({
     <span
       role="timer"
       aria-label={over ? "Time expired" : `${m} minutes ${s} seconds remaining`}
-      className={`font-mono tabular-nums ${over ? "text-rose-300" : "text-oracle-cyan"} ${className}`}
+      className={`font-mono tabular-nums transition-colors ${over ? "text-rose-300" : "text-oracle-cyan"} ${className}`}
     >
       {over ? "00:00" : `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`}
     </span>
