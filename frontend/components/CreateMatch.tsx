@@ -91,6 +91,7 @@ export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
           <select
             className="input mt-1"
             value={mode}
+            aria-label="Game mode"
             onChange={(e) => setMode(Number(e.target.value) as Mode)}
           >
             <option value={Mode.Casual}>Casual</option>
