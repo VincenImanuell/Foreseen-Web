@@ -63,6 +63,7 @@ const config: Config = {
         shimmer: "shimmer 6s linear infinite",
         fadeIn: "fadeIn 0.4s ease-out both",
         slideUp: "slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both",
+        slideDown: "slideDown 0.5s cubic-bezier(0.16, 1, 0.3, 1) both",
       },
     },
   },
