@@ -62,6 +62,7 @@ export function Withdraw({ onChanged }: { onChanged?: () => void }) {
           type="button"
           className="btn-gold"
           disabled={amount === 0n || busy}
+          aria-label={`Withdraw ${formatEther(amount)} CELO to wallet`}
           onClick={handleWithdraw}
         >
           {busy ? "Working…" : "Withdraw"}
