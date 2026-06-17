@@ -321,6 +321,7 @@ export function MatchCard({
             <>
               {haveSecret ? (
                 <button
+                  type="button"
                   className="btn-primary w-full"
                   disabled={busy}
                   onClick={doReveal}
