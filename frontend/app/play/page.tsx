@@ -101,7 +101,7 @@ export default function Play() {
                 key={t}
                 className="rounded-xl border border-white/10 bg-panel/60 p-3"
               >
-                <div className="mb-2 grid h-7 w-7 place-items-center rounded-full bg-oracle-cyan/10 font-mono text-[11px] text-oracle-cyan">
+                <div className="mb-2 grid h-7 w-7 place-items-center rounded-full border border-oracle-cyan/20 bg-oracle-cyan/10 font-mono text-[11px] font-bold text-oracle-cyan">
                   {index + 1}
                 </div>
                 <div className="text-xs font-semibold text-oracle-cyan">{t}</div>
