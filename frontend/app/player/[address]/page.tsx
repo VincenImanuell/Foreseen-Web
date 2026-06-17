@@ -23,7 +23,7 @@ export default function PlayerPage({
         <div className="mb-4">
           <Link
             href="/leaderboard"
-            className="text-xs text-slate-400 hover:text-white"
+            className="focus-ring rounded text-xs text-slate-400 transition-colors hover:text-white"
           >
             ← Leaderboard
           </Link>
