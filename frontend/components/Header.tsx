@@ -27,7 +27,7 @@ export function Header() {
               Foreseen
             </div>
             <div className="flex items-center gap-1.5 text-[11px] text-slate-400">
-              <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-400" />
+              <span className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-400" />
               Celo mainnet · live app
             </div>
           </div>
