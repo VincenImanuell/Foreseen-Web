@@ -247,7 +247,7 @@ export function MatchCard({
               Cancel & refund my bet
             </button>
           ) : (
-            <button type="button" className="btn-primary w-full" disabled={busy} onClick={doJoin}>
+            <button type="button" className="btn-primary w-full" disabled={busy} onClick={doJoin} aria-label={`Join match #${id.toString()} for ${formatEther(match.bet)} CELO`}>
               Join — match {formatEther(match.bet)} CELO
             </button>
           )}
