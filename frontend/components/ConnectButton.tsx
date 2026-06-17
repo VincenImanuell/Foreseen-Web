@@ -53,7 +53,7 @@ export function ConnectButton() {
         type="button"
         className="btn-ghost font-mono"
         onClick={() => disconnect()}
-        title="Disconnect"
+        title={`Disconnect ${shortAddress(address)}`}
       >
         {shortAddress(address)}
       </button>
