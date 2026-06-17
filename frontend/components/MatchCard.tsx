@@ -247,7 +247,7 @@ export function MatchCard({
               Cancel & refund my bet
             </button>
           ) : (
-            <button className="btn-primary w-full" disabled={busy} onClick={doJoin}>
+            <button type="button" className="btn-primary w-full" disabled={busy} onClick={doJoin}>
               Join — match {formatEther(match.bet)} CELO
             </button>
           )}
