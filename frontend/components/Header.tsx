@@ -11,6 +11,7 @@ const NAV_ITEMS = [
   { href: "/play", label: "Arena" },
   { href: "/matches", label: "Matches" },
   { href: "/leaderboard", label: "Leaderboard" },
+  { href: "/guide", label: "Guide" },
 ];
 
 export function Header() {

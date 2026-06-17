@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Logo } from "@/components/Logo";
+import { Header } from "@/components/Header";
+import { SiteFooter } from "@/components/SiteFooter";
 
 const SECTIONS = [
   {
@@ -33,13 +34,9 @@ const SECTIONS = [
 
 export default function GuidePage() {
   return (
-    <main className="min-h-screen px-4 py-10">
-      <div className="mx-auto max-w-5xl">
-        <Link href="/" className="inline-flex items-center gap-3 rounded-xl focus-ring">
-          <Logo size={36} />
-          <span className="font-display text-lg font-bold">Foreseen</span>
-        </Link>
-
+    <main>
+      <Header />
+      <div className="mx-auto max-w-5xl px-4 py-10">
         <section className="mt-10">
           <div className="eyebrow">Guide</div>
           <h1 className="mt-2 font-display text-4xl font-bold tracking-tight sm:text-5xl">
@@ -79,6 +76,7 @@ export default function GuidePage() {
           </a>
         </div>
       </div>
+      <SiteFooter />
     </main>
   );
 }

@@ -21,6 +21,9 @@ export function SiteFooter() {
           <Link href="/leaderboard" className="hover:text-oracle-cyan">
             Leaderboard
           </Link>
+          <Link href="/guide" className="hover:text-oracle-cyan">
+            Guide
+          </Link>
           <a
             href={`https://celoscan.io/address/${RPS_CORE_ADDRESS}`}
             target="_blank"
