@@ -42,7 +42,10 @@ export function OpenMatches() {
   const rankedCount = data?.filter((m) => m.mode === Mode.Ranked).length ?? 0;
 
   return (
-    <div className="rounded-2xl border border-white/10 bg-panel/60 p-4 sm:p-6">
+    <div
+      className="rounded-2xl border border-white/10 bg-panel/60 p-4 sm:p-6"
+      aria-busy={isFetching}
+    >
       <div className="mb-4 flex items-center justify-between">
         <div className="text-xs font-semibold uppercase tracking-wide text-oracle-cyan">
           ⚔️ Waiting for an opponent
@@ -50,6 +53,7 @@ export function OpenMatches() {
         <button
           onClick={() => refetch()}
           disabled={isFetching}
+          aria-label="Refresh open matches"
           className="focus-ring rounded-lg border border-white/10 px-2.5 py-1 text-[11px] text-slate-400 transition hover:text-white disabled:opacity-50"
         >
           {isFetching ? "Refreshing…" : "Refresh"}
