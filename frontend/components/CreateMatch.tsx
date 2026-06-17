@@ -105,6 +105,8 @@ export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
         type="button"
         className="btn-primary mt-4 w-full"
         disabled={!canSubmit}
+        aria-busy={busy}
+        aria-label={`Open match for ${bet} CELO`}
         onClick={handleCreate}
       >
         {busy ? "Working…" : "Open match"}
