@@ -47,7 +47,7 @@ export function Withdraw({ onChanged }: { onChanged?: () => void }) {
   if (!isConnected) return null;
 
   return (
-    <div className="card">
+    <div className="card" aria-busy={busy}>
       <div className="flex items-center justify-between gap-4">
         <div>
           <div className="text-sm text-slate-400">Claimable balance</div>
