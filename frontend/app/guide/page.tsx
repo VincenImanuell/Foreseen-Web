@@ -61,7 +61,7 @@ export default function GuidePage() {
               <h2 className="font-display text-lg font-bold text-white">
                 {section.title}
               </h2>
-              <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-400">
+              <ul role="list" className="mt-4 space-y-3 text-sm leading-6 text-slate-400">
                 {section.items.map((item) => (
                   <li key={item} className="flex gap-2">
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-oracle-cyan" />
