@@ -52,6 +52,7 @@ All env vars are public (no secrets):
 | --- | --- | --- |
 | `NEXT_PUBLIC_RPS_CORE_ADDRESS` | `0x4DFc92FF97378D0F5E82d44EB968cb7793C5b90e` | RPSCore on Celo mainnet |
 | `NEXT_PUBLIC_RPS_STATS_ADDRESS` | `0x0f5F94A4f5C72CAc4D6E69a6DD89341c7b1a475A` | RPSStats on Celo mainnet |
+| `NEXT_PUBLIC_RPS_RANKED_ADDRESS` | `0x8230D28C9a8Fbda2490F830c6cBc1cE3056096cb` | RPSRanked on Celo mainnet |
 | `NEXT_PUBLIC_CELO_RPC` | `https://forno.celo.org` | Public Celo mainnet RPC |
 
 ## Notes
