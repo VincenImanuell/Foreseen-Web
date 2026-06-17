@@ -7,7 +7,7 @@ type PageIntroProps = {
 
 export function PageIntro({ eyebrow, title, body, chips = [] }: PageIntroProps) {
   return (
-    <section className="surface-soft mb-6 p-5 sm:p-6">
+    <section className="surface-soft mb-6 animate-fadeIn p-5 sm:p-6">
       <div className="eyebrow">{eyebrow}</div>
       <h1 className="mt-2 font-display text-2xl font-bold tracking-tight sm:text-3xl">
         {title}
