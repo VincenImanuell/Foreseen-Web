@@ -49,7 +49,7 @@ export function moveEmoji(m: Move): string {
 export const COMMIT_WINDOW_SECONDS = 90;
 export const REVEAL_WINDOW_SECONDS = 90;
 
-// ---- Match shape decoded from getMatch() ----------------------------------
+// ---- CELO match shape decoded from RPSCore.getMatch() on CELO mainnet -----
 
 export type RpsMatch = {
   playerA: Address;
