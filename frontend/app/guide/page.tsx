@@ -6,10 +6,10 @@ const SECTIONS = [
   {
     title: "CELO Player Flow",
     items: [
-      "Open or join a table before choosing a move.",
-      "Scout the opponent's revealed history.",
-      "Commit a sealed move and keep the salt safe.",
-      "Reveal before the deadline and withdraw claimable CELO funds.",
+      "Open or join a CELO table on CELO mainnet (chainId 42220) before choosing a move.",
+      "Scout the opponent's revealed CELO on-chain history — move distribution and tells.",
+      "Commit a sealed CELO move and keep the salt safe in your browser.",
+      "Reveal before the CELO deadline and withdraw claimable CELO funds.",
     ],
   },
   {
