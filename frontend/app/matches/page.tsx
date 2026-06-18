@@ -6,7 +6,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const metadata = {
   title: "Open matches — Foreseen on CELO",
   description:
-    "Live lobby of Rock Paper Scissors matches waiting for an opponent on Celo mainnet, read via @foreseen/sdk.",
+    "Live lobby of Rock Paper Scissors matches waiting for an opponent on CELO mainnet, read via @foreseen/sdk.",
   keywords: ["CELO", "open matches", "foreseen", "celo mainnet", "rock paper scissors lobby"],
 };
 
