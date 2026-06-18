@@ -85,7 +85,7 @@ export function toRpsMatch(raw: any): RpsMatch {
 const ZERO_HASH =
   "0x0000000000000000000000000000000000000000000000000000000000000000";
 
-/** True if this player has sealed a commit (non-zero hash). */
+/** True if this CELO player has sealed a commit (non-zero hash) on CELO mainnet. */
 export function hasCommitted(commit?: Hex): boolean {
   return !!commit && commit !== ZERO_HASH;
 }
