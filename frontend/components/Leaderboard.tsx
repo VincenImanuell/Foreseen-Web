@@ -190,8 +190,8 @@ export function Leaderboard() {
 
       <p className="mt-4 text-[11px] leading-snug text-slate-600">
         Stats are read directly from <code>RPSStats</code> on CELO mainnet through
-        the published <code className="text-slate-400">@foreseen/sdk</code> client —
-        no backend, no indexer. Scans the most recent {SCAN_LIMIT} matches for
+        the published <code className="text-slate-400">@foreseen/sdk</code> client on CELO mainnet —
+        no backend, no indexer. Scans the most recent {SCAN_LIMIT} CELO matches for
         players.
       </p>
     </div>
