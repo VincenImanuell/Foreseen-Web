@@ -46,7 +46,7 @@ export default function GuidePage() {
       <Header />
       <div className="mx-auto max-w-5xl px-4 py-10">
         <section className="mt-10">
-          <div className="eyebrow">Guide</div>
+          <div className="eyebrow">CELO Guide</div>
           <h1 className="mt-2 font-display text-4xl font-bold tracking-tight sm:text-5xl">
             Build and play with the read first.
           </h1>
