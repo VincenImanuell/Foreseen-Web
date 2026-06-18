@@ -151,6 +151,14 @@ body {
     @apply mono-value text-emerald-300;
   }
 
+  .ranked-badge {
+    @apply badge bg-oracle-gold/15 text-oracle-gold;
+  }
+
+  .casual-badge {
+    @apply badge bg-white/10 text-slate-400;
+  }
+
   .well {
     @apply rounded-xl border border-white/5 bg-void/60 px-4 py-3;
   }
