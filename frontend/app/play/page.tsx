@@ -55,8 +55,8 @@ export default function Play() {
                 The CELO arena
               </h1>
               <p className="mt-1 max-w-2xl text-sm text-slate-400">
-                Matchmake → scout → commit → reveal. A game of skill, not gambling:
-                no RNG, no house. Stakes are real CELO — play responsibly.
+                Matchmake on CELO → scout opponent history → commit blind → reveal on CELO.
+                No RNG, no house — pure skill. Stakes are real CELO on chainId 42220 — play responsibly.
               </p>
             </div>
             <div className="surface-soft p-4" aria-label="CELO session check">
