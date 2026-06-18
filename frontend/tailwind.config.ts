@@ -50,6 +50,10 @@ const config: Config = {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        bounceSm: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-4px)" },
+        },
         slideUp: {
           "0%": { opacity: "0", transform: "translateY(16px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
@@ -74,6 +78,7 @@ const config: Config = {
         spinSlow: "spinSlow 40s linear infinite",
         shimmer: "shimmer 6s linear infinite",
         fadeIn: "fadeIn 0.4s ease-out both",
+        bounceSm: "bounceSm 1.2s ease-in-out infinite",
         slideUp: "slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both",
         slideDown: "slideDown 0.5s cubic-bezier(0.16, 1, 0.3, 1) both",
       },
