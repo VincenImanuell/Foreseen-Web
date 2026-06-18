@@ -17,7 +17,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Foreseen · CELO RPS — commit-reveal mind-sport",
-    description: "Scout CELO on-chain history, commit blind, reveal and settle on CELO mainnet (chainId 42220). Real stakes, soulbound ranks.",
+    description: "Scout CELO on-chain history, commit blind, reveal and settle on CELO mainnet (chainId 42220). Real CELO stakes, soulbound ranks.",
+    site: "@celoorg",
   },
   openGraph: {
     title: "Foreseen · CELO RPS — commit-reveal mind-sport",
@@ -28,6 +29,8 @@ export const metadata: Metadata = {
   other: {
     "talentapp:project_verification":
       "3c9a7c6f8b2b452cc43e9747638a3a2bf2d89c1bf79c1edd7cd40de285d851501d1271adc668cea4cebe5ab8526ad7cf1571a3e4cb114bbf54ed5685b5723035",
+    "celo:chain_id": "42220",
+    "celo:dapp_category": "gaming",
   },
 };
 

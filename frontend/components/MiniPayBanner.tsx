@@ -3,8 +3,9 @@
 import { useMiniPay } from "./useMiniPay";
 
 /**
- * Shows a contextual banner when the app is opened inside MiniPay,
- * confirming the wallet is active and the user is ready to play.
+ * Shows a contextual banner when the app is opened inside MiniPay on CELO mainnet.
+ * MiniPay is Opera Mini's embedded CELO wallet — detectable via `window.ethereum.isMiniPay`.
+ * When detected, wallet auto-connects to CELO mainnet (chainId 42220); no manual step needed.
  */
 export function MiniPayBanner() {
   const { isMiniPay } = useMiniPay();

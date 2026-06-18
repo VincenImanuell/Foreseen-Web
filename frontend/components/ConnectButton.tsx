@@ -72,7 +72,8 @@ export function ConnectButton() {
         type="button"
         className="btn-ghost font-mono"
         onClick={() => disconnect()}
-        title={`Disconnect ${shortAddress(address)}`}
+        title={`Disconnect CELO wallet ${shortAddress(address)}`}
+        aria-label={`Disconnect CELO wallet ${shortAddress(address)} from CELO mainnet`}
       >
         {shortAddress(address)}
       </button>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { RPS_CORE_ADDRESS } from "@/lib/contracts";
+import { RPS_CORE_ADDRESS, RPS_STATS_ADDRESS } from "@/lib/contracts";
 import { shortAddress } from "@/lib/rps";
 
 export function SiteFooter() {
@@ -28,11 +28,21 @@ export function SiteFooter() {
             href={`https://celoscan.io/address/${RPS_CORE_ADDRESS}`}
             target="_blank"
             rel="noreferrer"
-            title="Open RPSCore on Celoscan"
-            aria-label="View RPSCore contract on Celoscan (CELO mainnet)"
+            title="Open RPSCore on Celoscan (CELO mainnet)"
+            aria-label="View RPSCore CELO contract on Celoscan"
             className="focus-ring rounded font-mono transition-colors hover:text-oracle-cyan"
           >
-            {shortAddress(RPS_CORE_ADDRESS)} ↗
+            RPSCore ↗
+          </a>
+          <a
+            href={`https://celoscan.io/address/${RPS_STATS_ADDRESS}`}
+            target="_blank"
+            rel="noreferrer"
+            title="Open RPSStats on Celoscan (CELO mainnet)"
+            aria-label="View RPSStats CELO contract on Celoscan"
+            className="focus-ring rounded font-mono transition-colors hover:text-oracle-cyan"
+          >
+            RPSStats ↗
           </a>
         </nav>
       </div>
