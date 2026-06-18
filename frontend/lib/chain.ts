@@ -5,6 +5,7 @@ const rpcUrl =
 
 /**
  * CELO mainnet (chainId 42220) — the Foreseen contracts are deployed and live here.
+ * Override RPC with NEXT_PUBLIC_CELO_RPC env var; default is forno.celo.org (free public CELO RPC).
  * Defined by hand (rather than importing from viem/chains) so the config never
  * drifts with the installed viem version.
  */
