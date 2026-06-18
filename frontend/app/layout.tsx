@@ -8,9 +8,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Foreseen — Rock Paper Scissors on CELO",
+  title: "Foreseen — Commit-Reveal RPS on CELO mainnet",
   description:
-    "A skill-based mind-sport on CELO mainnet. Matchmake, scout your opponent's on-chain history, then commit blind. A game of reading, not luck — not gambling.",
+    "A skill-based mind-sport on CELO mainnet (chainId 42220). Matchmake, scout your opponent's CELO on-chain history, commit blind. No RNG, no house — pure skill.",
   icons: { icon: "/foreseen-eye.svg" },
   manifest: "/manifest.json",
   keywords: ["CELO", "CELO mainnet", "celo", "rock paper scissors", "onchain game", "web3 game", "minipay", "foreseen", "commit reveal", "chainId 42220", "soulbound rank", "commit-reveal RPS", "CELO RPS", "on-chain mind-sport"],
