@@ -47,7 +47,7 @@ export function Withdraw({ onChanged }: { onChanged?: () => void }) {
   if (!isConnected) return null;
 
   return (
-    <div className="card" aria-busy={busy}>
+    <div className="card" aria-busy={busy} role="region" aria-label="CELO claimable balance and withdrawal">
       <div className="flex items-center justify-between gap-4">
         <div>
           <div className="eyebrow mb-1">Claimable balance</div>
