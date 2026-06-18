@@ -31,6 +31,7 @@ export function ConnectButton() {
         className="btn-primary"
         disabled={!injected || isPending}
         aria-busy={isPending}
+        aria-label={isPending ? "Connecting CELO wallet…" : "Connect CELO wallet"}
         onClick={() => injected && connect({ connector: injected })}
       >
         {isPending ? "Connecting…" : "Connect Wallet"}
