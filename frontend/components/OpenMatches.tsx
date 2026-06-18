@@ -101,7 +101,7 @@ export function OpenMatches() {
       )}
 
       {!isLoading && !isError && data && data.length > 0 && (
-        <ul className="space-y-2">
+        <ul className="space-y-2" aria-label="Open CELO matches waiting for opponent">
           {data.map((m: MatchView) => (
             <li
               key={m.id.toString()}
