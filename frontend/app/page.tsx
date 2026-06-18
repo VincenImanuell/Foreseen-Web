@@ -417,7 +417,7 @@ export default function Landing() {
       <footer className="border-t border-white/10 px-4 py-10 text-center">
         <div className="mx-auto max-w-3xl">
           <div className="text-xs font-semibold uppercase tracking-wide text-slate-400">
-            Deployed contracts · Celo mainnet
+            Deployed contracts · CELO mainnet
           </div>
           <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {CELO_MAINNET_CONTRACTS.map((c) => (
