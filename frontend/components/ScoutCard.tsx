@@ -54,8 +54,8 @@ function Metric({ label, value }: { label: string; value: string }) {
 }
 
 /**
- * Full scouting report for one address, read through `@foreseen/sdk`'s
- * `analyzeOpponent` — the same call a bot or another dapp would make. Pure
+ * Full CELO scouting report for one address, read through `@foreseen/sdk`'s
+ * `analyzeOpponent` on CELO mainnet (chainId 42220) — the same call a bot or another dapp would make. Pure
  * read, no wallet needed.
  */
 export function ScoutCard({ address }: { address: string }) {
