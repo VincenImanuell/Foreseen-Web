@@ -6,8 +6,9 @@ const rpcUrl =
 /**
  * CELO mainnet (chainId 42220) — the Foreseen contracts are deployed and live here.
  * Override RPC with NEXT_PUBLIC_CELO_RPC env var; default is forno.celo.org (free public CELO RPC).
- * Defined by hand (rather than importing from viem/chains) so the config never
- * drifts with the installed viem version.
+ * Block explorer: celoscan.io — use for verifying CELO txs and contract state.
+ * Defined by hand (rather than importing from viem/chains) so the CELO config never
+ * drifts with the installed viem version. sourceId=1 indicates CELO L2 is settled to Ethereum.
  */
 export const celo = defineChain({
   id: 42220,
