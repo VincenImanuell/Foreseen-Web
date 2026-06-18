@@ -45,7 +45,7 @@ export function ConnectButton() {
         className="btn-gold"
         onClick={() => switchChain({ chainId: celo.id })}
       >
-        Switch to Celo
+        Switch to CELO
       </button>
     );
   }
