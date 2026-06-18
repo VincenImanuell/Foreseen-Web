@@ -15,7 +15,7 @@ const STEPS = [
   {
     icon: "🔍",
     title: "Scout",
-    body: "Now you see your opponent. Read their on-chain history: move distribution, what they throw after a win or a loss. 90 seconds.",
+    body: "Now you see your opponent. Read their CELO on-chain history: move distribution, what they throw after a win or a loss. 90 seconds.",
   },
   {
     icon: "🔒",
