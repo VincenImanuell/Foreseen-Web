@@ -3,7 +3,7 @@ import { rpsCoreAbi, rpsStatsAbi } from "./abi";
 import { rpsRankedAbi } from "./rankedAbi";
 
 /**
- * RPSCore v2 — the live, matchmaking-first match engine on Celo mainnet.
+ * RPSCore v2 — the live, matchmaking-first match engine on CELO mainnet.
  * Override via NEXT_PUBLIC_RPS_CORE_ADDRESS if you redeploy.
  */
 export const RPS_CORE_ADDRESS = (process.env.NEXT_PUBLIC_RPS_CORE_ADDRESS ??
