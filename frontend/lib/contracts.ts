@@ -25,8 +25,9 @@ export const RPS_RANKED_ADDRESS = (process.env.NEXT_PUBLIC_RPS_RANKED_ADDRESS ??
   "0x8230D28C9a8Fbda2490F830c6cBc1cE3056096cb") as Address;
 
 /**
- * Full v2 (matchmaking-first) system on CELO mainnet — shown in the landing footer.
- * Only RPSCore/RPSStats are read by the dapp; the rest are listed for transparency.
+ * Full v2 (matchmaking-first) system on CELO mainnet (chainId 42220) — shown in the landing footer.
+ * RPSCore handles all CELO match logic; RPSStats records tamper-proof CELO behavioral profiles;
+ * RPSRanked manages soulbound CELO rank progression. Listed for transparency.
  */
 export const CELO_MAINNET_CONTRACTS: { name: string; address: Address }[] = [
   { name: "RPSCore", address: RPS_CORE_ADDRESS },

@@ -12,16 +12,16 @@ import { useMiniPay } from "@/components/useMiniPay";
 import { shortAddress } from "@/lib/rps";
 
 const PHASES = [
-  ["1 · Matchmake", "Open a match or join one. Bets are escrowed — no move yet."],
-  ["2 · Scout", "Read opponent CELO on-chain history. 90s scouting window before commit."],
-  ["3 · Commit", "Seal your move blind. Neither side can see the other's throw."],
-  ["4 · Reveal", "Both reveal within 90s. Contract settles & releases CELO to winner."],
+  ["1 · Matchmake", "Open a CELO match or join one. CELO bets are escrowed on-chain — no move yet."],
+  ["2 · Scout", "Read opponent CELO on-chain history from RPSStats. 90s scouting window before commit."],
+  ["3 · Commit", "Seal your CELO move as keccak256 hash. Neither side can see the other's throw on CELO."],
+  ["4 · Reveal", "Both reveal within 90s on CELO. RPSCore settles & releases CELO to winner."],
 ];
 
 const ARENA_STATS = [
-  ["Network", "CELO mainnet"],
-  ["Windows", "90s"],
-  ["Game", "Skill"],
+  ["Network", "CELO mainnet · 42220"],
+  ["Windows", "90s scout + 90s reveal"],
+  ["Game", "Skill (no RNG)"],
 ];
 
 const TABLE_RULES = [
