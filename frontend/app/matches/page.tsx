@@ -4,10 +4,10 @@ import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
 
 export const metadata = {
-  title: "Open matches — Foreseen on CELO",
+  title: "Open CELO matches — Foreseen on CELO mainnet",
   description:
-    "Live lobby of Rock Paper Scissors matches waiting for an opponent on CELO mainnet, read via @foreseen/sdk.",
-  keywords: ["CELO", "open matches", "foreseen", "celo mainnet", "rock paper scissors lobby"],
+    "Live lobby of CELO Rock Paper Scissors matches waiting for an opponent on CELO mainnet (chainId 42220), read live via @foreseen/sdk. No wallet required to watch.",
+  keywords: ["CELO", "open matches", "foreseen", "celo mainnet", "rock paper scissors lobby", "chainId 42220", "commit-reveal"],
 };
 
 export default function MatchesPage() {
