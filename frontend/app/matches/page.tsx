@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function MatchesPage() {
   return (
-    <main aria-label="Open matches lobby">
+    <main aria-label="Open CELO matches lobby">
       <Header />
 
       <div className="mx-auto max-w-3xl px-4 py-8">
