@@ -18,7 +18,7 @@ export const RPS_RANKED_ADDRESS = (process.env.NEXT_PUBLIC_RPS_RANKED_ADDRESS ??
   "0x8230D28C9a8Fbda2490F830c6cBc1cE3056096cb") as Address;
 
 /**
- * Full v2 (matchmaking-first) system on Celo mainnet — shown in the landing footer.
+ * Full v2 (matchmaking-first) system on CELO mainnet — shown in the landing footer.
  * Only RPSCore/RPSStats are read by the dapp; the rest are listed for transparency.
  */
 export const CELO_MAINNET_CONTRACTS: { name: string; address: Address }[] = [
