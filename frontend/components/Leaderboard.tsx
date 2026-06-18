@@ -133,6 +133,7 @@ export function Leaderboard() {
           <TopPlayer row={data[0]} />
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
+            <caption className="sr-only">CELO Foreseen leaderboard ranked by wins</caption>
             <thead>
               <tr className="text-left text-[11px] uppercase tracking-wide text-slate-500">
                 <th className="pb-2 pr-2 font-medium">#</th>

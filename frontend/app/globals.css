@@ -260,6 +260,7 @@ body {
     .animate-fadeIn,
     .animate-slideUp,
     .animate-slideDown,
+    .animate-bounceSm,
     .animate-pulse {
       animation: none !important;
     }

@@ -27,6 +27,8 @@ const config: Config = {
         "glow-lg": "0 0 80px -10px rgba(124, 92, 255, 0.55)",
         "glow-cyan": "0 0 30px -5px rgba(55, 230, 255, 0.35)",
         "glow-gold": "0 0 30px -5px rgba(245, 196, 81, 0.35)",
+        "glow-sm": "0 0 15px -5px rgba(124, 92, 255, 0.35)",
+        "glow-emerald": "0 0 30px -5px rgba(52, 211, 153, 0.35)",
       },
       keyframes: {
         float: {
@@ -47,6 +49,10 @@ const config: Config = {
         fadeIn: {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
+        },
+        bounceSm: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-4px)" },
         },
         slideUp: {
           "0%": { opacity: "0", transform: "translateY(16px)" },
@@ -72,6 +78,7 @@ const config: Config = {
         spinSlow: "spinSlow 40s linear infinite",
         shimmer: "shimmer 6s linear infinite",
         fadeIn: "fadeIn 0.4s ease-out both",
+        bounceSm: "bounceSm 1.2s ease-in-out infinite",
         slideUp: "slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both",
         slideDown: "slideDown 0.5s cubic-bezier(0.16, 1, 0.3, 1) both",
       },

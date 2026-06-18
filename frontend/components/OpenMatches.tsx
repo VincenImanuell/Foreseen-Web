@@ -101,7 +101,7 @@ export function OpenMatches() {
       )}
 
       {!isLoading && !isError && data && data.length > 0 && (
-        <ul className="space-y-2">
+        <ul className="space-y-2" aria-label="Open CELO matches waiting for opponent">
           {data.map((m: MatchView) => (
             <li
               key={m.id.toString()}
@@ -118,6 +118,7 @@ export function OpenMatches() {
                 {shortAddress(m.playerA)} 🔍
               </Link>
               <span
+                title={m.mode === Mode.Ranked ? "Ranked CELO match" : "Casual CELO match"}
                 className={`rounded-full px-2 py-0.5 text-[10px] ${
                   m.mode === Mode.Ranked
                     ? "bg-oracle-gold/15 text-oracle-gold"
