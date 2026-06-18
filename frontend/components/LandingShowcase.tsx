@@ -80,10 +80,10 @@ export function LandingShowcase() {
 
         <div className="mt-8 flex flex-wrap justify-center gap-3 text-center">
           <Link href="/play" className="btn-primary">
-            Enter the arena
+            Enter the CELO arena
           </Link>
           <Link href="/matches" className="btn-ghost">
-            Watch lobby
+            Watch CELO lobby
           </Link>
         </div>
       </div>
