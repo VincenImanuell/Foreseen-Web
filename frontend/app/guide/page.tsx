@@ -9,7 +9,7 @@ const SECTIONS = [
       "Open or join a table before choosing a move.",
       "Scout the opponent's revealed history.",
       "Commit a sealed move and keep the salt safe.",
-      "Reveal before the deadline and withdraw claimable funds.",
+      "Reveal before the deadline and withdraw claimable CELO funds.",
     ],
   },
   {
@@ -17,8 +17,9 @@ const SECTIONS = [
     items: [
       "Use @foreseen/sdk for scouting, dashboards, and agent workflows.",
       "Keep write clients in trusted runtimes.",
-      "Use Celo Sepolia for funded tests.",
+      "Use Celo Sepolia (chain 11142220) for funded test matches — free faucet at faucet.celo.org.",
       "Prefer join-only agents for honest liquidity.",
+      "For MiniPay: detect window.ethereum.isMiniPay and auto-connect — no manual wallet step needed.",
     ],
   },
   {
@@ -33,9 +34,10 @@ const SECTIONS = [
 ];
 
 export const metadata = {
-  title: "Guide — Foreseen",
+  title: "Guide — Foreseen on CELO",
   description:
     "Player, builder, and safety guide for Foreseen's on-chain Rock Paper Scissors flow on Celo.",
+  keywords: ["CELO", "guide", "foreseen", "rock paper scissors", "MiniPay", "onchain game"],
 };
 
 export default function GuidePage() {
