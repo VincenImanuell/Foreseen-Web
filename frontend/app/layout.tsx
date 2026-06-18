@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "Foreseen — Rock Paper Scissors on CELO",
-    description: "Scout your opponent's on-chain history, commit blind, reveal and settle on Celo mainnet.",
+    description: "Scout your opponent's on-chain history, commit blind, reveal and settle on CELO mainnet.",
   },
   openGraph: {
     title: "Foreseen — Rock Paper Scissors on CELO",
