@@ -15,7 +15,7 @@ const SIGNALS = [
   {
     label: "Clock state",
     value: "90 sec",
-    body: "Deadline context stays visible during scouting and reveal windows.",
+    body: "CELO deadline context stays visible during scouting and reveal windows.",
   },
 ];
 
