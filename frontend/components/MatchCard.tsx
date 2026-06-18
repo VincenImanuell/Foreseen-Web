@@ -167,7 +167,7 @@ export function MatchCard({
     if (!address || pickMove === null) return;
     const salt = randomSalt();
     const commit = computeCommit(address, pickMove, salt);
-    run("Commit move", async () => {
+    run("Commit CELO move", async () => {
       const hash = await writeContractAsync({
         ...rpsCore,
         functionName: "commitMove",
