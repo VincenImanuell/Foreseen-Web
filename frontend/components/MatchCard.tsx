@@ -31,6 +31,7 @@ import { shortError, StatusBanner, type TxStatus } from "./Status";
 import { useNow } from "./useNow";
 import type { MatchEntry } from "./useMatches";
 
+/** Map of CELO match state → display label and badge color. */
 function StateBadge({ state }: { state: MatchState }) {
   const map: Record<MatchState, [string, string]> = {
     [MatchState.None]: ["—", "bg-white/10 text-slate-300"],
