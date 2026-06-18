@@ -185,7 +185,7 @@ export function MatchCard({
     const move = secret?.move ?? manualMove;
     const salt = (secret?.salt ?? manualSalt) as Hex;
     if (move === null || move === undefined || !salt) return;
-    run("Reveal", () =>
+    run("Reveal CELO", () =>
       writeContractAsync({
         ...rpsCore,
         functionName: "reveal",
