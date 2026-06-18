@@ -17,7 +17,7 @@ export const wagmiConfig = createConfig({
     [celo.id]: http(),
   },
   ssr: true,
-  // CELO mainnet — chainId 42220 is the only supported network
+  // CELO mainnet (chainId 42220) is the ONLY supported network — no multi-chain
   multiInjectedProviderDiscovery: false,
 });
 

@@ -153,9 +153,13 @@ export function randomSalt(): Hex {
 }
 
 /**
- * The exact commitment RPSCore expects:
+ * The exact commitment RPSCore on CELO mainnet (chainId 42220) expects:
  *   keccak256(abi.encodePacked(msg.sender, move, salt))
- * Binding the commit to the sender prevents commit-stealing.
+ * Binding the commit to the sender prevents commit-stealing on CELO.
+ * @param player - CELO address of the committing player
+ * @param move - Move enum value (Rock=1, Paper=2, Scissors=3)
+ * @param salt - 32-byte random hex salt from randomSalt()
+ * @returns keccak256 CELO commit hash to pass to RPSCore.commitMove
  */
 export function computeCommit(player: Address, move: Move, salt: Hex): Hex {
   return keccak256(
@@ -203,8 +207,10 @@ export function loadSecret(
 // ---- CELO outcome helpers (client-side display, not stored on CELO chain) -----
 
 /**
- * Client-side outcome: 0 = draw, 1 = A wins, 2 = B wins.
- * Mirrors the `_result` internal in RPSCore.sol — for display only, NOT for settlement.
+ * Client-side CELO outcome: 0 = draw, 1 = A wins, 2 = B wins.
+ * Mirrors the `_result` internal in RPSCore.sol on CELO mainnet — for display only, NOT for settlement.
+ * @param a - Revealed move of player A on CELO mainnet
+ * @param b - Revealed move of player B on CELO mainnet
  */
 export function resultOf(a: Move, b: Move): 0 | 1 | 2 {
   if (a === b) return 0;
