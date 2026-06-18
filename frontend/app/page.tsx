@@ -329,7 +329,7 @@ export default function Landing() {
       <LandingShowcase />
 
       {/* ---- Builders ---- */}
-      <section className="border-t border-white/5 px-4 py-20">
+      <section aria-label="For CELO builders — SDK integration" className="border-t border-white/5 px-4 py-20">
         <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1fr_360px]">
           <Reveal>
             <div>
