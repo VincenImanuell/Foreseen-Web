@@ -9,7 +9,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Foreseen — the Rock Paper Scissors mind-sport",
   description:
-    "A skill-based mind-sport on Celo mainnet. Matchmake, scout your opponent's on-chain history, then commit blind. A game of reading, not luck — not gambling.",
+    "A skill-based mind-sport on CELO mainnet. Matchmake, scout your opponent's on-chain history, then commit blind. A game of reading, not luck — not gambling.",
   icons: { icon: "/foreseen-eye.svg" },
   manifest: "/manifest.json",
   keywords: ["CELO", "celo", "rock paper scissors", "onchain game", "web3 game", "minipay", "foreseen", "commit reveal"],
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Foreseen — Rock Paper Scissors on CELO",
-    description: "A skill-based mind-sport on Celo mainnet. Scout opponents, commit blind, reveal and settle on-chain.",
+    description: "A skill-based mind-sport on CELO mainnet. Scout opponents, commit blind, reveal and settle on-chain.",
     siteName: "Foreseen",
     type: "website",
   },
