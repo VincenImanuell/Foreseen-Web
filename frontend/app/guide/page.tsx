@@ -9,7 +9,7 @@ const SECTIONS = [
       "Open or join a table before choosing a move.",
       "Scout the opponent's revealed history.",
       "Commit a sealed move and keep the salt safe.",
-      "Reveal before the deadline and withdraw claimable funds.",
+      "Reveal before the deadline and withdraw claimable CELO funds.",
     ],
   },
   {
