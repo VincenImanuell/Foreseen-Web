@@ -10,7 +10,7 @@ const SIGNALS = [
   {
     label: "Opponent signal",
     value: "Move tells",
-    body: "Read distribution and post-win habits before committing blind.",
+    body: "Read CELO on-chain distribution and post-win habits before committing blind.",
   },
   {
     label: "Clock state",
