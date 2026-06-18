@@ -25,7 +25,7 @@ const ARENA_STATS = [
 ];
 
 const TABLE_RULES = [
-  "Match stake exactly to join.",
+  "Match the CELO stake exactly to join.",
   "Scout before committing.",
   "Reveal before the deadline.",
 ];
