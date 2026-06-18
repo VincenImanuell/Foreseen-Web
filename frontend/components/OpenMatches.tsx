@@ -7,6 +7,7 @@ import { formatEther } from "viem";
 import { foreseen } from "@/lib/sdk";
 import { shortAddress } from "@/lib/rps";
 
+/** Format a CELO wei amount for display (4 decimal places, trailing zeros stripped). */
 function fmtCelo(wei: bigint): string {
   const s = formatEther(wei);
   // Trim to 4 decimals max, drop trailing zeros.
