@@ -39,7 +39,7 @@ function StateBadge({ state }: { state: MatchState }) {
     [MatchState.Scouting]: ["Scouting · CELO", "bg-oracle-gold/15 text-oracle-gold"],
     [MatchState.Revealing]: ["Revealing · CELO", "bg-oracle-purple/20 text-oracle-purple"],
     [MatchState.Settled]: ["CELO Settled", "bg-emerald-500/15 text-emerald-300"],
-    [MatchState.Cancelled]: ["Cancelled", "bg-white/10 text-slate-400"],
+    [MatchState.Cancelled]: ["CELO Cancelled", "bg-white/10 text-slate-400"],
   };
   const [label, cls] = map[state];
   return <span className={`badge ${cls}`}>{label}</span>;
