@@ -50,7 +50,7 @@ export function Withdraw({ onChanged }: { onChanged?: () => void }) {
     <div className="card" aria-busy={busy} role="region" aria-label="CELO claimable balance and withdrawal">
       <div className="flex items-center justify-between gap-4">
         <div>
-          <div className="eyebrow mb-1">Claimable balance</div>
+          <div className="eyebrow mb-1">CELO claimable balance</div>
           <div className="font-display text-2xl font-bold text-oracle-gold">
             <span className="tabular-nums">{formatEther(amount)}</span>{" "}
             <span className="text-base font-medium">CELO</span>
@@ -65,7 +65,7 @@ export function Withdraw({ onChanged }: { onChanged?: () => void }) {
           type="button"
           className="btn-gold"
           disabled={amount === 0n || busy}
-          aria-label={`Withdraw ${formatEther(amount)} CELO to wallet`}
+          aria-label={`Withdraw ${formatEther(amount)} CELO to wallet from CELO mainnet`}
           onClick={handleWithdraw}
         >
           {busy ? "Working…" : "Withdraw"}
