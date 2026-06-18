@@ -30,7 +30,7 @@ export function Withdraw({ onChanged }: { onChanged?: () => void }) {
   async function handleWithdraw() {
     if (!publicClient) return;
     try {
-      setStatus({ kind: "pending", msg: "Confirm withdrawal…" });
+      setStatus({ kind: "pending", msg: "Confirm CELO withdrawal in your wallet…" });
       const hash = await writeContractAsync({
         ...rpsCore,
         functionName: "withdraw",
