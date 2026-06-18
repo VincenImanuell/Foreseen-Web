@@ -113,7 +113,7 @@ export function ScoutCard({ address }: { address: string }) {
         <div className="space-y-5">
           {Number(data.stats.totalMatches) === 0 ? (
             <p className="text-sm text-slate-400">
-              No revealed matches yet — a blank slate. No tells to read; their first
+              No revealed CELO matches yet — a blank slate. No tells to read; their first
               throws here are pure guesswork.
             </p>
           ) : (
