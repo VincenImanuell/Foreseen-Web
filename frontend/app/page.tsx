@@ -230,7 +230,7 @@ export default function Landing() {
           <Reveal>
             <div>
               <div className="text-sm font-semibold uppercase tracking-wide text-oracle-cyan">
-                The read
+                The CELO read
               </div>
               <h2 className="mt-2 font-display text-3xl font-bold tracking-tight sm:text-4xl">
                 You can randomize your moves.
