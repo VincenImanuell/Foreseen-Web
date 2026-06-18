@@ -36,7 +36,7 @@ export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
         args: [mode],
         value: parseEther(bet),
       });
-      setStatus({ kind: "pending", msg: "Opening your match on-chain…" });
+      setStatus({ kind: "pending", msg: `Opening your ${bet} CELO match on-chain…` });
       await publicClient.waitForTransactionReceipt({ hash });
       setStatus({
         kind: "success",
