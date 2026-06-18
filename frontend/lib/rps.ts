@@ -200,7 +200,7 @@ export function loadSecret(
   }
 }
 
-// ---- Outcome helpers (client-side, for display only) ----------------------
+// ---- CELO outcome helpers (client-side display, not stored on CELO chain) -----
 
 /**
  * Client-side outcome: 0 = draw, 1 = A wins, 2 = B wins.
