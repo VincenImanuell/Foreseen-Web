@@ -33,7 +33,7 @@ const FEATURES = [
   {
     icon: "🧠",
     title: "Behavioral profiling",
-    body: "Every revealed match writes a tamper-proof profile: move distribution and the win-stay / lose-shift signal. Scout anyone before you face them.",
+    body: "Every revealed CELO match writes a tamper-proof profile: move distribution and the win-stay / lose-shift signal. Scout anyone before you face them.",
   },
   {
     icon: "🏅",
