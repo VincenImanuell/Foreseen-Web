@@ -36,7 +36,7 @@ const SECTIONS = [
 export const metadata = {
   title: "Guide — Foreseen on CELO",
   description:
-    "Player, builder, and safety guide for Foreseen's on-chain Rock Paper Scissors flow on Celo.",
+    "Player, builder, and safety guide for Foreseen's on-chain Rock Paper Scissors flow on CELO.",
   keywords: ["CELO", "guide", "foreseen", "rock paper scissors", "MiniPay", "onchain game"],
 };
 
