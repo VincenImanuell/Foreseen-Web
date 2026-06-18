@@ -246,7 +246,7 @@ export function MatchCard({
       {match.state === MatchState.WaitingForOpponent && (
         <div className="mt-3">
           {isA ? (
-            <button type="button" className="btn-ghost w-full" disabled={busy} onClick={doCancel} aria-label={`Cancel match #${id.toString()} and refund bet`}>
+            <button type="button" className="btn-ghost w-full" disabled={busy} onClick={doCancel} aria-label={`Cancel CELO match #${id.toString()} and refund CELO bet`}>
               Cancel & refund my bet
             </button>
           ) : (
