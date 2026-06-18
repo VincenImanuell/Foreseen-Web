@@ -25,7 +25,7 @@ const STEPS = [
   {
     icon: "👁",
     title: "Reveal",
-    body: "Both reveal within 90 seconds. The contract settles instantly and pays the winner. Provably fair.",
+    body: "Both reveal within 90 seconds. The contract settles and releases CELO to the winner on-chain. Provably fair.",
   },
 ];
 
