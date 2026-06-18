@@ -65,6 +65,7 @@ export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
             type="number"
             min="0"
             step="0.001"
+            placeholder="0.01"
             value={bet}
             aria-label="Bet amount in CELO"
             onChange={(e) => setBet(e.target.value)}
