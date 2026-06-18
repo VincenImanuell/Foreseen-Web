@@ -143,7 +143,7 @@ export function dominantMove(counts: [bigint, bigint, bigint]): number {
   return best;
 }
 
-// ---- Commit-reveal crypto --------------------------------------------------
+// ---- CELO commit-reveal crypto (keccak256 of address + move + salt) ------------
 
 /** Fresh, cryptographically-random 32-byte salt. */
 export function randomSalt(): Hex {
