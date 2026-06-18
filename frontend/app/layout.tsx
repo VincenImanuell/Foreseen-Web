@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "A skill-based mind-sport on CELO mainnet. Matchmake, scout your opponent's on-chain history, then commit blind. A game of reading, not luck — not gambling.",
   icons: { icon: "/foreseen-eye.svg" },
   manifest: "/manifest.json",
-  keywords: ["CELO", "celo", "rock paper scissors", "onchain game", "web3 game", "minipay", "foreseen", "commit reveal"],
+  keywords: ["CELO", "CELO mainnet", "celo", "rock paper scissors", "onchain game", "web3 game", "minipay", "foreseen", "commit reveal", "chainId 42220"],
   twitter: {
     card: "summary",
     title: "Foreseen — Rock Paper Scissors on CELO",
