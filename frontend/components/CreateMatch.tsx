@@ -29,7 +29,7 @@ export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
   async function handleCreate() {
     if (!address || !publicClient) return;
     try {
-      setStatus({ kind: "pending", msg: "Confirm in your wallet…" });
+      setStatus({ kind: "pending", msg: "Confirm CELO match in your wallet…" });
       const hash = await writeContractAsync({
         ...rpsCore,
         functionName: "createMatch",
@@ -92,7 +92,7 @@ export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
           <select
             className="input mt-1"
             value={mode}
-            aria-label="Game mode"
+            aria-label="CELO match mode — Casual or Ranked"
             onChange={(e) => setMode(Number(e.target.value) as Mode)}
           >
             <option value={Mode.Casual}>Casual</option>
