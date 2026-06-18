@@ -109,7 +109,7 @@ export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
         className="btn-primary mt-4 w-full"
         disabled={!canSubmit}
         aria-busy={busy}
-        aria-label={`Open match for ${bet} CELO`}
+        aria-label={`Open CELO match for ${bet} CELO on CELO mainnet`}
         onClick={handleCreate}
       >
         {busy ? "Working…" : "Open match"}
