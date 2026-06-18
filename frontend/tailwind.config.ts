@@ -27,6 +27,7 @@ const config: Config = {
         "glow-lg": "0 0 80px -10px rgba(124, 92, 255, 0.55)",
         "glow-cyan": "0 0 30px -5px rgba(55, 230, 255, 0.35)",
         "glow-gold": "0 0 30px -5px rgba(245, 196, 81, 0.35)",
+        "glow-sm": "0 0 15px -5px rgba(124, 92, 255, 0.35)",
       },
       keyframes: {
         float: {
