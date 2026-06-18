@@ -20,7 +20,7 @@ export default function MatchesPage() {
           eyebrow="Live lobby"
           title="Open matches"
           body="Matches currently waiting for a challenger, read live from Celo mainnet through @foreseen/sdk. Scout an opener before you decide to take the seat."
-          chips={["Celo mainnet", "Wallet-free read", "SDK powered"]}
+          chips={["CELO mainnet", "Wallet-free read", "SDK powered"]}
         />
 
         <OpenMatches />
