@@ -1,6 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
+
+export const viewport: Viewport = {
+  themeColor: "#0a0a14",
+};
 
 export const metadata: Metadata = {
   title: "Foreseen — the Rock Paper Scissors mind-sport",
