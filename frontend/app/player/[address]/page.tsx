@@ -5,9 +5,10 @@ import { ScoutCard } from "@/components/ScoutCard";
 import { SiteFooter } from "@/components/SiteFooter";
 
 export const metadata = {
-  title: "Scouting report — Foreseen",
+  title: "CELO Scouting report — Foreseen on CELO mainnet",
   description:
-    "Read any player's on-chain Rock Paper Scissors history — distribution, tells and the move that beats their habit — via @foreseen/sdk.",
+    "Read any CELO player's on-chain Rock Paper Scissors history from CELO mainnet (chainId 42220) — distribution, tells and the move that beats their habit — via @foreseen/sdk.",
+  keywords: ["CELO", "scouting report", "foreseen", "CELO mainnet", "chainId 42220", "@foreseen/sdk", "commit-reveal"],
 };
 
 export default function PlayerPage({
@@ -16,7 +17,7 @@ export default function PlayerPage({
   params: { address: string };
 }) {
   return (
-    <main aria-label="Player scouting report">
+    <main aria-label="CELO player scouting report — CELO mainnet">
       <Header />
 
       <div className="mx-auto max-w-3xl px-4 py-8">
@@ -30,10 +31,10 @@ export default function PlayerPage({
         </div>
 
         <PageIntro
-          eyebrow="Opponent read"
-          title="Scouting report"
-          body="Everything the chain reveals about this player: read the pattern, then pick the move that beats their habit, or bluff against it."
-          chips={["Move distribution", "Win/loss tells", "Suggested counter"]}
+          eyebrow="CELO opponent read"
+          title="CELO scouting report"
+          body="Everything CELO mainnet reveals about this player: read the pattern on-chain, then pick the move that beats their habit, or bluff against it."
+          chips={["Move distribution", "Win/loss tells", "Suggested counter", "CELO mainnet · chainId 42220"]}
         />
 
         <ScoutCard address={params.address} />
