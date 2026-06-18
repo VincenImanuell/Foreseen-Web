@@ -33,22 +33,22 @@ const FEATURES = [
   {
     icon: "🧠",
     title: "Behavioral profiling",
-    body: "Every revealed CELO match writes a tamper-proof profile: move distribution and the win-stay / lose-shift signal. Scout anyone before you face them.",
+    body: "Every revealed CELO match writes a tamper-proof profile on CELO mainnet: move distribution and the win-stay / lose-shift signal. Scout any CELO address before you face them.",
   },
   {
     icon: "🏅",
     title: "Soulbound ranks",
-    body: "Climb Bronze → Legend on CELO win streaks. Rank badges (ERC-5192) can't be bought, sold or transferred — they prove skill, not CELO.",
+    body: "Climb Bronze → Legend on CELO win streaks. Soulbound rank badges (ERC-5192) on CELO can't be bought, sold or transferred — they prove CELO skill, not capital.",
   },
   {
     icon: "🔐",
-    title: "Commit–reveal",
-    body: "Moves are sealed as hashes and opened on-chain. Refereeless and fair — neither player can react to the other's choice.",
+    title: "Commit–reveal on CELO",
+    body: "Moves are sealed as keccak256 hashes and opened on CELO mainnet. Refereeless and fair — neither player can react to the other's CELO choice.",
   },
   {
     icon: "⚖️",
     title: "Not gambling",
-    body: "No RNG, no house, no dealer. The contract escrows CELO peer-to-peer and pays the winner on-chain. You win by skill, not luck.",
+    body: "No RNG, no house, no dealer. The CELO contract escrows peer-to-peer stakes on chainId 42220 and pays the CELO winner on-chain. You win by skill.",
   },
 ];
 
