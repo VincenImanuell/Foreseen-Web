@@ -4,6 +4,7 @@ import { useAccount, useConnect, useDisconnect, useSwitchChain } from "wagmi";
 import { celo } from "@/lib/chain";
 import { shortAddress } from "@/lib/rps";
 import { useMounted } from "./useMounted";
+import { useMiniPay } from "./useMiniPay";
 
 export function ConnectButton() {
   const mounted = useMounted();
@@ -11,8 +12,14 @@ export function ConnectButton() {
   const { connect, connectors, isPending } = useConnect();
   const { disconnect } = useDisconnect();
   const { switchChain } = useSwitchChain();
+  const { isMiniPay } = useMiniPay();
 
   if (!mounted) {
+    return <div className="h-9 w-32 animate-pulse rounded-xl bg-white/5" />;
+  }
+
+  // MiniPay auto-connects — no manual connect button needed.
+  if (!isConnected && isMiniPay) {
     return <div className="h-9 w-32 animate-pulse rounded-xl bg-white/5" />;
   }
 
