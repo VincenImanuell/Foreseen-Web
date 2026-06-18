@@ -78,7 +78,7 @@ export default function Play() {
               </ul>
             </div>
           </div>
-          <div className="mt-4 surface-soft p-4">
+          <div className="mt-4 surface-soft p-4" aria-label="CELO match table rules">
             <div className="eyebrow">Table rules</div>
             <div className="mt-3 grid gap-2 sm:grid-cols-3">
               {TABLE_RULES.map((rule) => (
