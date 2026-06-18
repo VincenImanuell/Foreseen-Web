@@ -17,7 +17,7 @@ export default function LeaderboardPage() {
 
       <div className="mx-auto max-w-5xl px-4 py-8">
         <PageIntro
-          eyebrow="Player signal"
+          eyebrow="CELO player signal"
           title="Leaderboard"
           body="Every revealed match writes a tamper-proof record on CELO. This board ranks players by wins, read live from CELO mainnet through the published @foreseen/sdk client."
           chips={["Ranked by wins", "CELO on-chain stats", "No indexer"]}
