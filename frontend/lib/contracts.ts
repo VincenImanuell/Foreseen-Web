@@ -13,7 +13,7 @@ export const RPS_CORE_ADDRESS = (process.env.NEXT_PUBLIC_RPS_CORE_ADDRESS ??
 export const RPS_STATS_ADDRESS = (process.env.NEXT_PUBLIC_RPS_STATS_ADDRESS ??
   "0x0f5F94A4f5C72CAc4D6E69a6DD89341c7b1a475A") as Address;
 
-/** RPSRanked — on-chain ranked progression (streaks, tiers, streak multiplier). */
+/** RPSRanked — CELO on-chain ranked progression (streaks, tiers, streak multiplier). */
 export const RPS_RANKED_ADDRESS = (process.env.NEXT_PUBLIC_RPS_RANKED_ADDRESS ??
   "0x8230D28C9a8Fbda2490F830c6cBc1cE3056096cb") as Address;
 
