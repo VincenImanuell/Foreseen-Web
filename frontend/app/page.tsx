@@ -192,7 +192,7 @@ export default function Landing() {
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <h2 className="text-center font-display text-3xl font-bold tracking-tight sm:text-4xl">
-              How to play
+              How to play on CELO
             </h2>
             <p className="mx-auto mt-3 max-w-xl text-center text-slate-400">
               Four steps. The throw is trivial — the game is everything around
