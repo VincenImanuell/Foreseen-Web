@@ -79,7 +79,7 @@ export function ScoutCard({ address }: { address: string }) {
     <div className="rounded-2xl border border-oracle-cyan/20 bg-oracle-cyan/[0.04] p-4 sm:p-6">
       <div className="mb-4 flex items-center justify-between">
         <div className="text-xs font-semibold uppercase tracking-wide text-oracle-cyan">
-          🔍 Scouting report
+          🔍 CELO mainnet scouting report
         </div>
         <div className="flex items-center gap-2 font-mono text-[11px] text-slate-500">
           {shortAddress(getAddress(address) as Address)}
@@ -87,7 +87,7 @@ export function ScoutCard({ address }: { address: string }) {
             href={`https://celoscan.io/address/${address}`}
             target="_blank"
             rel="noreferrer"
-            aria-label="View on Celoscan"
+            aria-label="View CELO address on Celoscan (CELO mainnet)"
             className="focus-ring rounded transition-colors hover:text-oracle-cyan"
           >
             ↗
