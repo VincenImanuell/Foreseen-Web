@@ -30,7 +30,7 @@ export function MatchList({
   return (
     <div className="space-y-8">
       <Section
-        title="Open lobbies"
+        title="Open CELO lobbies"
         hint="Anyone can challenge these — match the bet to play."
         empty={
           isLoading ? "Loading CELO matches…" : "No open CELO lobbies. Be the first to open one."
