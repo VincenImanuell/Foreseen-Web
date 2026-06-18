@@ -4,10 +4,10 @@ import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
 
 export const metadata = {
-  title: "Leaderboard — Foreseen on CELO",
+  title: "CELO Leaderboard — Foreseen on CELO mainnet",
   description:
-    "On-chain Rock Paper Scissors rankings, read live from CELO mainnet via the @foreseen/sdk client.",
-  keywords: ["CELO", "leaderboard", "foreseen", "on-chain stats", "rock paper scissors"],
+    "On-chain Rock Paper Scissors rankings on CELO mainnet (chainId 42220), read live from RPSStats via the @foreseen/sdk client. Ranked by wins, soulbound tiers.",
+  keywords: ["CELO", "leaderboard", "foreseen", "on-chain stats", "rock paper scissors", "chainId 42220", "soulbound rank"],
 };
 
 export default function LeaderboardPage() {
