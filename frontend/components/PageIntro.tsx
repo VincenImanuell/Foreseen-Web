@@ -1,3 +1,4 @@
+/** Props for the CELO page intro header card used across leaderboard, matches, and guide pages. */
 type PageIntroProps = {
   eyebrow: string;
   title: string;
