@@ -15,9 +15,9 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   keywords: ["CELO", "CELO mainnet", "celo", "rock paper scissors", "onchain game", "web3 game", "minipay", "foreseen", "commit reveal", "chainId 42220", "soulbound rank", "commit-reveal RPS", "CELO RPS", "on-chain mind-sport"],
   twitter: {
-    card: "summary",
-    title: "Foreseen — Rock Paper Scissors on CELO",
-    description: "Scout your opponent's on-chain history, commit blind, reveal and settle on CELO mainnet.",
+    card: "summary_large_image",
+    title: "Foreseen · CELO RPS — commit-reveal mind-sport",
+    description: "Scout CELO on-chain history, commit blind, reveal and settle on CELO mainnet (chainId 42220). Real stakes, soulbound ranks.",
   },
   openGraph: {
     title: "Foreseen — Rock Paper Scissors on CELO",
