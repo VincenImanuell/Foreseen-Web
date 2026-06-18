@@ -32,7 +32,7 @@ const TABLE_RULES = [
 
 const SESSION_CHECKS = [
   "Use the wallet that opened or joined the match.",
-  "Keep your reveal salt in this browser session.",
+  "Keep your CELO reveal salt in this browser session.",
   "Confirm you are on CELO mainnet before every wallet action.",
 ];
 
