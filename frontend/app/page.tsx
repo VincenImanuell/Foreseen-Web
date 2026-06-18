@@ -171,9 +171,9 @@ export default function Landing() {
           </Reveal>
 
           <Reveal delay={300}>
-            <div className="mt-8 grid gap-3 text-left sm:grid-cols-3">
+            <div className="mt-8 grid gap-3 text-left sm:grid-cols-3" role="list" aria-label="CELO trust proofs">
               {TRUST_PROOFS.map(([label, detail]) => (
-                <div key={label} className="stat-card">
+                <div key={label} role="listitem" className="stat-card">
                   <div className="font-display text-sm font-bold text-white">
                     {label}
                   </div>
