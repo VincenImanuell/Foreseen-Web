@@ -96,7 +96,7 @@ export function OpenMatches() {
 
       {!isLoading && !isError && data && data.length === 0 && (
         <div className="py-10 text-center text-sm text-slate-400">
-          No open matches right now. Open one in the app to get the board moving.
+          No open CELO matches right now. Open one in the app to get the board moving.
         </div>
       )}
 
