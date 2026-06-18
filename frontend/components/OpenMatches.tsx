@@ -71,7 +71,7 @@ export function OpenMatches() {
             </div>
           </div>
           <div className="stat-card !rounded-xl !p-3">
-            <div className="text-[11px] text-slate-500">Ranked</div>
+            <div className="text-[11px] text-slate-500">Ranked CELO</div>
             <div className="mt-1 font-display text-lg font-bold">
               {rankedCount}
             </div>
