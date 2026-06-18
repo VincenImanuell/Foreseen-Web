@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function LeaderboardPage() {
   return (
-    <main aria-label="Leaderboard">
+    <main aria-label="CELO Foreseen leaderboard">
       <Header />
 
       <div className="mx-auto max-w-5xl px-4 py-8">
