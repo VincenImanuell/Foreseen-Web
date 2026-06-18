@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     "A skill-based mind-sport on Celo mainnet. Matchmake, scout your opponent's on-chain history, then commit blind. A game of reading, not luck — not gambling.",
   icons: { icon: "/foreseen-eye.svg" },
   manifest: "/manifest.json",
+  twitter: {
+    card: "summary",
+    title: "Foreseen — Rock Paper Scissors on CELO",
+    description: "Scout your opponent's on-chain history, commit blind, reveal and settle on Celo mainnet.",
+  },
   openGraph: {
     title: "Foreseen — Rock Paper Scissors on CELO",
     description: "A skill-based mind-sport on Celo mainnet. Scout opponents, commit blind, reveal and settle on-chain.",
