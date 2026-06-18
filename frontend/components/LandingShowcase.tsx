@@ -28,14 +28,14 @@ export function LandingShowcase() {
     <section aria-label="CELO arena signals showcase" className="border-t border-white/5 px-4 py-20">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <div className="eyebrow text-center">Table intelligence</div>
+          <div className="eyebrow text-center">CELO table intelligence</div>
           <h2 className="mt-2 text-center font-display text-3xl font-bold tracking-tight sm:text-4xl">
-            The UI is built around reading the room.
+            The CELO UI is built around reading the room.
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-center text-sm leading-6 text-slate-400">
-            Foreseen is still Rock Paper Scissors at the core, but the interface
-            keeps the important CELO signals close: lobby pressure, opponent tells,
-            deadlines, and settlement state.
+            Foreseen on CELO is still Rock Paper Scissors at the core, but the interface
+            keeps the important CELO signals close: CELO lobby pressure, opponent tells
+            on-chain, CELO deadlines, and settlement state on chainId 42220.
           </p>
         </Reveal>
 
