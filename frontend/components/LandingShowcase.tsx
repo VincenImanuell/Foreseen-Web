@@ -34,7 +34,7 @@ export function LandingShowcase() {
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-center text-sm leading-6 text-slate-400">
             Foreseen is still Rock Paper Scissors at the core, but the interface
-            keeps the important signals close: lobby pressure, opponent tells,
+            keeps the important CELO signals close: lobby pressure, opponent tells,
             deadlines, and settlement state.
           </p>
         </Reveal>
