@@ -8,6 +8,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { Withdraw } from "@/components/Withdraw";
 import { useMatches } from "@/components/useMatches";
 import { useMounted } from "@/components/useMounted";
+import { useMiniPay } from "@/components/useMiniPay";
 import { shortAddress } from "@/lib/rps";
 
 const PHASES = [
@@ -39,6 +40,7 @@ export default function Play() {
   const mounted = useMounted();
   const { address, isConnected } = useAccount();
   const { entries, refetch, isLoading } = useMatches();
+  const { isMiniPay } = useMiniPay();
 
   return (
     <main aria-label="Arena — play Foreseen">
@@ -64,6 +66,8 @@ export default function Play() {
                 <div className="mt-1 font-mono text-xs text-slate-300">
                   {mounted && isConnected && address
                     ? shortAddress(address)
+                    : isMiniPay
+                    ? "MiniPay connecting…"
                     : "Not connected"}
                 </div>
               </div>
