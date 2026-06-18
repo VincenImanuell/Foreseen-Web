@@ -51,9 +51,10 @@ export default function GuidePage() {
             Build and play with the read first.
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-6 text-slate-400">
-            Foreseen works best when the interface keeps the actual loop clear:
-            matchmake, scout, commit, reveal, and withdraw. This guide keeps
-            player UX, SDK integrations, and agent safety in the same place.
+            Foreseen on CELO works best when the interface keeps the actual loop clear:
+            matchmake on CELO, scout the opponent, commit your sealed move,
+            reveal before the CELO deadline, and withdraw claimable CELO balance.
+            This guide keeps player UX, CELO SDK integrations, and agent safety together.
           </p>
         </section>
 
