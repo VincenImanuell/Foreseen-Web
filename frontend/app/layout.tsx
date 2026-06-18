@@ -4,6 +4,7 @@ import { Providers } from "./providers";
 
 export const viewport: Viewport = {
   themeColor: "#0a0a14",
+  colorScheme: "dark",
 };
 
 export const metadata: Metadata = {
