@@ -44,6 +44,7 @@ export function ConnectButton() {
       <button
         type="button"
         className="btn-gold"
+        aria-label="Switch wallet to CELO mainnet (chainId 42220)"
         onClick={() => switchChain({ chainId: celo.id })}
       >
         Switch to CELO
