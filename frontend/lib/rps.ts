@@ -45,7 +45,7 @@ export function moveEmoji(m: Move): string {
   return MOVES.find((x) => x.value === m)?.emoji ?? "❔";
 }
 
-// Match windows (seconds) — must match the contract constants.
+// CELO match windows (seconds) — must match RPSCore.sol constants on CELO mainnet (chainId 42220).
 export const COMMIT_WINDOW_SECONDS = 90;
 export const REVEAL_WINDOW_SECONDS = 90;
 
