@@ -10,22 +10,22 @@ const STEPS = [
   {
     icon: "🤝",
     title: "Matchmake",
-    body: "Open a match or join one and escrow your bet. No move yet — you're just sitting down across the table.",
+    body: "Open a CELO match or join one and escrow your CELO bet on-chain. No move yet — you're just sitting down across the CELO table.",
   },
   {
     icon: "🔍",
     title: "Scout",
-    body: "Now you see your opponent. Read their CELO on-chain history: move distribution, what they throw after a win or a loss. 90 seconds.",
+    body: "Now you see your opponent. Read their CELO on-chain history: move distribution, what they throw after a CELO win or a loss. 90 seconds.",
   },
   {
     icon: "🔒",
     title: "Commit",
-    body: "Seal your move as a hash on CELO. Neither side can see the other's throw — no peeking, no front-running.",
+    body: "Seal your move as a keccak256 hash on CELO. Neither side can see the other's throw — no peeking, no front-running on CELO.",
   },
   {
     icon: "👁",
     title: "Reveal",
-    body: "Both reveal within 90 seconds. The contract settles and releases CELO to the winner on-chain. Provably fair.",
+    body: "Both reveal within 90 seconds. The CELO contract settles and releases CELO to the winner on-chain. Provably fair on chainId 42220.",
   },
 ];
 
