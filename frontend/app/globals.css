@@ -159,6 +159,18 @@ body {
     @apply badge bg-white/10 text-slate-400;
   }
 
+  .win-text {
+    @apply font-semibold text-emerald-300;
+  }
+
+  .loss-text {
+    @apply font-semibold text-rose-300;
+  }
+
+  .draw-text {
+    @apply font-semibold text-slate-400;
+  }
+
   .well {
     @apply rounded-xl border border-white/5 bg-void/60 px-4 py-3;
   }
