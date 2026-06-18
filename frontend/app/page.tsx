@@ -38,7 +38,7 @@ const FEATURES = [
   {
     icon: "🏅",
     title: "Soulbound ranks",
-    body: "Climb Bronze → Legend on win streaks. Rank badges (ERC-5192) can't be bought, sold or transferred — they prove skill, not money.",
+    body: "Climb Bronze → Legend on CELO win streaks. Rank badges (ERC-5192) can't be bought, sold or transferred — they prove skill, not CELO.",
   },
   {
     icon: "🔐",
