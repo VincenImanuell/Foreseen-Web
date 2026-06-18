@@ -53,8 +53,8 @@ export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
       <div className="eyebrow">New table</div>
       <h2 className="mt-1 font-display text-lg font-bold">Open a match</h2>
       <p className="mt-1 text-sm text-slate-400">
-        Set your stake — no move yet. You pick your throw <em>after</em> an
-        opponent joins and you’ve scouted them.
+        Set your CELO stake on CELO mainnet — no move yet. You pick your throw <em>after</em> an
+        opponent joins and you’ve scouted their CELO history.
       </p>
 
       <div className="mt-4 grid grid-cols-2 gap-3">
