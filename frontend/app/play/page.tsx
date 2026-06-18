@@ -50,7 +50,7 @@ export default function Play() {
         <section className="mb-6">
           <div className="grid gap-5 lg:grid-cols-[1fr_280px]">
             <div>
-              <div className="eyebrow">Live arena</div>
+              <div className="eyebrow">Live CELO arena</div>
               <h1 className="mt-2 font-display text-2xl font-bold tracking-tight sm:text-3xl">
                 The CELO arena
               </h1>
