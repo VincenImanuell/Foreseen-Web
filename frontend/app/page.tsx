@@ -56,6 +56,7 @@ const TRUST_CHIPS = [
   "Not gambling — pure skill",
   "Provably fair commit-reveal",
   "Soulbound ranks",
+  "CELO mainnet",
 ];
 
 const NPM_LINKS = [
