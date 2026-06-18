@@ -143,6 +143,10 @@ body {
     @apply animate-pulse rounded-xl bg-white/[0.06];
   }
 
+  .tag {
+    @apply inline-flex items-center rounded-md border border-white/10 bg-white/5 px-2 py-0.5 text-[11px] font-medium text-slate-300;
+  }
+
   .truncate-address {
     @apply max-w-[120px] truncate font-mono text-xs;
   }
