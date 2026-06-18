@@ -153,7 +153,7 @@ export function MatchCard({
   }
 
   function doJoin() {
-    run("Join match", () =>
+    run("Join CELO match", () =>
       writeContractAsync({
         ...rpsCore,
         functionName: "joinMatch",
