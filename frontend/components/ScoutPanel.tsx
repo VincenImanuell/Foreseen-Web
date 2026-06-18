@@ -66,7 +66,7 @@ export function ScoutPanel({ opponent }: { opponent: Address }) {
     <div role="region" aria-label="CELO opponent scouting report" className="rounded-xl border border-oracle-cyan/20 bg-oracle-cyan/[0.04] p-3">
       <div className="mb-2 flex items-center justify-between">
         <div className="text-xs font-semibold uppercase tracking-wide text-oracle-cyan">
-          🔍 Scouting report
+          🔍 CELO Scouting report
         </div>
         <div className="font-mono text-[11px] text-slate-500">
           {shortAddress(opponent)}
