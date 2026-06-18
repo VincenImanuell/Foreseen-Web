@@ -218,7 +218,7 @@ export function resultOf(a: Move, b: Move): 0 | 1 | 2 {
   return 2;
 }
 
-/** Truncate an address to `0x1234…abcd` format for display. Returns "—" if falsy. */
+/** Truncate a CELO address to `0x1234…abcd` format for display on CELO mainnet. Returns "—" if falsy. */
 export function shortAddress(addr?: string): string {
   if (!addr) return "—";
   return `${addr.slice(0, 6)}…${addr.slice(-4)}`;
