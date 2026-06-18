@@ -339,7 +339,8 @@ export default function Landing() {
               </h2>
               <p className="mt-4 max-w-2xl text-slate-400">
                 Foreseen ships a TypeScript SDK for CELO scouting summaries,
-                commit-reveal helpers, and honest player-agent workflows on CELO mainnet.
+                commit-reveal helpers, and honest player-agent workflows on CELO mainnet (chainId 42220).
+                Read live stats from RPSStats, build bots, or embed the CELO leaderboard.
               </p>
               <div className="mt-5 grid gap-2">
                 {BUILDER_SIGNALS.map((point) => (
