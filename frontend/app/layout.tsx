@@ -7,7 +7,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Foreseen — the Rock Paper Scissors mind-sport",
+  title: "Foreseen — Rock Paper Scissors on CELO",
   description:
     "A skill-based mind-sport on CELO mainnet. Matchmake, scout your opponent's on-chain history, then commit blind. A game of reading, not luck — not gambling.",
   icons: { icon: "/foreseen-eye.svg" },
