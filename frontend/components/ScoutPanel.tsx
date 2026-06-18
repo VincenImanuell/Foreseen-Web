@@ -83,8 +83,8 @@ export function ScoutPanel({ opponent }: { opponent: Address }) {
 
       {!isLoading && !hasData && (
         <div className="text-xs text-slate-400">
-          No revealed matches yet — a blank slate. No tells to read. Their first
-          moves here are pure guesswork; trust nothing.
+          No revealed CELO matches yet — a blank slate. No tells to read. Their first
+          moves on CELO are pure guesswork; trust nothing.
         </div>
       )}
 
