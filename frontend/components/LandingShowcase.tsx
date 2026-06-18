@@ -5,7 +5,7 @@ const SIGNALS = [
   {
     label: "Lobby pressure",
     value: "Open seats",
-    body: "See whether the table is quiet or crowded before you stake.",
+    body: "See whether the CELO table is quiet or crowded before you stake.",
   },
   {
     label: "Opponent signal",
