@@ -42,7 +42,7 @@ export const metadata = {
 
 export default function GuidePage() {
   return (
-    <main aria-label="Foreseen guide">
+    <main aria-label="Foreseen CELO guide">
       <Header />
       <div className="mx-auto max-w-5xl px-4 py-10">
         <section className="mt-10">
