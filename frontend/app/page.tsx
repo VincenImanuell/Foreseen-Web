@@ -188,7 +188,7 @@ export default function Landing() {
       </section>
 
       {/* ---- How to play ---- */}
-      <section id="how" className="scroll-mt-20 border-t border-white/5 px-4 py-20">
+      <section id="how" aria-label="How to play Foreseen on CELO" className="scroll-mt-20 border-t border-white/5 px-4 py-20">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <h2 className="text-center font-display text-3xl font-bold tracking-tight sm:text-4xl">
