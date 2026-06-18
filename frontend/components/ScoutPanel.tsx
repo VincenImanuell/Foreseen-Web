@@ -63,7 +63,7 @@ export function ScoutPanel({ opponent }: { opponent: Address }) {
   const hasData = !!s && s.totalMatches > 0n;
 
   return (
-    <div className="rounded-xl border border-oracle-cyan/20 bg-oracle-cyan/[0.04] p-3">
+    <div role="region" aria-label="Opponent scouting report" className="rounded-xl border border-oracle-cyan/20 bg-oracle-cyan/[0.04] p-3">
       <div className="mb-2 flex items-center justify-between">
         <div className="text-xs font-semibold uppercase tracking-wide text-oracle-cyan">
           🔍 Scouting report
