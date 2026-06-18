@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     description: "Scout CELO on-chain history, commit blind, reveal and settle on CELO mainnet (chainId 42220). Real stakes, soulbound ranks.",
   },
   openGraph: {
-    title: "Foreseen — Rock Paper Scissors on CELO",
-    description: "A skill-based mind-sport on CELO mainnet. Scout opponents, commit blind, reveal and settle on-chain.",
-    siteName: "Foreseen",
+    title: "Foreseen · CELO RPS — commit-reveal mind-sport",
+    description: "A skill-based mind-sport on CELO mainnet (chainId 42220). Scout CELO opponents, commit blind, reveal and settle on-chain. Real CELO stakes, soulbound ranks.",
+    siteName: "Foreseen on CELO",
     type: "website",
   },
   other: {
