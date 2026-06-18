@@ -61,6 +61,7 @@ export function Header() {
             target="_blank"
             rel="noreferrer"
             title="Open RPSCore on Celoscan"
+            aria-label="View Foreseen contract on Celoscan (CELO mainnet)"
             className="focus-ring hidden rounded font-mono text-[11px] text-slate-500 hover:text-oracle-cyan sm:block"
           >
             {shortAddress(RPS_CORE_ADDRESS)} ↗
