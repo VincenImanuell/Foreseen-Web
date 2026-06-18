@@ -25,7 +25,7 @@ const MOVE_WIDTHS = ["72%", "42%", "58%"];
 
 export function LandingShowcase() {
   return (
-    <section className="border-t border-white/5 px-4 py-20">
+    <section aria-label="CELO arena signals showcase" className="border-t border-white/5 px-4 py-20">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <div className="eyebrow text-center">Table intelligence</div>
