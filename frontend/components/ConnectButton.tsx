@@ -52,10 +52,17 @@ export function ConnectButton() {
 
   return (
     <div className="flex items-center gap-2">
-      <span className="badge flex items-center gap-1.5 bg-oracle-cyan/15 text-oracle-cyan">
-        <span className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-oracle-cyan" />
-        Celo
-      </span>
+      {isMiniPay ? (
+        <span className="badge flex items-center gap-1.5 bg-emerald-500/15 text-emerald-300">
+          <span className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-400" />
+          MiniPay
+        </span>
+      ) : (
+        <span className="badge flex items-center gap-1.5 bg-oracle-cyan/15 text-oracle-cyan">
+          <span className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-oracle-cyan" />
+          Celo
+        </span>
+      )}
       <button
         type="button"
         className="btn-ghost font-mono"
