@@ -41,7 +41,7 @@ export function MatchList({
 
       {me && (
         <Section
-          title="Your matches"
+          title="Your CELO matches"
           hint="Reveal in time or risk forfeiting your CELO bet."
           empty="You haven’t played yet. Open a match to begin."
           entries={mine}
