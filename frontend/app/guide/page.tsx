@@ -15,11 +15,11 @@ const SECTIONS = [
   {
     title: "CELO Builder Flow",
     items: [
-      "Use @foreseen/sdk for scouting, dashboards, and agent workflows.",
-      "Keep write clients in trusted runtimes.",
-      "Use Celo Sepolia (chainId 11142220) for funded test matches — free faucet at faucet.celo.org.",
-      "Prefer join-only agents for honest liquidity.",
-      "For MiniPay: detect window.ethereum.isMiniPay and auto-connect — no manual wallet step needed.",
+      "Use @foreseen/sdk for CELO scouting, dashboards, and agent workflows on CELO mainnet.",
+      "Keep CELO write clients in trusted runtimes — never expose keys in browser code.",
+      "Use Celo Sepolia (chainId 44787) for funded test matches — free faucet at faucet.celo.org.",
+      "Prefer join-only agents for honest CELO liquidity — do not manufacture fake volume.",
+      "For MiniPay on CELO: detect window.ethereum.isMiniPay and auto-connect — no manual wallet step.",
     ],
   },
   {
