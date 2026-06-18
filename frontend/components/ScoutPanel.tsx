@@ -63,10 +63,10 @@ export function ScoutPanel({ opponent }: { opponent: Address }) {
   const hasData = !!s && s.totalMatches > 0n;
 
   return (
-    <div role="region" aria-label="Opponent scouting report" className="rounded-xl border border-oracle-cyan/20 bg-oracle-cyan/[0.04] p-3">
+    <div role="region" aria-label="CELO opponent scouting report" className="rounded-xl border border-oracle-cyan/20 bg-oracle-cyan/[0.04] p-3">
       <div className="mb-2 flex items-center justify-between">
         <div className="text-xs font-semibold uppercase tracking-wide text-oracle-cyan">
-          🔍 Scouting report
+          🔍 CELO Scouting report
         </div>
         <div className="font-mono text-[11px] text-slate-500">
           {shortAddress(opponent)}
@@ -83,8 +83,8 @@ export function ScoutPanel({ opponent }: { opponent: Address }) {
 
       {!isLoading && !hasData && (
         <div className="text-xs text-slate-400">
-          No revealed matches yet — a blank slate. No tells to read. Their first
-          moves here are pure guesswork; trust nothing.
+          No revealed CELO matches yet — a blank slate. No tells to read. Their first
+          moves on CELO are pure guesswork; trust nothing.
         </div>
       )}
 
@@ -94,7 +94,7 @@ export function ScoutPanel({ opponent }: { opponent: Address }) {
             <span className="text-emerald-300">{s.wins.toString()}W</span>
             <span className="text-rose-300">{s.losses.toString()}L</span>
             <span className="text-slate-400">{s.draws.toString()}D</span>
-            <span className="ml-auto text-slate-500">
+            <span className="ml-auto text-slate-500" aria-label={`${s.totalMatches.toString()} CELO matches revealed`}>
               {s.totalMatches.toString()} revealed
             </span>
           </div>
@@ -114,8 +114,8 @@ export function ScoutPanel({ opponent }: { opponent: Address }) {
           </div>
 
           <p className="text-[11px] leading-snug text-slate-500">
-            Read the pattern, then pick the move that beats their habit — or bluff
-            against it. {moveLabel(MOVES[dominantMove(s.moveCount)]?.value ?? 0)}
+            Read the CELO pattern, then pick the move that beats their habit — or bluff
+            against it.{moveLabel(MOVES[dominantMove(s.moveCount)]?.value ?? 0)}
             {dominantMove(s.moveCount) >= 0
               ? ` ${moveEmoji(MOVES[dominantMove(s.moveCount)].value)} is their favorite throw overall.`
               : ""}

@@ -13,27 +13,27 @@ import { shortAddress } from "@/lib/rps";
 
 const PHASES = [
   ["1 · Matchmake", "Open a match or join one. Bets are escrowed — no move yet."],
-  ["2 · Scout", "See your opponent and read their on-chain history. 90s."],
+  ["2 · Scout", "Read opponent CELO on-chain history. 90s scouting window before commit."],
   ["3 · Commit", "Seal your move blind. Neither side can see the other's throw."],
-  ["4 · Reveal", "Both reveal within 90s. The contract settles & pays the winner."],
+  ["4 · Reveal", "Both reveal within 90s. Contract settles & releases CELO to winner."],
 ];
 
 const ARENA_STATS = [
-  ["Network", "Celo"],
+  ["Network", "CELO mainnet"],
   ["Windows", "90s"],
   ["Game", "Skill"],
 ];
 
 const TABLE_RULES = [
-  "Match stake exactly to join.",
-  "Scout before committing.",
-  "Reveal before the deadline.",
+  "Match the CELO stake exactly to join on CELO mainnet.",
+  "Scout the CELO on-chain history before committing your move.",
+  "Reveal before the CELO deadline or forfeit the pot.",
 ];
 
 const SESSION_CHECKS = [
-  "Use the wallet that opened or joined the match.",
-  "Keep your reveal salt in this browser session.",
-  "Check the network before every wallet confirmation.",
+  "Use the wallet that opened or joined the CELO match.",
+  "Keep your CELO reveal salt in this browser session — it cannot be recovered.",
+  "Confirm you are on CELO mainnet (chainId 42220) before every wallet action.",
 ];
 
 export default function Play() {
@@ -43,23 +43,23 @@ export default function Play() {
   const { isMiniPay } = useMiniPay();
 
   return (
-    <main aria-label="Arena — play Foreseen">
+    <main aria-label="CELO Arena — play Foreseen on CELO mainnet">
       <Header />
 
       <div className="mx-auto max-w-5xl px-4 py-8">
         <section className="mb-6">
           <div className="grid gap-5 lg:grid-cols-[1fr_280px]">
             <div>
-              <div className="eyebrow">Live arena</div>
+              <div className="eyebrow">Live CELO arena</div>
               <h1 className="mt-2 font-display text-2xl font-bold tracking-tight sm:text-3xl">
-                The arena
+                The CELO arena
               </h1>
               <p className="mt-1 max-w-2xl text-sm text-slate-400">
-                Matchmake → scout → commit → reveal. A game of skill, not gambling:
-                no RNG, no house. Stakes are real CELO — play responsibly.
+                Matchmake on CELO → scout opponent history → commit blind → reveal on CELO.
+                No RNG, no house — pure skill. Stakes are real CELO on chainId 42220 — play responsibly.
               </p>
             </div>
-            <div className="surface-soft p-4">
+            <div className="surface-soft p-4" aria-label="CELO session check">
               <div className="eyebrow">Session check</div>
               <div className="mt-2 rounded-xl border border-white/10 bg-void/35 px-3 py-2">
                 <div className="text-[11px] text-slate-500">Wallet</div>
@@ -78,7 +78,7 @@ export default function Play() {
               </ul>
             </div>
           </div>
-          <div className="mt-4 surface-soft p-4">
+          <div className="mt-4 surface-soft p-4" aria-label="CELO match table rules">
             <div className="eyebrow">Table rules</div>
             <div className="mt-3 grid gap-2 sm:grid-cols-3">
               {TABLE_RULES.map((rule) => (

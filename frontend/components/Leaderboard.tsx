@@ -75,13 +75,13 @@ function LeaderboardSkeleton() {
 function TopPlayer({ row }: { row: Row }) {
   return (
     <div className="mb-4 rounded-xl border border-oracle-gold/20 bg-oracle-gold/[0.05] p-4">
-      <div className="text-xs text-slate-500">Current read</div>
+      <div className="text-xs text-slate-500">CELO leader · current read</div>
       <div className="mt-1 flex flex-wrap items-center justify-between gap-3">
         <div className="font-mono text-sm text-oracle-gold">
           {shortAddress(row.address)}
         </div>
         <div className="font-mono text-xs text-slate-400">
-          {row.stats.wins.toString()} wins · {Math.round(row.winRate * 100)}%
+          {row.stats.wins.toString()} CELO wins · {Math.round(row.winRate * 100)}%
         </div>
       </div>
     </div>
@@ -99,13 +99,13 @@ export function Leaderboard() {
     <div className="rounded-2xl border border-white/10 bg-panel/60 p-4 sm:p-6">
       <div className="mb-4 flex items-center justify-between">
         <div className="text-xs font-semibold uppercase tracking-wide text-oracle-cyan">
-          🏆 Ranked by wins
+          🏆 CELO — Ranked by wins
         </div>
         <button
           type="button"
           onClick={() => refetch()}
           disabled={isFetching}
-          aria-label="Refresh leaderboard"
+          aria-label="Refresh CELO leaderboard"
           className="focus-ring rounded-lg border border-white/10 px-2.5 py-1 text-[11px] text-slate-400 transition hover:text-white disabled:opacity-50"
         >
           {isFetching ? "Refreshing…" : "Refresh"}
@@ -124,7 +124,7 @@ export function Leaderboard() {
 
       {!isLoading && !isError && data && data.length === 0 && (
         <div className="py-10 text-center text-sm text-slate-400">
-          No revealed matches yet. Be the first to leave a record on-chain.
+          No revealed CELO matches yet. Be the first to leave a record on-chain.
         </div>
       )}
 
@@ -189,9 +189,9 @@ export function Leaderboard() {
       )}
 
       <p className="mt-4 text-[11px] leading-snug text-slate-600">
-        Stats are read directly from <code>RPSStats</code> on Celo mainnet through
-        the published <code className="text-slate-400">@foreseen/sdk</code> client —
-        no backend, no indexer. Scans the most recent {SCAN_LIMIT} matches for
+        Stats are read directly from <code>RPSStats</code> on CELO mainnet through
+        the published <code className="text-slate-400">@foreseen/sdk</code> client on CELO mainnet —
+        no backend, no indexer. Scans the most recent {SCAN_LIMIT} CELO matches for
         players.
       </p>
     </div>

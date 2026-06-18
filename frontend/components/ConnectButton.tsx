@@ -31,6 +31,7 @@ export function ConnectButton() {
         className="btn-primary"
         disabled={!injected || isPending}
         aria-busy={isPending}
+        aria-label={isPending ? "Connecting CELO wallet…" : "Connect CELO wallet"}
         onClick={() => injected && connect({ connector: injected })}
       >
         {isPending ? "Connecting…" : "Connect Wallet"}
@@ -45,7 +46,7 @@ export function ConnectButton() {
         className="btn-gold"
         onClick={() => switchChain({ chainId: celo.id })}
       >
-        Switch to Celo
+        Switch to CELO
       </button>
     );
   }
@@ -58,9 +59,12 @@ export function ConnectButton() {
           MiniPay
         </span>
       ) : (
-        <span className="badge flex items-center gap-1.5 bg-oracle-cyan/15 text-oracle-cyan">
+        <span
+          title="Connected to CELO mainnet"
+          className="badge flex items-center gap-1.5 bg-oracle-cyan/15 text-oracle-cyan"
+        >
           <span className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-oracle-cyan" />
-          Celo
+          CELO
         </span>
       )}
       <button

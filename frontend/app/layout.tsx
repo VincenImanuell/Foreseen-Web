@@ -4,23 +4,24 @@ import { Providers } from "./providers";
 
 export const viewport: Viewport = {
   themeColor: "#0a0a14",
+  colorScheme: "dark",
 };
 
 export const metadata: Metadata = {
-  title: "Foreseen — the Rock Paper Scissors mind-sport",
+  title: "Foreseen — Rock Paper Scissors on CELO",
   description:
-    "A skill-based mind-sport on Celo mainnet. Matchmake, scout your opponent's on-chain history, then commit blind. A game of reading, not luck — not gambling.",
+    "A skill-based mind-sport on CELO mainnet. Matchmake, scout your opponent's on-chain history, then commit blind. A game of reading, not luck — not gambling.",
   icons: { icon: "/foreseen-eye.svg" },
   manifest: "/manifest.json",
-  keywords: ["CELO", "celo", "rock paper scissors", "onchain game", "web3 game", "minipay", "foreseen", "commit reveal"],
+  keywords: ["CELO", "CELO mainnet", "celo", "rock paper scissors", "onchain game", "web3 game", "minipay", "foreseen", "commit reveal", "chainId 42220"],
   twitter: {
     card: "summary",
     title: "Foreseen — Rock Paper Scissors on CELO",
-    description: "Scout your opponent's on-chain history, commit blind, reveal and settle on Celo mainnet.",
+    description: "Scout your opponent's on-chain history, commit blind, reveal and settle on CELO mainnet.",
   },
   openGraph: {
     title: "Foreseen — Rock Paper Scissors on CELO",
-    description: "A skill-based mind-sport on Celo mainnet. Scout opponents, commit blind, reveal and settle on-chain.",
+    description: "A skill-based mind-sport on CELO mainnet. Scout opponents, commit blind, reveal and settle on-chain.",
     siteName: "Foreseen",
     type: "website",
   },

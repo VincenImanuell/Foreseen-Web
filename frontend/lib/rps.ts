@@ -6,7 +6,7 @@ import {
   type Hex,
 } from "viem";
 
-// ---- On-chain enums (must match RPSCore.sol v2 exactly) -------------------
+// ---- On-chain enums for CELO mainnet (must match RPSCore.sol v2 exactly) ---
 
 export enum Move {
   None = 0,
@@ -49,7 +49,7 @@ export function moveEmoji(m: Move): string {
 export const COMMIT_WINDOW_SECONDS = 90;
 export const REVEAL_WINDOW_SECONDS = 90;
 
-// ---- Match shape decoded from getMatch() ----------------------------------
+// ---- CELO match shape decoded from RPSCore.getMatch() on CELO mainnet -----
 
 export type RpsMatch = {
   playerA: Address;
@@ -90,7 +90,7 @@ export function hasCommitted(commit?: Hex): boolean {
   return !!commit && commit !== ZERO_HASH;
 }
 
-// ---- On-chain behavioral stats (RPSStats.getStats) ------------------------
+// ---- CELO on-chain behavioral stats from RPSStats.getStats (CELO mainnet) ------
 
 export type RpsStats = {
   totalMatches: bigint;
@@ -143,7 +143,7 @@ export function dominantMove(counts: [bigint, bigint, bigint]): number {
   return best;
 }
 
-// ---- Commit-reveal crypto --------------------------------------------------
+// ---- CELO commit-reveal crypto (keccak256 of address + move + salt) ------------
 
 /** Fresh, cryptographically-random 32-byte salt. */
 export function randomSalt(): Hex {
@@ -163,7 +163,7 @@ export function computeCommit(player: Address, move: Move, salt: Hex): Hex {
   );
 }
 
-// ---- Reveal-secret persistence (the salt+move you must keep to reveal) -----
+// ---- CELO reveal-secret persistence (salt+move must be kept to reveal on CELO) ---
 
 type Secret = { move: Move; salt: Hex };
 
@@ -200,7 +200,7 @@ export function loadSecret(
   }
 }
 
-// ---- Outcome helpers (client-side, for display only) ----------------------
+// ---- CELO outcome helpers (client-side display, not stored on CELO chain) -----
 
 /**
  * Client-side outcome: 0 = draw, 1 = A wins, 2 = B wins.

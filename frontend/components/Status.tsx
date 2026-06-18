@@ -10,7 +10,7 @@ export function shortError(e: unknown): string {
   const raw = e instanceof Error ? e.message : String(e);
   // viem errors are verbose; surface the first meaningful line.
   if (/User rejected|rejected the request/i.test(raw)) return "Rejected in wallet.";
-  if (/insufficient funds/i.test(raw)) return "Insufficient CELO for bet + gas.";
+  if (/insufficient funds/i.test(raw)) return "Insufficient CELO for bet + gas. Top up your CELO wallet.";
   const firstLine = raw.split("\n")[0];
   return firstLine.length > 140 ? firstLine.slice(0, 140) + "…" : firstLine;
 }

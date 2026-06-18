@@ -18,7 +18,7 @@ export function Countdown({
   return (
     <span
       role="timer"
-      aria-label={over ? "Time expired" : `${m} minutes ${s} seconds remaining`}
+      aria-label={over ? "CELO window expired" : `${m} minutes ${s} seconds remaining on CELO`}
       className={`font-mono tabular-nums transition-colors ${over ? "text-rose-300" : "text-oracle-cyan"} ${className}`}
     >
       {over ? "00:00" : `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`}

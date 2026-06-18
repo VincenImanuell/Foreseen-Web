@@ -1,3 +1,4 @@
+/** Props for the CELO page intro header card used across leaderboard, matches, and guide pages. */
 type PageIntroProps = {
   eyebrow: string;
   title: string;
@@ -7,7 +8,7 @@ type PageIntroProps = {
 
 export function PageIntro({ eyebrow, title, body, chips = [] }: PageIntroProps) {
   return (
-    <section className="surface-soft mb-6 animate-fadeIn p-5 sm:p-6">
+    <section aria-label={`${title} — CELO`} className="surface-soft mb-6 animate-fadeIn p-5 sm:p-6">
       <div className="eyebrow">{eyebrow}</div>
       <h1 className="mt-2 font-display text-2xl font-bold tracking-tight sm:text-3xl">
         {title}

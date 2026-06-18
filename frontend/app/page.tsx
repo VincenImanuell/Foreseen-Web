@@ -15,17 +15,17 @@ const STEPS = [
   {
     icon: "🔍",
     title: "Scout",
-    body: "Now you see your opponent. Read their on-chain history: move distribution, what they throw after a win or a loss. 90 seconds.",
+    body: "Now you see your opponent. Read their CELO on-chain history: move distribution, what they throw after a win or a loss. 90 seconds.",
   },
   {
     icon: "🔒",
     title: "Commit",
-    body: "Seal your move as a hash. Neither side can see the other's throw — no peeking, no front-running.",
+    body: "Seal your move as a hash on CELO. Neither side can see the other's throw — no peeking, no front-running.",
   },
   {
     icon: "👁",
     title: "Reveal",
-    body: "Both reveal within 90 seconds. The contract settles instantly and pays the winner. Provably fair.",
+    body: "Both reveal within 90 seconds. The contract settles and releases CELO to the winner on-chain. Provably fair.",
   },
 ];
 
@@ -33,12 +33,12 @@ const FEATURES = [
   {
     icon: "🧠",
     title: "Behavioral profiling",
-    body: "Every revealed match writes a tamper-proof profile: move distribution and the win-stay / lose-shift signal. Scout anyone before you face them.",
+    body: "Every revealed CELO match writes a tamper-proof profile: move distribution and the win-stay / lose-shift signal. Scout anyone before you face them.",
   },
   {
     icon: "🏅",
     title: "Soulbound ranks",
-    body: "Climb Bronze → Legend on win streaks. Rank badges (ERC-5192) can't be bought, sold or transferred — they prove skill, not money.",
+    body: "Climb Bronze → Legend on CELO win streaks. Rank badges (ERC-5192) can't be bought, sold or transferred — they prove skill, not CELO.",
   },
   {
     icon: "🔐",
@@ -48,7 +48,7 @@ const FEATURES = [
   {
     icon: "⚖️",
     title: "Not gambling",
-    body: "No RNG, no house, no dealer. The contract is a neutral referee that escrows a peer-to-peer stake and pays the winner. You win by skill.",
+    body: "No RNG, no house, no dealer. The contract escrows CELO peer-to-peer and pays the winner on-chain. You win by skill, not luck.",
   },
 ];
 
@@ -56,6 +56,7 @@ const TRUST_CHIPS = [
   "Not gambling — pure skill",
   "Provably fair commit-reveal",
   "Soulbound ranks",
+  "CELO mainnet",
 ];
 
 const NPM_LINKS = [
@@ -122,7 +123,7 @@ export default function Landing() {
           <Reveal>
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-300">
               <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-400" />
-              Live on Celo mainnet
+              Live on CELO mainnet (chainId 42220)
             </div>
           </Reveal>
 
@@ -136,7 +137,7 @@ export default function Landing() {
 
           <Reveal delay={120}>
             <p className="mx-auto mt-5 max-w-xl text-base text-slate-400 sm:text-lg">
-              Foreseen is on-chain Rock Paper Scissors as a psychological
+              Foreseen is on-chain Rock Paper Scissors on CELO — a psychological
               mind-sport. Matchmake, scout your opponent&apos;s history, then
               commit blind. A game of reading — not luck.
             </p>
@@ -144,13 +145,13 @@ export default function Landing() {
 
           <Reveal delay={180}>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-              <Link href="/play" className="btn-primary !px-6 !py-3 text-base">
+              <Link href="/play" aria-label="Launch Foreseen CELO arena" className="btn-primary !px-6 !py-3 text-base">
                 👁 Launch App
               </Link>
-              <Link href="/leaderboard" className="btn-ghost !px-6 !py-3 text-base">
+              <Link href="/leaderboard" aria-label="View CELO Foreseen leaderboard" className="btn-ghost !px-6 !py-3 text-base">
                 🏆 Leaderboard
               </Link>
-              <Link href="/matches" className="btn-ghost !px-6 !py-3 text-base">
+              <Link href="/matches" aria-label="View open CELO matches lobby" className="btn-ghost !px-6 !py-3 text-base">
                 ⚔️ Open matches
               </Link>
               <a href="#how" className="btn-ghost !px-6 !py-3 text-base">
@@ -170,9 +171,9 @@ export default function Landing() {
           </Reveal>
 
           <Reveal delay={300}>
-            <div className="mt-8 grid gap-3 text-left sm:grid-cols-3">
+            <div className="mt-8 grid gap-3 text-left sm:grid-cols-3" role="list" aria-label="CELO trust proofs">
               {TRUST_PROOFS.map(([label, detail]) => (
-                <div key={label} className="stat-card">
+                <div key={label} role="listitem" className="stat-card">
                   <div className="font-display text-sm font-bold text-white">
                     {label}
                   </div>
@@ -187,11 +188,11 @@ export default function Landing() {
       </section>
 
       {/* ---- How to play ---- */}
-      <section id="how" className="scroll-mt-20 border-t border-white/5 px-4 py-20">
+      <section id="how" aria-label="How to play Foreseen on CELO" className="scroll-mt-20 border-t border-white/5 px-4 py-20">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <h2 className="text-center font-display text-3xl font-bold tracking-tight sm:text-4xl">
-              How to play
+              How to play on CELO
             </h2>
             <p className="mx-auto mt-3 max-w-xl text-center text-slate-400">
               Four steps. The throw is trivial — the game is everything around
@@ -222,13 +223,14 @@ export default function Landing() {
       {/* ---- The read (mind-sport) ---- */}
       <section
         id="mindsport"
+        aria-label="CELO on-chain scouting — mind-sport read"
         className="scroll-mt-20 border-t border-white/5 px-4 py-20"
       >
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
           <Reveal>
             <div>
               <div className="text-sm font-semibold uppercase tracking-wide text-oracle-cyan">
-                The read
+                The CELO read
               </div>
               <h2 className="mt-2 font-display text-3xl font-bold tracking-tight sm:text-4xl">
                 You can randomize your moves.
@@ -244,9 +246,10 @@ export default function Landing() {
                 habit — or bluff against it.
               </p>
               <ul className="mt-5 space-y-2 text-sm text-slate-300">
-                <li>🔍 Move distribution &amp; contextual tells, on-chain</li>
-                <li>🤝 Symmetric scouting — both sides read before they throw</li>
-                <li>⛓️ History can&apos;t be hidden or faked</li>
+                <li>🔍 Move distribution &amp; contextual tells — live from CELO chain</li>
+                <li>🤝 Symmetric scouting on CELO — both sides read before they throw</li>
+                <li>⛓️ CELO on-chain history can&apos;t be hidden or faked</li>
+                <li>📊 chainId 42220 · provably fair on CELO mainnet</li>
               </ul>
             </div>
           </Reveal>
@@ -327,17 +330,18 @@ export default function Landing() {
       <LandingShowcase />
 
       {/* ---- Builders ---- */}
-      <section className="border-t border-white/5 px-4 py-20">
+      <section aria-label="For CELO builders — SDK integration" className="border-t border-white/5 px-4 py-20">
         <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1fr_360px]">
           <Reveal>
             <div>
-              <div className="eyebrow">For builders</div>
+              <div className="eyebrow">For CELO builders</div>
               <h2 className="mt-2 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-                Build the read layer with the SDK.
+                Build the CELO read layer with the SDK.
               </h2>
               <p className="mt-4 max-w-2xl text-slate-400">
-                Foreseen ships a TypeScript package for scouting summaries,
-                commit-reveal helpers, and honest player-agent workflows.
+                Foreseen ships a TypeScript SDK for CELO scouting summaries,
+                commit-reveal helpers, and honest player-agent workflows on CELO mainnet (chainId 42220).
+                Read live stats from RPSStats, build bots, or embed the CELO leaderboard.
               </p>
               <div className="mt-5 grid gap-2">
                 {BUILDER_SIGNALS.map((point) => (
@@ -398,7 +402,7 @@ export default function Landing() {
               </Link>
             </div>
             <p className="mt-6 text-xs text-slate-500">
-              Live on Celo mainnet · RPSCore{" "}
+              Live on CELO mainnet (chainId 42220) · RPSCore{" "}
               <a
                 href={`https://celoscan.io/address/${RPS_CORE_ADDRESS}`}
                 target="_blank"
@@ -415,7 +419,7 @@ export default function Landing() {
       <footer className="border-t border-white/10 px-4 py-10 text-center">
         <div className="mx-auto max-w-3xl">
           <div className="text-xs font-semibold uppercase tracking-wide text-slate-400">
-            Deployed contracts · Celo mainnet
+            Deployed contracts · CELO mainnet
           </div>
           <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {CELO_MAINNET_CONTRACTS.map((c) => (

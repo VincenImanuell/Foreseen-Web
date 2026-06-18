@@ -35,10 +35,10 @@ import type { MatchEntry } from "./useMatches";
 function StateBadge({ state }: { state: MatchState }) {
   const map: Record<MatchState, [string, string]> = {
     [MatchState.None]: ["—", "bg-white/10 text-slate-300"],
-    [MatchState.WaitingForOpponent]: ["Open", "bg-oracle-cyan/15 text-oracle-cyan"],
-    [MatchState.Scouting]: ["Scouting", "bg-oracle-gold/15 text-oracle-gold"],
-    [MatchState.Revealing]: ["Revealing", "bg-oracle-purple/20 text-oracle-purple"],
-    [MatchState.Settled]: ["Settled", "bg-emerald-500/15 text-emerald-300"],
+    [MatchState.WaitingForOpponent]: ["Open · CELO", "bg-oracle-cyan/15 text-oracle-cyan"],
+    [MatchState.Scouting]: ["Scouting · CELO", "bg-oracle-gold/15 text-oracle-gold"],
+    [MatchState.Revealing]: ["Revealing · CELO", "bg-oracle-purple/20 text-oracle-purple"],
+    [MatchState.Settled]: ["CELO Settled", "bg-emerald-500/15 text-emerald-300"],
     [MatchState.Cancelled]: ["Cancelled", "bg-white/10 text-slate-400"],
   };
   const [label, cls] = map[state];
@@ -153,7 +153,7 @@ export function MatchCard({
   }
 
   function doJoin() {
-    run("Join match", () =>
+    run("Join CELO match", () =>
       writeContractAsync({
         ...rpsCore,
         functionName: "joinMatch",
@@ -167,7 +167,7 @@ export function MatchCard({
     if (!address || pickMove === null) return;
     const salt = randomSalt();
     const commit = computeCommit(address, pickMove, salt);
-    run("Commit move", async () => {
+    run("Commit CELO move", async () => {
       const hash = await writeContractAsync({
         ...rpsCore,
         functionName: "commitMove",
@@ -185,7 +185,7 @@ export function MatchCard({
     const move = secret?.move ?? manualMove;
     const salt = (secret?.salt ?? manualSalt) as Hex;
     if (move === null || move === undefined || !salt) return;
-    run("Reveal", () =>
+    run("Reveal CELO", () =>
       writeContractAsync({
         ...rpsCore,
         functionName: "reveal",
@@ -201,7 +201,7 @@ export function MatchCard({
   }
 
   function doCancel() {
-    run("Cancel match", () =>
+    run("Cancel CELO match", () =>
       writeContractAsync({ ...rpsCore, functionName: "cancelMatch", args: [id] }),
     );
   }
@@ -221,7 +221,7 @@ export function MatchCard({
           <div className="font-display font-bold text-oracle-gold">
             {formatEther(match.bet)} CELO
           </div>
-          <div className="text-[11px] text-slate-500">per player</div>
+          <div className="text-[11px] text-slate-500">stake · per player CELO</div>
           <div className="mt-1 text-[11px] font-medium text-slate-300">
             {formatEther(pot)} CELO pot
           </div>
@@ -246,12 +246,12 @@ export function MatchCard({
       {match.state === MatchState.WaitingForOpponent && (
         <div className="mt-3">
           {isA ? (
-            <button type="button" className="btn-ghost w-full" disabled={busy} onClick={doCancel} aria-label={`Cancel match #${id.toString()} and refund bet`}>
+            <button type="button" className="btn-ghost w-full" disabled={busy} onClick={doCancel} aria-label={`Cancel CELO match #${id.toString()} and refund CELO bet`}>
               Cancel & refund my bet
             </button>
           ) : (
-            <button type="button" className="btn-primary w-full" disabled={busy} onClick={doJoin} aria-label={`Join match #${id.toString()} for ${formatEther(match.bet)} CELO`}>
-              Join — match {formatEther(match.bet)} CELO
+            <button type="button" className="btn-primary w-full" disabled={busy} onClick={doJoin} aria-label={`Join CELO match #${id.toString()} for ${formatEther(match.bet)} CELO`}>
+              Join — stake {formatEther(match.bet)} CELO
             </button>
           )}
         </div>
@@ -286,10 +286,10 @@ export function MatchCard({
 
           {isPlayer && iCommitted && (
             <div className="text-sm text-emerald-300">
-              ✓ Your move is sealed.{" "}
+              ✓ Your CELO move is sealed.{" "}
               {oppCommitted
                 ? "Both committed — opening reveal…"
-                : "Waiting for your opponent to commit."}
+                : "Waiting for your CELO opponent to commit."}
             </div>
           )}
 
@@ -365,7 +365,7 @@ export function MatchCard({
 
           {isPlayer && iRevealed && !revealOver && (
             <div className="text-sm text-emerald-300">
-              You revealed — waiting for your opponent.
+              You revealed on CELO — waiting for your opponent.
             </div>
           )}
 

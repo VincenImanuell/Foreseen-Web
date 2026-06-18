@@ -8,10 +8,10 @@ export function SiteFooter() {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
         <span>
           <span className="mr-2 inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-400" />
-          Foreseen · Celo mainnet (chainId 42220) · skill-based mind-sport ·
-          real CELO stakes
+          Foreseen · CELO mainnet (chainId 42220) · skill-based mind-sport ·
+          real CELO stakes · no testnet
         </span>
-        <nav aria-label="Footer navigation" className="flex flex-wrap items-center justify-center gap-4">
+        <nav aria-label="CELO Foreseen footer navigation" className="flex flex-wrap items-center justify-center gap-4">
           <Link href="/play" className="focus-ring rounded transition-colors hover:text-oracle-cyan">
             Arena
           </Link>

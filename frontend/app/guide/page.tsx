@@ -4,7 +4,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 
 const SECTIONS = [
   {
-    title: "Player Flow",
+    title: "CELO Player Flow",
     items: [
       "Open or join a table before choosing a move.",
       "Scout the opponent's revealed history.",
@@ -13,17 +13,17 @@ const SECTIONS = [
     ],
   },
   {
-    title: "Builder Flow",
+    title: "CELO Builder Flow",
     items: [
       "Use @foreseen/sdk for scouting, dashboards, and agent workflows.",
       "Keep write clients in trusted runtimes.",
-      "Use Celo Sepolia (chain 11142220) for funded test matches — free faucet at faucet.celo.org.",
+      "Use Celo Sepolia (chainId 11142220) for funded test matches — free faucet at faucet.celo.org.",
       "Prefer join-only agents for honest liquidity.",
       "For MiniPay: detect window.ethereum.isMiniPay and auto-connect — no manual wallet step needed.",
     ],
   },
   {
-    title: "Safety Flow",
+    title: "CELO Safety Flow",
     items: [
       "Never commit private keys, seed phrases, or live salts.",
       "Show stake, pot, network, and deadlines near wallet actions.",
@@ -36,24 +36,25 @@ const SECTIONS = [
 export const metadata = {
   title: "Guide — Foreseen on CELO",
   description:
-    "Player, builder, and safety guide for Foreseen's on-chain Rock Paper Scissors flow on Celo.",
+    "Player, builder, and safety guide for Foreseen's on-chain Rock Paper Scissors flow on CELO.",
   keywords: ["CELO", "guide", "foreseen", "rock paper scissors", "MiniPay", "onchain game"],
 };
 
 export default function GuidePage() {
   return (
-    <main aria-label="Foreseen guide">
+    <main aria-label="Foreseen CELO guide">
       <Header />
       <div className="mx-auto max-w-5xl px-4 py-10">
         <section className="mt-10">
-          <div className="eyebrow">Guide</div>
+          <div className="eyebrow">CELO Guide</div>
           <h1 className="mt-2 font-display text-4xl font-bold tracking-tight sm:text-5xl">
             Build and play with the read first.
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-6 text-slate-400">
-            Foreseen works best when the interface keeps the actual loop clear:
-            matchmake, scout, commit, reveal, and withdraw. This guide keeps
-            player UX, SDK integrations, and agent safety in the same place.
+            Foreseen on CELO works best when the interface keeps the actual loop clear:
+            matchmake on CELO, scout the opponent, commit your sealed move,
+            reveal before the CELO deadline, and withdraw claimable CELO balance.
+            This guide keeps player UX, CELO SDK integrations, and agent safety together.
           </p>
         </section>
 

@@ -10,8 +10,8 @@ import { shortError, StatusBanner, type TxStatus } from "./Status";
 const BET_PRESETS = ["0.01", "0.05", "0.1", "0.5"];
 
 const MODE_HELP: Record<Mode, string> = {
-  [Mode.Casual]: "Casual matches keep the pressure low.",
-  [Mode.Ranked]: "Ranked matches can move your soulbound rank.",
+  [Mode.Casual]: "Casual CELO matches keep the pressure low.",
+  [Mode.Ranked]: "Ranked CELO matches can move your soulbound rank.",
 };
 
 export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
@@ -40,7 +40,7 @@ export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
       await publicClient.waitForTransactionReceipt({ hash });
       setStatus({
         kind: "success",
-        msg: "Match opened. When someone joins, scout them — then commit your move.",
+        msg: "CELO match opened. When someone joins, scout them — then commit your move.",
       });
       onChanged?.();
     } catch (e) {
@@ -109,7 +109,7 @@ export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
         className="btn-primary mt-4 w-full"
         disabled={!canSubmit}
         aria-busy={busy}
-        aria-label={`Open match for ${bet} CELO`}
+        aria-label={`Open CELO match for ${bet} CELO on CELO mainnet`}
         onClick={handleCreate}
       >
         {busy ? "Working…" : "Open match"}

@@ -1,4 +1,4 @@
-/** The Foreseen eye mark with an oracle glow halo. */
+/** The Foreseen eye mark with an oracle glow halo — the brand logo for CELO's mind-sport. */
 export function Logo({
   size = 40,
   glow = true,

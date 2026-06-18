@@ -30,10 +30,10 @@ export function MatchList({
   return (
     <div className="space-y-8">
       <Section
-        title="Open lobbies"
+        title="Open CELO lobbies"
         hint="Anyone can challenge these — match the bet to play."
         empty={
-          isLoading ? "Loading matches…" : "No open lobbies. Be the first to open one."
+          isLoading ? "Loading CELO matches…" : "No open CELO lobbies. Be the first to open one."
         }
         entries={openLobbies}
         onChanged={onChanged}
@@ -41,8 +41,8 @@ export function MatchList({
 
       {me && (
         <Section
-          title="Your matches"
-          hint="Reveal in time or risk forfeiting your bet."
+          title="Your CELO matches"
+          hint="Reveal in time or risk forfeiting your CELO bet."
           empty="You haven’t played yet. Open a match to begin."
           entries={mine}
           onChanged={onChanged}
@@ -72,7 +72,7 @@ function Section({
       <div className="mb-3">
         <div className="flex items-center justify-between gap-3">
           <h2 className="font-display text-lg font-bold">{title}</h2>
-          <span className="chip" aria-label={`${count} matches`}>{count} live</span>
+          <span className="chip" aria-label={`${count} CELO matches live`}>{count} live</span>
         </div>
         <p className="text-sm text-slate-400">{hint}</p>
       </div>

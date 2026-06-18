@@ -5,17 +5,17 @@ const SIGNALS = [
   {
     label: "Lobby pressure",
     value: "Open seats",
-    body: "See whether the table is quiet or crowded before you stake.",
+    body: "See whether the CELO table is quiet or crowded before you stake.",
   },
   {
     label: "Opponent signal",
     value: "Move tells",
-    body: "Read distribution and post-win habits before committing blind.",
+    body: "Read CELO on-chain distribution and post-win habits before committing blind.",
   },
   {
     label: "Clock state",
     value: "90 sec",
-    body: "Deadline context stays visible during scouting and reveal windows.",
+    body: "CELO deadline context stays visible during scouting and reveal windows.",
   },
 ];
 
@@ -25,7 +25,7 @@ const MOVE_WIDTHS = ["72%", "42%", "58%"];
 
 export function LandingShowcase() {
   return (
-    <section className="border-t border-white/5 px-4 py-20">
+    <section aria-label="CELO arena signals showcase" className="border-t border-white/5 px-4 py-20">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <div className="eyebrow text-center">Table intelligence</div>
@@ -34,7 +34,7 @@ export function LandingShowcase() {
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-center text-sm leading-6 text-slate-400">
             Foreseen is still Rock Paper Scissors at the core, but the interface
-            keeps the important signals close: lobby pressure, opponent tells,
+            keeps the important CELO signals close: lobby pressure, opponent tells,
             deadlines, and settlement state.
           </p>
         </Reveal>
@@ -59,7 +59,7 @@ export function LandingShowcase() {
             <span className="chip">sealed move</span>
           </div>
           <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-400">
-            The screen shows habits, not secrets. The actual throw stays sealed
+            The CELO screen shows habits, not secrets. The actual throw stays sealed
             until both players reveal.
           </p>
           <div className="mt-5 grid gap-3 sm:grid-cols-3">

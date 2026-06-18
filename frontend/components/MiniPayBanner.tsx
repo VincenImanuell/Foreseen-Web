@@ -14,10 +14,11 @@ export function MiniPayBanner() {
     <div
       role="status"
       aria-live="polite"
+      aria-label="MiniPay CELO wallet status"
       className="flex items-center justify-center gap-2 bg-emerald-500/10 px-4 py-2 text-xs text-emerald-300 border-b border-emerald-500/20"
     >
       <span className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-400" />
-      Running in MiniPay — wallet connected automatically.
+      Running in MiniPay — CELO wallet connected automatically.
     </div>
   );
 }

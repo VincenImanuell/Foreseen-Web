@@ -3,22 +3,29 @@ import { rpsCoreAbi, rpsStatsAbi } from "./abi";
 import { rpsRankedAbi } from "./rankedAbi";
 
 /**
- * RPSCore v2 — the live, matchmaking-first match engine on Celo mainnet.
- * Override via NEXT_PUBLIC_RPS_CORE_ADDRESS if you redeploy.
+ * RPSCore v2 — the live, matchmaking-first match engine on CELO mainnet (chainId 42220).
+ * Verified on Celoscan. Override via NEXT_PUBLIC_RPS_CORE_ADDRESS if you redeploy.
+ * @see https://celoscan.io/address/0x4DFc92FF97378D0F5E82d44EB968cb7793C5b90e
  */
 export const RPS_CORE_ADDRESS = (process.env.NEXT_PUBLIC_RPS_CORE_ADDRESS ??
   "0x4DFc92FF97378D0F5E82d44EB968cb7793C5b90e") as Address;
 
-/** RPSStats — tamper-proof on-chain behavioral profile used for scouting. */
+/**
+ * RPSStats — tamper-proof CELO on-chain behavioral profile used for scouting (chainId 42220).
+ * @see https://celoscan.io/address/0x0f5F94A4f5C72CAc4D6E69a6DD89341c7b1a475A
+ */
 export const RPS_STATS_ADDRESS = (process.env.NEXT_PUBLIC_RPS_STATS_ADDRESS ??
   "0x0f5F94A4f5C72CAc4D6E69a6DD89341c7b1a475A") as Address;
 
-/** RPSRanked — on-chain ranked progression (streaks, tiers, streak multiplier). */
+/**
+ * RPSRanked — CELO on-chain ranked progression (streaks, tiers, streak multiplier) on chainId 42220.
+ * @see https://celoscan.io/address/0x8230D28C9a8Fbda2490F830c6cBc1cE3056096cb
+ */
 export const RPS_RANKED_ADDRESS = (process.env.NEXT_PUBLIC_RPS_RANKED_ADDRESS ??
   "0x8230D28C9a8Fbda2490F830c6cBc1cE3056096cb") as Address;
 
 /**
- * Full v2 (matchmaking-first) system on Celo mainnet — shown in the landing footer.
+ * Full v2 (matchmaking-first) system on CELO mainnet — shown in the landing footer.
  * Only RPSCore/RPSStats are read by the dapp; the rest are listed for transparency.
  */
 export const CELO_MAINNET_CONTRACTS: { name: string; address: Address }[] = [
