@@ -4,9 +4,10 @@ import { PageIntro } from "@/components/PageIntro";
 import { SiteFooter } from "@/components/SiteFooter";
 
 export const metadata = {
-  title: "Open matches — Foreseen",
+  title: "Open matches — Foreseen on CELO",
   description:
     "Live lobby of Rock Paper Scissors matches waiting for an opponent on Celo mainnet, read via @foreseen/sdk.",
+  keywords: ["CELO", "open matches", "foreseen", "celo mainnet", "rock paper scissors lobby"],
 };
 
 export default function MatchesPage() {
