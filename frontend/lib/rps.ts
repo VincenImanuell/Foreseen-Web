@@ -85,7 +85,7 @@ export function toRpsMatch(raw: any): RpsMatch {
 const ZERO_HASH =
   "0x0000000000000000000000000000000000000000000000000000000000000000";
 
-/** Has this side sealed a move yet (commit != 0)? */
+/** True if this player has sealed a commit (non-zero hash). */
 export function hasCommitted(commit?: Hex): boolean {
   return !!commit && commit !== ZERO_HASH;
 }
