@@ -1,0 +1,23 @@
+{
+  "name": "Foreseen",
+  "short_name": "Foreseen",
+  "description": "Rock Paper Scissors mind-sport on Celo. Scout, commit, reveal.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a14",
+  "theme_color": "#0a0a14",
+  "icons": [
+    {
+      "src": "/foreseen-eye.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/foreseen-eye.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
