@@ -335,7 +335,7 @@ export default function Landing() {
             <div>
               <div className="eyebrow">For CELO builders</div>
               <h2 className="mt-2 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-                Build the read layer with the SDK.
+                Build the CELO read layer with the SDK.
               </h2>
               <p className="mt-4 max-w-2xl text-slate-400">
                 Foreseen ships a TypeScript SDK for CELO scouting summaries,
