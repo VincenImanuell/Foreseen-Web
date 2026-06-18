@@ -3,8 +3,9 @@ import { rpsCoreAbi, rpsStatsAbi } from "./abi";
 import { rpsRankedAbi } from "./rankedAbi";
 
 /**
- * RPSCore v2 — the live, matchmaking-first match engine on CELO mainnet.
- * Override via NEXT_PUBLIC_RPS_CORE_ADDRESS if you redeploy.
+ * RPSCore v2 — the live, matchmaking-first match engine on CELO mainnet (chainId 42220).
+ * Verified on Celoscan. Override via NEXT_PUBLIC_RPS_CORE_ADDRESS if you redeploy.
+ * @see https://celoscan.io/address/0x4DFc92FF97378D0F5E82d44EB968cb7793C5b90e
  */
 export const RPS_CORE_ADDRESS = (process.env.NEXT_PUBLIC_RPS_CORE_ADDRESS ??
   "0x4DFc92FF97378D0F5E82d44EB968cb7793C5b90e") as Address;
