@@ -94,7 +94,7 @@ export function ScoutPanel({ opponent }: { opponent: Address }) {
             <span className="text-emerald-300">{s.wins.toString()}W</span>
             <span className="text-rose-300">{s.losses.toString()}L</span>
             <span className="text-slate-400">{s.draws.toString()}D</span>
-            <span className="ml-auto text-slate-500">
+            <span className="ml-auto text-slate-500" aria-label={`${s.totalMatches.toString()} CELO matches revealed`}>
               {s.totalMatches.toString()} revealed
             </span>
           </div>
