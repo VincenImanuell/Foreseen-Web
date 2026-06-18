@@ -23,7 +23,7 @@ const SECTIONS = [
     ],
   },
   {
-    title: "Safety Flow",
+    title: "CELO Safety Flow",
     items: [
       "Never commit private keys, seed phrases, or live salts.",
       "Show stake, pot, network, and deadlines near wallet actions.",
