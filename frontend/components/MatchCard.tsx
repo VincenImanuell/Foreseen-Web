@@ -286,7 +286,7 @@ export function MatchCard({
 
           {isPlayer && iCommitted && (
             <div className="text-sm text-emerald-300">
-              ✓ Your move is sealed.{" "}
+              ✓ Your CELO move is sealed.{" "}
               {oppCommitted
                 ? "Both committed — opening reveal…"
                 : "Waiting for your CELO opponent to commit."}
