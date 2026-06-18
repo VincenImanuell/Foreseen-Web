@@ -202,7 +202,10 @@ export function loadSecret(
 
 // ---- Outcome helpers (client-side, for display only) ----------------------
 
-/** 0 = draw, 1 = A wins, 2 = B wins. Mirrors RPSCore._result. */
+/**
+ * Client-side outcome: 0 = draw, 1 = A wins, 2 = B wins.
+ * Mirrors the `_result` internal in RPSCore.sol — for display only, NOT for settlement.
+ */
 export function resultOf(a: Move, b: Move): 0 | 1 | 2 {
   if (a === b) return 0;
   if (
