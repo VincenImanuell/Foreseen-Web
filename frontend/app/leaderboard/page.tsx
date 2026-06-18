@@ -19,7 +19,7 @@ export default function LeaderboardPage() {
         <PageIntro
           eyebrow="Player signal"
           title="Leaderboard"
-          body="Every revealed match writes a tamper-proof record on-chain. This board ranks players by wins, read live from Celo mainnet through the published @foreseen/sdk client."
+          body="Every revealed match writes a tamper-proof record on CELO. This board ranks players by wins, read live from CELO mainnet through the published @foreseen/sdk client."
           chips={["Ranked by wins", "On-chain stats", "No indexer"]}
         />
 
