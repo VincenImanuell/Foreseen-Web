@@ -40,7 +40,7 @@ export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
       await publicClient.waitForTransactionReceipt({ hash });
       setStatus({
         kind: "success",
-        msg: "Match opened. When someone joins, scout them — then commit your move.",
+        msg: "CELO match opened. When someone joins, scout them — then commit your move.",
       });
       onChanged?.();
     } catch (e) {
