@@ -3,12 +3,12 @@ import { injected } from "wagmi/connectors";
 import { celo } from "./chain";
 
 /**
- * wagmi config for CELO mainnet. We use the `injected` connector only — it covers MetaMask,
- * MiniPay (CELO's wallet, detectable via `window.ethereum.isMiniPay`), and any
- * EIP-1193 browser wallet, with zero external accounts or WalletConnect project
- * ids required (keeps the demo free & signup-less).
+ * wagmi config for CELO mainnet (chainId 42220). We use the `injected` connector only — it covers
+ * MetaMask, MiniPay (CELO's Opera wallet, detectable via `window.ethereum.isMiniPay`), Rabby, Valora,
+ * and any EIP-1193 browser wallet. No WalletConnect project ID required — keeps the CELO app free
+ * and signup-less. Only CELO mainnet chain is configured; no other EVM chain is supported.
  *
- * MiniPay auto-connects the wallet — see `useMiniPay` hook in components/.
+ * MiniPay auto-connects the wallet on CELO mainnet — see `useMiniPay` hook in components/.
  */
 export const wagmiConfig = createConfig({
   chains: [celo],
