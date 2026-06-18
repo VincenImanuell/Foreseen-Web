@@ -29,6 +29,7 @@ export function SiteFooter() {
             target="_blank"
             rel="noreferrer"
             title="Open RPSCore on Celoscan"
+            aria-label="View RPSCore contract on Celoscan (CELO mainnet)"
             className="focus-ring rounded font-mono transition-colors hover:text-oracle-cyan"
           >
             {shortAddress(RPS_CORE_ADDRESS)} ↗
