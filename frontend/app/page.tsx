@@ -20,7 +20,7 @@ const STEPS = [
   {
     icon: "🔒",
     title: "Commit",
-    body: "Seal your move as a hash. Neither side can see the other's throw — no peeking, no front-running.",
+    body: "Seal your move as a hash on CELO. Neither side can see the other's throw — no peeking, no front-running.",
   },
   {
     icon: "👁",
