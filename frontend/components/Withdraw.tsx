@@ -56,7 +56,9 @@ export function Withdraw({ onChanged }: { onChanged?: () => void }) {
             <span className="text-base font-medium">CELO</span>
           </div>
           <p className="mt-1 text-xs text-slate-500">
-            Winnings, draw refunds & cancelled bets collect here (pull-payment).
+            {amount === 0n
+              ? "No CELO pending — play a match to earn winnings."
+              : "Winnings, draw refunds & cancelled bets collect here."}
           </p>
         </div>
         <button
