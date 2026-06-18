@@ -10,8 +10,8 @@ import { shortError, StatusBanner, type TxStatus } from "./Status";
 const BET_PRESETS = ["0.01", "0.05", "0.1", "0.5"];
 
 const MODE_HELP: Record<Mode, string> = {
-  [Mode.Casual]: "Casual matches keep the pressure low.",
-  [Mode.Ranked]: "Ranked matches can move your soulbound rank.",
+  [Mode.Casual]: "Casual CELO matches keep the pressure low.",
+  [Mode.Ranked]: "Ranked CELO matches can move your soulbound rank.",
 };
 
 export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
