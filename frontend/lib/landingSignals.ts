@@ -1,6 +1,6 @@
 export const TRUST_PROOFS = [
   ["No RNG", "Outcomes come from sealed player choices, not random numbers."],
-  ["No house", "The contract escrows peer-to-peer stakes and settles the table."],
+  ["No house", "The CELO contract escrows peer-to-peer stakes and settles the table."],
   ["Public reads", "Player tendencies stay visible through on-chain history."],
 ] as const;
 
