@@ -134,7 +134,7 @@ export function distributionPct(
   ];
 }
 
-/** Index (0..2) of the most-played bucket, or -1 if no data. */
+/** Index (0=rock, 1=paper, 2=scissors) of most-played bucket, or -1 if no data. */
 export function dominantMove(counts: [bigint, bigint, bigint]): number {
   const total = counts[0] + counts[1] + counts[2];
   if (total === 0n) return -1;
