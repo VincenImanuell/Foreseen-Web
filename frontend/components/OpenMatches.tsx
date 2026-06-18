@@ -65,7 +65,7 @@ export function OpenMatches() {
       {!isLoading && !isError && data && (
         <div className="mb-4 grid gap-2 sm:grid-cols-3">
           <div className="stat-card !rounded-xl !p-3">
-            <div className="text-[11px] text-slate-500">Open tables</div>
+            <div className="text-[11px] text-slate-500">Open CELO tables</div>
             <div className="mt-1 font-display text-lg font-bold">
               {data.length}
             </div>
