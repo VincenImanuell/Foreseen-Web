@@ -246,9 +246,10 @@ export default function Landing() {
                 habit — or bluff against it.
               </p>
               <ul className="mt-5 space-y-2 text-sm text-slate-300">
-                <li>🔍 Move distribution &amp; contextual tells, on CELO on-chain</li>
-                <li>🤝 Symmetric scouting — both sides read before they throw</li>
-                <li>⛓️ CELO history can&apos;t be hidden or faked</li>
+                <li>🔍 Move distribution &amp; contextual tells — live from CELO chain</li>
+                <li>🤝 Symmetric scouting on CELO — both sides read before they throw</li>
+                <li>⛓️ CELO on-chain history can&apos;t be hidden or faked</li>
+                <li>📊 chainId 42220 · provably fair on CELO mainnet</li>
               </ul>
             </div>
           </Reveal>
