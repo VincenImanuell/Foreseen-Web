@@ -35,7 +35,7 @@ import type { MatchEntry } from "./useMatches";
 function StateBadge({ state }: { state: MatchState }) {
   const map: Record<MatchState, [string, string]> = {
     [MatchState.None]: ["—", "bg-white/10 text-slate-300"],
-    [MatchState.WaitingForOpponent]: ["Open", "bg-oracle-cyan/15 text-oracle-cyan"],
+    [MatchState.WaitingForOpponent]: ["Open · CELO", "bg-oracle-cyan/15 text-oracle-cyan"],
     [MatchState.Scouting]: ["Scouting", "bg-oracle-gold/15 text-oracle-gold"],
     [MatchState.Revealing]: ["Revealing", "bg-oracle-purple/20 text-oracle-purple"],
     [MatchState.Settled]: ["Settled", "bg-emerald-500/15 text-emerald-300"],
