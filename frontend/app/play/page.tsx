@@ -19,7 +19,7 @@ const PHASES = [
 ];
 
 const ARENA_STATS = [
-  ["Network", "Celo"],
+  ["Network", "CELO mainnet"],
   ["Windows", "90s"],
   ["Game", "Skill"],
 ];
