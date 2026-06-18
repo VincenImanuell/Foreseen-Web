@@ -3,7 +3,7 @@ import { injected } from "wagmi/connectors";
 import { celo } from "./chain";
 
 /**
- * wagmi config. We use the `injected` connector only — it covers MetaMask,
+ * wagmi config for CELO mainnet. We use the `injected` connector only — it covers MetaMask,
  * MiniPay (CELO's wallet, detectable via `window.ethereum.isMiniPay`), and any
  * EIP-1193 browser wallet, with zero external accounts or WalletConnect project
  * ids required (keeps the demo free & signup-less).
