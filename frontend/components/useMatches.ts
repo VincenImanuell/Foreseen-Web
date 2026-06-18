@@ -11,6 +11,11 @@ export type MatchEntry = { id: bigint; match: RpsMatch };
  *  contract from ballooning the multicall). */
 const WINDOW = 50;
 
+/**
+ * Poll RPSCore on CELO mainnet (chainId 42220) for the most recent matches via
+ * wagmi's multicall — newest CELO match first. Refetches every 8s to track
+ * live commit/reveal state without a CELO indexer.
+ */
 export function useMatches() {
   const {
     data: nextId,
