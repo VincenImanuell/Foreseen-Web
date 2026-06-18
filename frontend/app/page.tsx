@@ -400,7 +400,7 @@ export default function Landing() {
               </Link>
             </div>
             <p className="mt-6 text-xs text-slate-500">
-              Live on Celo mainnet · RPSCore{" "}
+              Live on CELO mainnet · RPSCore{" "}
               <a
                 href={`https://celoscan.io/address/${RPS_CORE_ADDRESS}`}
                 target="_blank"
