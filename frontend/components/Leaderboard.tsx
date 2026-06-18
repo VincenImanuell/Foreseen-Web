@@ -124,7 +124,7 @@ export function Leaderboard() {
 
       {!isLoading && !isError && data && data.length === 0 && (
         <div className="py-10 text-center text-sm text-slate-400">
-          No revealed matches yet. Be the first to leave a record on-chain.
+          No revealed CELO matches yet. Be the first to leave a record on-chain.
         </div>
       )}
 
