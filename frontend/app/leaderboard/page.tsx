@@ -20,7 +20,7 @@ export default function LeaderboardPage() {
           eyebrow="Player signal"
           title="Leaderboard"
           body="Every revealed match writes a tamper-proof record on CELO. This board ranks players by wins, read live from CELO mainnet through the published @foreseen/sdk client."
-          chips={["Ranked by wins", "On-chain stats", "No indexer"]}
+          chips={["Ranked by wins", "CELO on-chain stats", "No indexer"]}
         />
 
         <Leaderboard />
