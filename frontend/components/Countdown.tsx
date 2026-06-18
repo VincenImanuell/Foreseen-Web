@@ -2,7 +2,7 @@
 
 import { useNow } from "./useNow";
 
-/** mm:ss remaining until a unix-seconds deadline. Turns red once elapsed. */
+/** mm:ss remaining until a CELO match deadline (unix-seconds). Turns red once CELO window expires. */
 export function Countdown({
   deadline,
   className = "",
