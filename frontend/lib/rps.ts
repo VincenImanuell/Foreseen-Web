@@ -121,7 +121,7 @@ export function toRpsStats(raw: any): RpsStats {
   };
 }
 
-/** Convert a 3-bucket bigint move tally to percentage split [rock%, paper%, scissors%]. */
+/** Convert a 3-bucket bigint CELO move tally to percentage split [rock%, paper%, scissors%] for display. */
 export function distributionPct(
   counts: [bigint, bigint, bigint],
 ): [number, number, number] {
