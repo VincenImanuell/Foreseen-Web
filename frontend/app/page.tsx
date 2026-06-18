@@ -145,7 +145,7 @@ export default function Landing() {
 
           <Reveal delay={180}>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-              <Link href="/play" className="btn-primary !px-6 !py-3 text-base">
+              <Link href="/play" aria-label="Launch Foreseen CELO arena" className="btn-primary !px-6 !py-3 text-base">
                 👁 Launch App
               </Link>
               <Link href="/leaderboard" className="btn-ghost !px-6 !py-3 text-base">
