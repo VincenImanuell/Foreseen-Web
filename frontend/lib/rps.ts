@@ -90,7 +90,7 @@ export function hasCommitted(commit?: Hex): boolean {
   return !!commit && commit !== ZERO_HASH;
 }
 
-// ---- On-chain behavioral stats (RPSStats.getStats) ------------------------
+// ---- CELO on-chain behavioral stats from RPSStats.getStats (CELO mainnet) ------
 
 export type RpsStats = {
   totalMatches: bigint;
