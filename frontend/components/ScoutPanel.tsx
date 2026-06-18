@@ -73,7 +73,13 @@ export function ScoutPanel({ opponent }: { opponent: Address }) {
         </div>
       </div>
 
-      {isLoading && <div className="text-xs text-slate-500">Reading on-chain history…</div>}
+      {isLoading && (
+        <div className="space-y-2 py-1">
+          <div className="skeleton h-3 w-3/4" />
+          <div className="skeleton h-3 w-1/2" />
+          <div className="skeleton h-3 w-2/3" />
+        </div>
+      )}
 
       {!isLoading && !hasData && (
         <div className="text-xs text-slate-400">
