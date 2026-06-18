@@ -7,7 +7,7 @@ import { rpsCore } from "@/lib/contracts";
 import { Mode } from "@/lib/rps";
 import { shortError, StatusBanner, type TxStatus } from "./Status";
 
-const BET_PRESETS = ["0.01", "0.05", "0.1"];
+const BET_PRESETS = ["0.01", "0.05", "0.1", "0.5"];
 
 const MODE_HELP: Record<Mode, string> = {
   [Mode.Casual]: "Casual matches keep the pressure low.",
