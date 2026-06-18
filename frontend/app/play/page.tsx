@@ -52,7 +52,7 @@ export default function Play() {
             <div>
               <div className="eyebrow">Live arena</div>
               <h1 className="mt-2 font-display text-2xl font-bold tracking-tight sm:text-3xl">
-                The arena
+                The CELO arena
               </h1>
               <p className="mt-1 max-w-2xl text-sm text-slate-400">
                 Matchmake → scout → commit → reveal. A game of skill, not gambling:
