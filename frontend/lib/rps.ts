@@ -45,7 +45,7 @@ export function moveEmoji(m: Move): string {
   return MOVES.find((x) => x.value === m)?.emoji ?? "❔";
 }
 
-// Match windows (seconds) — must match the contract constants.
+// CELO match windows (seconds) — must match RPSCore.sol constants on CELO mainnet (chainId 42220).
 export const COMMIT_WINDOW_SECONDS = 90;
 export const REVEAL_WINDOW_SECONDS = 90;
 
@@ -85,7 +85,7 @@ export function toRpsMatch(raw: any): RpsMatch {
 const ZERO_HASH =
   "0x0000000000000000000000000000000000000000000000000000000000000000";
 
-/** True if this player has sealed a commit (non-zero hash). */
+/** True if this CELO player has sealed a commit (non-zero hash) on CELO mainnet. */
 export function hasCommitted(commit?: Hex): boolean {
   return !!commit && commit !== ZERO_HASH;
 }
@@ -121,7 +121,7 @@ export function toRpsStats(raw: any): RpsStats {
   };
 }
 
-/** Convert a 3-bucket bigint move tally to percentage split [rock%, paper%, scissors%]. */
+/** Convert a 3-bucket bigint CELO move tally to percentage split [rock%, paper%, scissors%] for display. */
 export function distributionPct(
   counts: [bigint, bigint, bigint],
 ): [number, number, number] {
@@ -134,7 +134,7 @@ export function distributionPct(
   ];
 }
 
-/** Index (0=rock, 1=paper, 2=scissors) of most-played bucket, or -1 if no data. */
+/** Index (0=rock, 1=paper, 2=scissors) of most-played CELO bucket from RPSStats, or -1 if no CELO data. */
 export function dominantMove(counts: [bigint, bigint, bigint]): number {
   const total = counts[0] + counts[1] + counts[2];
   if (total === 0n) return -1;
@@ -218,7 +218,7 @@ export function resultOf(a: Move, b: Move): 0 | 1 | 2 {
   return 2;
 }
 
-/** Truncate an address to `0x1234…abcd` format for display. Returns "—" if falsy. */
+/** Truncate a CELO address to `0x1234…abcd` format for display on CELO mainnet. Returns "—" if falsy. */
 export function shortAddress(addr?: string): string {
   if (!addr) return "—";
   return `${addr.slice(0, 6)}…${addr.slice(-4)}`;
