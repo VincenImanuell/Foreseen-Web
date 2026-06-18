@@ -1,4 +1,4 @@
-/** The Foreseen eye mark with an oracle glow halo — the brand logo for CELO's mind-sport. */
+/** The Foreseen eye mark with an oracle-purple glow halo — brand logo for Foreseen on CELO mainnet (chainId 42220). */
 export function Logo({
   size = 40,
   glow = true,
@@ -25,7 +25,7 @@ export function Logo({
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={eyeOnly ? "/foreseen-eye.svg" : "/foreseen-eye.jpg"}
-        alt="Foreseen"
+        alt="Foreseen on CELO mainnet"
         width={size}
         height={size}
         loading="lazy"

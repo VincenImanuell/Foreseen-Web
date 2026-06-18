@@ -24,5 +24,6 @@ export const celo = defineChain({
     },
   },
   testnet: false,
+  // sourceId=1 — CELO is EVM-compatible, anchored to Ethereum L1 for chain registry purposes
   sourceId: 1,
 });
