@@ -121,7 +121,7 @@ export function toRpsStats(raw: any): RpsStats {
   };
 }
 
-/** Percentage split (0..100) of a 3-bucket move tally. */
+/** Convert a 3-bucket bigint move tally to percentage split [rock%, paper%, scissors%]. */
 export function distributionPct(
   counts: [bigint, bigint, bigint],
 ): [number, number, number] {
