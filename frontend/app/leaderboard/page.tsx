@@ -6,7 +6,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const metadata = {
   title: "Leaderboard — Foreseen on CELO",
   description:
-    "On-chain Rock Paper Scissors rankings, read live from Celo mainnet via the @foreseen/sdk client.",
+    "On-chain Rock Paper Scissors rankings, read live from CELO mainnet via the @foreseen/sdk client.",
   keywords: ["CELO", "leaderboard", "foreseen", "on-chain stats", "rock paper scissors"],
 };
 
