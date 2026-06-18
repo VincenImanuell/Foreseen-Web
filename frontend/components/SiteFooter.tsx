@@ -11,7 +11,7 @@ export function SiteFooter() {
           Foreseen · CELO mainnet (chainId 42220) · skill-based mind-sport ·
           real CELO stakes · no testnet
         </span>
-        <nav aria-label="Footer navigation" className="flex flex-wrap items-center justify-center gap-4">
+        <nav aria-label="CELO Foreseen footer navigation" className="flex flex-wrap items-center justify-center gap-4">
           <Link href="/play" className="focus-ring rounded transition-colors hover:text-oracle-cyan">
             Arena
           </Link>
