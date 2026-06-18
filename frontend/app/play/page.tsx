@@ -43,7 +43,7 @@ export default function Play() {
   const { isMiniPay } = useMiniPay();
 
   return (
-    <main aria-label="Arena — play Foreseen">
+    <main aria-label="CELO Arena — play Foreseen on CELO mainnet">
       <Header />
 
       <div className="mx-auto max-w-5xl px-4 py-8">
