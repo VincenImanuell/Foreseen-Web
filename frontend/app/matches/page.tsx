@@ -17,7 +17,7 @@ export default function MatchesPage() {
 
       <div className="mx-auto max-w-3xl px-4 py-8">
         <PageIntro
-          eyebrow="Live lobby"
+          eyebrow="Live CELO lobby"
           title="Open matches"
           body="Matches currently waiting for a challenger, read live from CELO mainnet through @foreseen/sdk. Scout an opener before you decide to take the seat."
           chips={["CELO mainnet", "Wallet-free read", "SDK powered"]}
