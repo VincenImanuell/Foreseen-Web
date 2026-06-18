@@ -9,7 +9,7 @@ import { rpsRankedAbi } from "./rankedAbi";
 export const RPS_CORE_ADDRESS = (process.env.NEXT_PUBLIC_RPS_CORE_ADDRESS ??
   "0x4DFc92FF97378D0F5E82d44EB968cb7793C5b90e") as Address;
 
-/** RPSStats — tamper-proof on-chain behavioral profile used for scouting. */
+/** RPSStats — tamper-proof CELO on-chain behavioral profile used for scouting. */
 export const RPS_STATS_ADDRESS = (process.env.NEXT_PUBLIC_RPS_STATS_ADDRESS ??
   "0x0f5F94A4f5C72CAc4D6E69a6DD89341c7b1a475A") as Address;
 
