@@ -20,9 +20,10 @@ type Row = {
 };
 
 /**
- * Build the leaderboard entirely through `@foreseen/sdk`: walk recent matches to
- * collect players, then pull each player's tamper-proof on-chain stats and rank
- * by wins. No local ABIs, no direct contract calls — this is the SDK dogfooding.
+ * Build the CELO leaderboard entirely through `@foreseen/sdk`: walk recent CELO matches
+ * to collect players, then pull each player's tamper-proof on-chain stats from RPSStats
+ * on CELO mainnet (chainId 42220) and rank by wins. No local ABIs, no direct contract
+ * calls — this is the SDK dogfooding on CELO.
  */
 async function buildLeaderboard(): Promise<Row[]> {
   const next = await foreseen.nextMatchId();
@@ -118,7 +119,7 @@ export function Leaderboard() {
 
       {isError && (
         <div className="py-10 text-center text-sm text-rose-300">
-          Couldn&apos;t read on-chain stats right now. Try refresh.
+          Couldn&apos;t read CELO on-chain stats from CELO mainnet right now. Try refresh.
         </div>
       )}
 
@@ -159,7 +160,7 @@ export function Leaderboard() {
                     <Link
                       href={`/player/${r.address}`}
                       className="focus-ring rounded font-mono text-xs text-slate-300 transition-colors hover:text-oracle-cyan"
-                      title="View scouting report"
+                      title="View CELO scouting report"
                     >
                       {shortAddress(r.address)} 🔍
                     </Link>

@@ -10,8 +10,8 @@ import { shortError, StatusBanner, type TxStatus } from "./Status";
 const BET_PRESETS = ["0.01", "0.05", "0.1", "0.5"];
 
 const MODE_HELP: Record<Mode, string> = {
-  [Mode.Casual]: "Casual CELO matches keep the pressure low.",
-  [Mode.Ranked]: "Ranked CELO matches can move your soulbound rank.",
+  [Mode.Casual]: "Casual CELO matches keep the pressure low — no rank movement on CELO.",
+  [Mode.Ranked]: "Ranked CELO matches can move your soulbound rank on CELO mainnet (chainId 42220).",
 };
 
 export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
@@ -50,8 +50,8 @@ export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
 
   return (
     <div className="card">
-      <div className="eyebrow">New table</div>
-      <h2 className="mt-1 font-display text-lg font-bold">Open a match</h2>
+      <div className="eyebrow">New CELO table</div>
+      <h2 className="mt-1 font-display text-lg font-bold">Open a CELO match</h2>
       <p className="mt-1 text-sm text-slate-400">
         Set your CELO stake on CELO mainnet — no move yet. You pick your throw <em>after</em> an
         opponent joins and you’ve scouted their CELO history.
