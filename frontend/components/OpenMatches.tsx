@@ -55,7 +55,7 @@ export function OpenMatches() {
           type="button"
           onClick={() => refetch()}
           disabled={isFetching}
-          aria-label="Refresh open matches"
+          aria-label="Refresh open CELO matches"
           className="focus-ring rounded-lg border border-white/10 px-2.5 py-1 text-[11px] text-slate-400 transition hover:text-white disabled:opacity-50"
         >
           {isFetching ? "Refreshing…" : "Refresh"}
