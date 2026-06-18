@@ -4,8 +4,11 @@ import { celo } from "./chain";
 
 /**
  * wagmi config. We use the `injected` connector only — it covers MetaMask,
- * MiniPay (Celo's wallet) and any EIP-1193 browser wallet, with zero external
- * accounts or WalletConnect project ids required (keeps the demo free & signup-less).
+ * MiniPay (Celo's wallet, detectable via `window.ethereum.isMiniPay`), and any
+ * EIP-1193 browser wallet, with zero external accounts or WalletConnect project
+ * ids required (keeps the demo free & signup-less).
+ *
+ * MiniPay auto-connects the wallet — see `useMiniPay` hook in components/.
  */
 export const wagmiConfig = createConfig({
   chains: [celo],
