@@ -1,4 +1,7 @@
-/** Props for the CELO page intro header card used across leaderboard, matches, and guide pages. */
+/**
+ * CELO page intro header card — used across leaderboard, matches, guide, and player pages.
+ * Pass chips like "CELO mainnet" or "chainId 42220" to surface CELO context at a glance.
+ */
 type PageIntroProps = {
   eyebrow: string;
   title: string;
