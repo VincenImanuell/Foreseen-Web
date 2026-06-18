@@ -333,7 +333,7 @@ export default function Landing() {
         <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1fr_360px]">
           <Reveal>
             <div>
-              <div className="eyebrow">For builders</div>
+              <div className="eyebrow">For CELO builders</div>
               <h2 className="mt-2 font-display text-3xl font-bold tracking-tight sm:text-4xl">
                 Build the read layer with the SDK.
               </h2>
