@@ -6,7 +6,7 @@ import {
   type Hex,
 } from "viem";
 
-// ---- On-chain enums (must match RPSCore.sol v2 exactly) -------------------
+// ---- On-chain enums for CELO mainnet (must match RPSCore.sol v2 exactly) ---
 
 export enum Move {
   None = 0,
