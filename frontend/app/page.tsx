@@ -54,9 +54,9 @@ const FEATURES = [
 
 const TRUST_CHIPS = [
   "Not gambling — pure skill",
-  "Provably fair commit-reveal",
-  "Soulbound ranks",
-  "CELO mainnet",
+  "Provably fair commit-reveal on CELO",
+  "Soulbound ranks (ERC-5192)",
+  "CELO mainnet · chainId 42220",
 ];
 
 const NPM_LINKS = [
