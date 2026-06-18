@@ -114,7 +114,7 @@ export function ScoutCard({ address }: { address: string }) {
           {Number(data.stats.totalMatches) === 0 ? (
             <p className="text-sm text-slate-400">
               No revealed CELO matches yet — a blank slate. No tells to read; their first
-              throws here are pure guesswork.
+              throws on CELO are pure guesswork.
             </p>
           ) : (
             <>
