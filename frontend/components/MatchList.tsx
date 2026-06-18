@@ -33,7 +33,7 @@ export function MatchList({
         title="Open lobbies"
         hint="Anyone can challenge these — match the bet to play."
         empty={
-          isLoading ? "Loading matches…" : "No open lobbies. Be the first to open one."
+          isLoading ? "Loading CELO matches…" : "No open CELO lobbies. Be the first to open one."
         }
         entries={openLobbies}
         onChanged={onChanged}
