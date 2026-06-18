@@ -11,6 +11,7 @@ export function shortError(e: unknown): string {
   // viem errors are verbose; surface the first meaningful CELO-relevant line.
   if (/User rejected|rejected the request/i.test(raw)) return "Rejected in wallet — CELO tx cancelled.";
   if (/insufficient funds/i.test(raw)) return "Insufficient CELO for bet + gas on CELO mainnet. Top up your CELO wallet.";
+  if (/chain mismatch|wrong network|unsupported chain/i.test(raw)) return "Wallet is on the wrong network — switch to CELO mainnet (chainId 42220).";
   const firstLine = raw.split("\n")[0];
   return firstLine.length > 140 ? firstLine.slice(0, 140) + "…" : firstLine;
 }
