@@ -201,7 +201,7 @@ export function MatchCard({
   }
 
   function doCancel() {
-    run("Cancel match", () =>
+    run("Cancel CELO match", () =>
       writeContractAsync({ ...rpsCore, functionName: "cancelMatch", args: [id] }),
     );
   }
