@@ -4,7 +4,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 
 const SECTIONS = [
   {
-    title: "Player Flow",
+    title: "CELO Player Flow",
     items: [
       "Open or join a table before choosing a move.",
       "Scout the opponent's revealed history.",
