@@ -99,7 +99,7 @@ export function Leaderboard() {
     <div className="rounded-2xl border border-white/10 bg-panel/60 p-4 sm:p-6">
       <div className="mb-4 flex items-center justify-between">
         <div className="text-xs font-semibold uppercase tracking-wide text-oracle-cyan">
-          🏆 Ranked by wins
+          🏆 CELO — Ranked by wins
         </div>
         <button
           type="button"
