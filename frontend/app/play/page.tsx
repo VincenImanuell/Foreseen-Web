@@ -25,9 +25,9 @@ const ARENA_STATS = [
 ];
 
 const TABLE_RULES = [
-  "Match the CELO stake exactly to join.",
-  "Scout before committing.",
-  "Reveal before the deadline.",
+  "Match the CELO stake exactly to join on CELO mainnet.",
+  "Scout the CELO on-chain history before committing your move.",
+  "Reveal before the CELO deadline or forfeit the pot.",
 ];
 
 const SESSION_CHECKS = [
