@@ -18,6 +18,7 @@ export function Reveal({
     <div
       ref={ref}
       className={`reveal ${inView ? "in-view" : ""} ${className}`}
+      aria-hidden={!inView}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {children}
