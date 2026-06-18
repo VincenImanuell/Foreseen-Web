@@ -13,16 +13,16 @@ export const metadata: Metadata = {
     "A skill-based mind-sport on CELO mainnet. Matchmake, scout your opponent's on-chain history, then commit blind. A game of reading, not luck — not gambling.",
   icons: { icon: "/foreseen-eye.svg" },
   manifest: "/manifest.json",
-  keywords: ["CELO", "CELO mainnet", "celo", "rock paper scissors", "onchain game", "web3 game", "minipay", "foreseen", "commit reveal", "chainId 42220"],
+  keywords: ["CELO", "CELO mainnet", "celo", "rock paper scissors", "onchain game", "web3 game", "minipay", "foreseen", "commit reveal", "chainId 42220", "soulbound rank", "commit-reveal RPS", "CELO RPS", "on-chain mind-sport"],
   twitter: {
-    card: "summary",
-    title: "Foreseen — Rock Paper Scissors on CELO",
-    description: "Scout your opponent's on-chain history, commit blind, reveal and settle on CELO mainnet.",
+    card: "summary_large_image",
+    title: "Foreseen · CELO RPS — commit-reveal mind-sport",
+    description: "Scout CELO on-chain history, commit blind, reveal and settle on CELO mainnet (chainId 42220). Real stakes, soulbound ranks.",
   },
   openGraph: {
-    title: "Foreseen — Rock Paper Scissors on CELO",
-    description: "A skill-based mind-sport on CELO mainnet. Scout opponents, commit blind, reveal and settle on-chain.",
-    siteName: "Foreseen",
+    title: "Foreseen · CELO RPS — commit-reveal mind-sport",
+    description: "A skill-based mind-sport on CELO mainnet (chainId 42220). Scout CELO opponents, commit blind, reveal and settle on-chain. Real CELO stakes, soulbound ranks.",
+    siteName: "Foreseen on CELO",
     type: "website",
   },
   other: {

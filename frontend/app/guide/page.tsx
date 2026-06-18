@@ -6,29 +6,29 @@ const SECTIONS = [
   {
     title: "CELO Player Flow",
     items: [
-      "Open or join a table before choosing a move.",
-      "Scout the opponent's revealed history.",
-      "Commit a sealed move and keep the salt safe.",
-      "Reveal before the deadline and withdraw claimable CELO funds.",
+      "Open or join a CELO table on CELO mainnet (chainId 42220) before choosing a move.",
+      "Scout the opponent's revealed CELO on-chain history — move distribution and tells.",
+      "Commit a sealed CELO move and keep the salt safe in your browser.",
+      "Reveal before the CELO deadline and withdraw claimable CELO funds.",
     ],
   },
   {
     title: "CELO Builder Flow",
     items: [
-      "Use @foreseen/sdk for scouting, dashboards, and agent workflows.",
-      "Keep write clients in trusted runtimes.",
-      "Use Celo Sepolia (chainId 11142220) for funded test matches — free faucet at faucet.celo.org.",
-      "Prefer join-only agents for honest liquidity.",
-      "For MiniPay: detect window.ethereum.isMiniPay and auto-connect — no manual wallet step needed.",
+      "Use @foreseen/sdk for CELO scouting, dashboards, and agent workflows on CELO mainnet.",
+      "Keep CELO write clients in trusted runtimes — never expose keys in browser code.",
+      "Use Celo Sepolia (chainId 44787) for funded test matches — free faucet at faucet.celo.org.",
+      "Prefer join-only agents for honest CELO liquidity — do not manufacture fake volume.",
+      "For MiniPay on CELO: detect window.ethereum.isMiniPay and auto-connect — no manual wallet step.",
     ],
   },
   {
     title: "CELO Safety Flow",
     items: [
-      "Never commit private keys, seed phrases, or live salts.",
-      "Show stake, pot, network, and deadlines near wallet actions.",
-      "Do not manufacture fake usage, fake downloads, or bot-vs-bot volume.",
-      "Keep contract changes separate from frontend and SDK updates.",
+      "Never commit CELO private keys, seed phrases, or live CELO reveal salts.",
+      "Show CELO stake, pot, network (chainId 42220), and deadlines near wallet actions.",
+      "Do not manufacture fake CELO usage, fake downloads, or bot-vs-bot CELO volume.",
+      "Keep CELO contract changes separate from frontend and CELO SDK updates.",
     ],
   },
 ];
