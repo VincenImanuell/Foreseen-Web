@@ -59,7 +59,7 @@ export default function Play() {
                 no RNG, no house. Stakes are real CELO — play responsibly.
               </p>
             </div>
-            <div className="surface-soft p-4">
+            <div className="surface-soft p-4" aria-label="CELO session check">
               <div className="eyebrow">Session check</div>
               <div className="mt-2 rounded-xl border border-white/10 bg-void/35 px-3 py-2">
                 <div className="text-[11px] text-slate-500">Wallet</div>
