@@ -289,7 +289,7 @@ export function MatchCard({
               ✓ Your move is sealed.{" "}
               {oppCommitted
                 ? "Both committed — opening reveal…"
-                : "Waiting for your opponent to commit."}
+                : "Waiting for your CELO opponent to commit."}
             </div>
           )}
 
