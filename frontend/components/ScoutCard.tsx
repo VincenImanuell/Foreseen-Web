@@ -166,8 +166,8 @@ export function ScoutCard({ address }: { address: string }) {
       )}
 
       <p className="mt-4 text-[11px] leading-snug text-slate-600">
-        Read live from <code>RPSStats</code> on CELO mainnet via{" "}
-        <code className="text-slate-400">@foreseen/sdk</code> — distribution, tells
+        Read live from <code>RPSStats</code> on CELO mainnet (chainId 42220) via{" "}
+        <code className="text-slate-400">@foreseen/sdk</code> — CELO distribution, tells
         and suggested counter come straight from the package&apos;s{" "}
         <code>analyzeOpponent</code>.
       </p>
