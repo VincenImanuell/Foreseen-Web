@@ -29,6 +29,7 @@ const SECTIONS = [
       "Show CELO stake, pot, network (chainId 42220), and deadlines near wallet actions.",
       "Do not manufacture fake CELO usage, fake downloads, or bot-vs-bot CELO volume.",
       "Keep CELO contract changes separate from frontend and CELO SDK updates.",
+      "Verify CELO network in wallet before every mainnet transaction (chainId 42220).",
     ],
   },
 ];
@@ -37,12 +38,12 @@ export const metadata = {
   title: "CELO Guide — Foreseen on CELO mainnet",
   description:
     "Player, builder, and safety guide for Foreseen's commit-reveal Rock Paper Scissors on CELO mainnet (chainId 42220). Includes MiniPay integration and @foreseen/sdk builder patterns.",
-  keywords: ["CELO", "guide", "foreseen", "rock paper scissors", "MiniPay", "onchain game", "chainId 42220", "@foreseen/sdk", "commit-reveal"],
+  keywords: ["CELO", "guide", "foreseen", "rock paper scissors", "MiniPay", "onchain game", "chainId 42220", "@foreseen/sdk", "commit-reveal", "CELO mainnet", "soulbound rank", "RPSCore"],
 };
 
 export default function GuidePage() {
   return (
-    <main aria-label="Foreseen CELO guide">
+    <main aria-label="Foreseen CELO guide — CELO mainnet commit-reveal RPS">
       <Header />
       <div className="mx-auto max-w-5xl px-4 py-10">
         <section className="mt-10">
