@@ -25,10 +25,10 @@ const SECTIONS = [
   {
     title: "CELO Safety Flow",
     items: [
-      "Never commit private keys, seed phrases, or live salts.",
-      "Show stake, pot, network, and deadlines near wallet actions.",
-      "Do not manufacture fake usage, fake downloads, or bot-vs-bot volume.",
-      "Keep contract changes separate from frontend and SDK updates.",
+      "Never commit CELO private keys, seed phrases, or live CELO reveal salts.",
+      "Show CELO stake, pot, network (chainId 42220), and deadlines near wallet actions.",
+      "Do not manufacture fake CELO usage, fake downloads, or bot-vs-bot CELO volume.",
+      "Keep CELO contract changes separate from frontend and CELO SDK updates.",
     ],
   },
 ];
