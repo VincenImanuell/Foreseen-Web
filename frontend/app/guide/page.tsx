@@ -34,10 +34,10 @@ const SECTIONS = [
 ];
 
 export const metadata = {
-  title: "Guide — Foreseen on CELO",
+  title: "CELO Guide — Foreseen on CELO mainnet",
   description:
-    "Player, builder, and safety guide for Foreseen's on-chain Rock Paper Scissors flow on CELO.",
-  keywords: ["CELO", "guide", "foreseen", "rock paper scissors", "MiniPay", "onchain game"],
+    "Player, builder, and safety guide for Foreseen's commit-reveal Rock Paper Scissors on CELO mainnet (chainId 42220). Includes MiniPay integration and @foreseen/sdk builder patterns.",
+  keywords: ["CELO", "guide", "foreseen", "rock paper scissors", "MiniPay", "onchain game", "chainId 42220", "@foreseen/sdk", "commit-reveal"],
 };
 
 export default function GuidePage() {
