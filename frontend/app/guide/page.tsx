@@ -17,7 +17,7 @@ const SECTIONS = [
     items: [
       "Use @foreseen/sdk for scouting, dashboards, and agent workflows.",
       "Keep write clients in trusted runtimes.",
-      "Use Celo Sepolia for funded tests.",
+      "Use Celo Sepolia (chain 11142220) for funded test matches — free faucet at faucet.celo.org.",
       "Prefer join-only agents for honest liquidity.",
     ],
   },
