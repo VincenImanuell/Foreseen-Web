@@ -151,7 +151,7 @@ export default function Landing() {
               <Link href="/leaderboard" aria-label="View CELO Foreseen leaderboard" className="btn-ghost !px-6 !py-3 text-base">
                 🏆 Leaderboard
               </Link>
-              <Link href="/matches" className="btn-ghost !px-6 !py-3 text-base">
+              <Link href="/matches" aria-label="View open CELO matches lobby" className="btn-ghost !px-6 !py-3 text-base">
                 ⚔️ Open matches
               </Link>
               <a href="#how" className="btn-ghost !px-6 !py-3 text-base">
