@@ -19,6 +19,7 @@ const SECTIONS = [
       "Keep write clients in trusted runtimes.",
       "Use Celo Sepolia (chain 11142220) for funded test matches — free faucet at faucet.celo.org.",
       "Prefer join-only agents for honest liquidity.",
+      "For MiniPay: detect window.ethereum.isMiniPay and auto-connect — no manual wallet step needed.",
     ],
   },
   {
