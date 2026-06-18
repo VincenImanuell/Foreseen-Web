@@ -13,7 +13,7 @@ import { shortAddress } from "@/lib/rps";
 
 const PHASES = [
   ["1 · Matchmake", "Open a match or join one. Bets are escrowed — no move yet."],
-  ["2 · Scout", "Read opponent on-chain history from CELO. 90s scouting window."],
+  ["2 · Scout", "Read opponent CELO on-chain history. 90s scouting window before commit."],
   ["3 · Commit", "Seal your move blind. Neither side can see the other's throw."],
   ["4 · Reveal", "Both reveal within 90s. Contract settles & releases CELO to winner."],
 ];
