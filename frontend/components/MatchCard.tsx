@@ -365,7 +365,7 @@ export function MatchCard({
 
           {isPlayer && iRevealed && !revealOver && (
             <div className="text-sm text-emerald-300">
-              You revealed — waiting for your opponent.
+              You revealed on CELO — waiting for your opponent.
             </div>
           )}
 
