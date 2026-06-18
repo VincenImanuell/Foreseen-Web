@@ -259,7 +259,7 @@ export default function Landing() {
             <div className="rounded-2xl border border-oracle-cyan/20 bg-oracle-cyan/[0.04] p-5">
               <div className="mb-3 flex items-center justify-between">
                 <span className="text-xs font-semibold uppercase tracking-wide text-oracle-cyan">
-                  🔍 Scouting report
+                  🔍 CELO scouting report
                 </span>
                 <span className="font-mono text-[11px] text-slate-500">
                   0x9f…3c2a
@@ -290,9 +290,9 @@ export default function Landing() {
                 </div>
               ))}
               <div className="mt-3 rounded-lg border border-white/10 bg-void/40 px-3 py-2 text-xs text-slate-300">
-                After a loss: tends to throw{" "}
+                After a CELO loss: tends to throw{" "}
                 <span className="font-semibold text-oracle-gold">🪨 Rock</span> —
-                so throw Paper.
+                so throw Paper on CELO mainnet.
               </div>
             </div>
           </Reveal>

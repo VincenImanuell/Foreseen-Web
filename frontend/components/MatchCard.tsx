@@ -221,9 +221,9 @@ export function MatchCard({
           <div className="font-display font-bold text-oracle-gold">
             {formatEther(match.bet)} CELO
           </div>
-          <div className="text-[11px] text-slate-500">stake · per player CELO</div>
+          <div className="text-[11px] text-slate-500">stake · per player · CELO mainnet</div>
           <div className="mt-1 text-[11px] font-medium text-slate-300">
-            {formatEther(pot)} CELO pot
+            {formatEther(pot)} CELO pot · chainId 42220
           </div>
         </div>
       </div>
@@ -389,7 +389,7 @@ export function MatchCard({
 
       {match.state === MatchState.Cancelled && (
         <div className="mt-3 text-sm text-slate-400">
-          Cancelled — bets refunded to your claimable balance.
+          Cancelled — CELO bets refunded to your claimable CELO balance.
         </div>
       )}
 
@@ -412,8 +412,8 @@ function SettledSummary({
   if (isForfeit) {
     return (
       <div className="mt-3 rounded-xl border border-white/10 bg-void/40 p-3 text-center text-sm">
-        Settled by forfeit — a player ran out the clock. Pot paid to the player
-        who showed up; collect from your claimable balance.
+        CELO match settled by forfeit — a player ran out the clock. CELO pot paid to the player
+        who showed up; collect from your claimable CELO balance.
       </div>
     );
   }

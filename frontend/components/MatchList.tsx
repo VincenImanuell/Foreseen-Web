@@ -31,7 +31,7 @@ export function MatchList({
     <div className="space-y-8">
       <Section
         title="Open CELO lobbies"
-        hint="Anyone can challenge these — match the bet to play."
+        hint="Anyone can challenge these — match the CELO bet to play on CELO mainnet."
         empty={
           isLoading ? "Loading CELO matches…" : "No open CELO lobbies. Be the first to open one."
         }
@@ -43,7 +43,7 @@ export function MatchList({
         <Section
           title="Your CELO matches"
           hint="Reveal in time or risk forfeiting your CELO bet."
-          empty="You haven’t played yet. Open a match to begin."
+          empty="No active CELO matches. Open a CELO match to begin."
           entries={mine}
           onChanged={onChanged}
         />

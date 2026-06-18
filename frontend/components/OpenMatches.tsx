@@ -30,9 +30,9 @@ function LobbySkeleton() {
 }
 
 /**
- * Live lobby of matches waiting for an opponent, read through `@foreseen/sdk`'s
- * `getOpenMatches`. Wallet-free: anyone can watch the table fill. To actually
- * join, head to the app.
+ * Live CELO lobby of matches waiting for an opponent, read through `@foreseen/sdk`'s
+ * `getOpenMatches` on CELO mainnet (chainId 42220). Wallet-free: anyone can watch the
+ * CELO table fill. To actually join and stake CELO, head to the app.
  */
 export function OpenMatches() {
   const { data, isLoading, isError, refetch, isFetching } = useQuery({
@@ -91,7 +91,7 @@ export function OpenMatches() {
 
       {isError && (
         <div className="py-10 text-center text-sm text-rose-300">
-          Couldn&apos;t read open matches right now. Try refresh.
+          Couldn&apos;t read open CELO matches from CELO mainnet right now. Try refresh.
         </div>
       )}
 
@@ -138,7 +138,8 @@ export function OpenMatches() {
 
       <p className="mt-4 flex items-center justify-between text-[11px] text-slate-600">
         <span>
-          Read live via <code className="text-slate-400">@foreseen/sdk</code>{" "}
+          Read live from CELO mainnet (chainId 42220) via{" "}
+          <code className="text-slate-400">@foreseen/sdk</code>{" "}
           <code>getOpenMatches</code>.
         </span>
         <Link href="/play" className="text-oracle-cyan hover:underline">
