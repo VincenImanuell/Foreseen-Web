@@ -163,7 +163,7 @@ export function computeCommit(player: Address, move: Move, salt: Hex): Hex {
   );
 }
 
-// ---- Reveal-secret persistence (the salt+move you must keep to reveal) -----
+// ---- CELO reveal-secret persistence (salt+move must be kept to reveal on CELO) ---
 
 type Secret = { move: Move; salt: Hex };
 
