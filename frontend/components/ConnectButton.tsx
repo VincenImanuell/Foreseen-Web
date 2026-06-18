@@ -44,6 +44,7 @@ export function ConnectButton() {
       <button
         type="button"
         className="btn-gold"
+        aria-label="Switch wallet to CELO mainnet (chainId 42220)"
         onClick={() => switchChain({ chainId: celo.id })}
       >
         Switch to CELO
@@ -60,7 +61,7 @@ export function ConnectButton() {
         </span>
       ) : (
         <span
-          title="Connected to CELO mainnet"
+          title="Connected to CELO mainnet (chainId 42220)"
           className="badge flex items-center gap-1.5 bg-oracle-cyan/15 text-oracle-cyan"
         >
           <span className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-oracle-cyan" />

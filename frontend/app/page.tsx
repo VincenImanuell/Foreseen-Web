@@ -10,22 +10,22 @@ const STEPS = [
   {
     icon: "🤝",
     title: "Matchmake",
-    body: "Open a match or join one and escrow your bet. No move yet — you're just sitting down across the table.",
+    body: "Open a CELO match or join one and escrow your CELO bet on-chain. No move yet — you're just sitting down across the CELO table.",
   },
   {
     icon: "🔍",
     title: "Scout",
-    body: "Now you see your opponent. Read their CELO on-chain history: move distribution, what they throw after a win or a loss. 90 seconds.",
+    body: "Now you see your opponent. Read their CELO on-chain history: move distribution, what they throw after a CELO win or a loss. 90 seconds.",
   },
   {
     icon: "🔒",
     title: "Commit",
-    body: "Seal your move as a hash on CELO. Neither side can see the other's throw — no peeking, no front-running.",
+    body: "Seal your move as a keccak256 hash on CELO. Neither side can see the other's throw — no peeking, no front-running on CELO.",
   },
   {
     icon: "👁",
     title: "Reveal",
-    body: "Both reveal within 90 seconds. The contract settles and releases CELO to the winner on-chain. Provably fair.",
+    body: "Both reveal within 90 seconds. The CELO contract settles and releases CELO to the winner on-chain. Provably fair on chainId 42220.",
   },
 ];
 
@@ -33,30 +33,30 @@ const FEATURES = [
   {
     icon: "🧠",
     title: "Behavioral profiling",
-    body: "Every revealed CELO match writes a tamper-proof profile: move distribution and the win-stay / lose-shift signal. Scout anyone before you face them.",
+    body: "Every revealed CELO match writes a tamper-proof profile on CELO mainnet: move distribution and the win-stay / lose-shift signal. Scout any CELO address before you face them.",
   },
   {
     icon: "🏅",
     title: "Soulbound ranks",
-    body: "Climb Bronze → Legend on CELO win streaks. Rank badges (ERC-5192) can't be bought, sold or transferred — they prove skill, not CELO.",
+    body: "Climb Bronze → Legend on CELO win streaks. Soulbound rank badges (ERC-5192) on CELO can't be bought, sold or transferred — they prove CELO skill, not capital.",
   },
   {
     icon: "🔐",
-    title: "Commit–reveal",
-    body: "Moves are sealed as hashes and opened on-chain. Refereeless and fair — neither player can react to the other's choice.",
+    title: "Commit–reveal on CELO",
+    body: "Moves are sealed as keccak256 hashes and opened on CELO mainnet. Refereeless and fair — neither player can react to the other's CELO choice.",
   },
   {
     icon: "⚖️",
     title: "Not gambling",
-    body: "No RNG, no house, no dealer. The contract escrows CELO peer-to-peer and pays the winner on-chain. You win by skill, not luck.",
+    body: "No RNG, no house, no dealer. The CELO contract escrows peer-to-peer stakes on chainId 42220 and pays the CELO winner on-chain. You win by skill.",
   },
 ];
 
 const TRUST_CHIPS = [
   "Not gambling — pure skill",
-  "Provably fair commit-reveal",
-  "Soulbound ranks",
-  "CELO mainnet",
+  "Provably fair commit-reveal on CELO",
+  "Soulbound ranks (ERC-5192)",
+  "CELO mainnet · chainId 42220",
 ];
 
 const NPM_LINKS = [
