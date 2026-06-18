@@ -48,7 +48,7 @@ const FEATURES = [
   {
     icon: "⚖️",
     title: "Not gambling",
-    body: "No RNG, no house, no dealer. The contract is a neutral referee that escrows a peer-to-peer stake and pays the winner. You win by skill.",
+    body: "No RNG, no house, no dealer. The contract escrows CELO peer-to-peer and pays the winner on-chain. You win by skill, not luck.",
   },
 ];
 
