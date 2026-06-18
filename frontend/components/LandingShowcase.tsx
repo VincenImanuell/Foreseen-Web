@@ -59,7 +59,7 @@ export function LandingShowcase() {
             <span className="chip">sealed move</span>
           </div>
           <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-400">
-            The screen shows habits, not secrets. The actual throw stays sealed
+            The CELO screen shows habits, not secrets. The actual throw stays sealed
             until both players reveal.
           </p>
           <div className="mt-5 grid gap-3 sm:grid-cols-3">
