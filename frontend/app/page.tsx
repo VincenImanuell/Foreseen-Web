@@ -223,6 +223,7 @@ export default function Landing() {
       {/* ---- The read (mind-sport) ---- */}
       <section
         id="mindsport"
+        aria-label="CELO on-chain scouting — mind-sport read"
         className="scroll-mt-20 border-t border-white/5 px-4 py-20"
       >
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
