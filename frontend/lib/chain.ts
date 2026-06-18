@@ -10,7 +10,7 @@ const rpcUrl =
  */
 export const celo = defineChain({
   id: 42220,
-  name: "Celo",
+  name: "CELO",
   nativeCurrency: { name: "CELO", symbol: "CELO", decimals: 18 },
   rpcUrls: {
     default: { http: [rpcUrl] },
