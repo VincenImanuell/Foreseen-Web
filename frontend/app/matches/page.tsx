@@ -19,7 +19,7 @@ export default function MatchesPage() {
         <PageIntro
           eyebrow="Live lobby"
           title="Open matches"
-          body="Matches currently waiting for a challenger, read live from Celo mainnet through @foreseen/sdk. Scout an opener before you decide to take the seat."
+          body="Matches currently waiting for a challenger, read live from CELO mainnet through @foreseen/sdk. Scout an opener before you decide to take the seat."
           chips={["CELO mainnet", "Wallet-free read", "SDK powered"]}
         />
 
