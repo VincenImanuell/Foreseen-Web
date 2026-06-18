@@ -19,9 +19,9 @@ const PHASES = [
 ];
 
 const ARENA_STATS = [
-  ["Network", "CELO mainnet"],
-  ["Windows", "90s"],
-  ["Game", "Skill"],
+  ["Network", "CELO mainnet · 42220"],
+  ["Windows", "90s scout + 90s reveal"],
+  ["Game", "Skill (no RNG)"],
 ];
 
 const TABLE_RULES = [
