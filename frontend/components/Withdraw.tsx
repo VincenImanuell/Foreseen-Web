@@ -36,7 +36,7 @@ export function Withdraw({ onChanged }: { onChanged?: () => void }) {
         functionName: "withdraw",
       });
       await publicClient.waitForTransactionReceipt({ hash });
-      setStatus({ kind: "success", msg: "Withdrawn to your wallet." });
+      setStatus({ kind: "success", msg: "CELO withdrawn to your wallet." });
       refetch();
       onChanged?.();
     } catch (e) {
