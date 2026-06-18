@@ -69,8 +69,11 @@ export function ScoutCard({ address }: { address: string }) {
 
   if (!valid) {
     return (
-      <div className="rounded-2xl border border-rose-400/20 bg-rose-400/[0.04] p-6 text-sm text-rose-200">
-        <span className="font-mono">{address}</span> is not a valid address.
+      <div
+        role="alert"
+        className="rounded-2xl border border-rose-400/20 bg-rose-400/[0.04] p-6 text-sm text-rose-200"
+      >
+        <span className="font-mono">{address}</span> is not a valid CELO address.
       </div>
     );
   }
@@ -105,7 +108,7 @@ export function ScoutCard({ address }: { address: string }) {
 
       {isError && (
         <div className="py-10 text-center text-sm text-rose-300">
-          Couldn&apos;t read this player&apos;s history right now. Try again.
+          Couldn&apos;t read this player&apos;s CELO mainnet history right now. Try again.
         </div>
       )}
 
