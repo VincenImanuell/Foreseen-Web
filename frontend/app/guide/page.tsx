@@ -13,7 +13,7 @@ const SECTIONS = [
     ],
   },
   {
-    title: "Builder Flow",
+    title: "CELO Builder Flow",
     items: [
       "Use @foreseen/sdk for scouting, dashboards, and agent workflows.",
       "Keep write clients in trusted runtimes.",
