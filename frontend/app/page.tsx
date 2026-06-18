@@ -136,7 +136,7 @@ export default function Landing() {
 
           <Reveal delay={120}>
             <p className="mx-auto mt-5 max-w-xl text-base text-slate-400 sm:text-lg">
-              Foreseen is on-chain Rock Paper Scissors as a psychological
+              Foreseen is on-chain Rock Paper Scissors on CELO — a psychological
               mind-sport. Matchmake, scout your opponent&apos;s history, then
               commit blind. A game of reading — not luck.
             </p>
