@@ -32,7 +32,7 @@ export function SiteFooter() {
             aria-label="View RPSCore CELO contract on Celoscan"
             className="focus-ring rounded font-mono transition-colors hover:text-oracle-cyan"
           >
-            RPSCore ↗
+            RPSCore {shortAddress(RPS_CORE_ADDRESS)} ↗
           </a>
           <a
             href={`https://celoscan.io/address/${RPS_STATS_ADDRESS}`}
@@ -42,7 +42,7 @@ export function SiteFooter() {
             aria-label="View RPSStats CELO contract on Celoscan"
             className="focus-ring rounded font-mono transition-colors hover:text-oracle-cyan"
           >
-            RPSStats ↗
+            RPSStats {shortAddress(RPS_STATS_ADDRESS)} ↗
           </a>
         </nav>
       </div>
