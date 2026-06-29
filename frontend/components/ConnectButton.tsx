@@ -9,7 +9,7 @@ import { useMiniPay } from "./useMiniPay";
 export function ConnectButton() {
   const mounted = useMounted();
   const { address, isConnected, chainId } = useAccount();
-  const { connect, connectors, isPending } = useConnect();
+  const { connect, connectors, isPending, error, reset } = useConnect();
   const { disconnect } = useDisconnect();
   const { switchChain } = useSwitchChain();
   const { isMiniPay } = useMiniPay();
@@ -26,16 +26,31 @@ export function ConnectButton() {
   if (!isConnected) {
     const injected = connectors[0];
     return (
-      <button
-        type="button"
-        className="btn-primary"
-        disabled={!injected || isPending}
-        aria-busy={isPending}
-        aria-label={isPending ? "Connecting CELO wallet…" : "Connect CELO wallet"}
-        onClick={() => injected && connect({ connector: injected })}
-      >
-        {isPending ? "Connecting…" : "Connect Wallet"}
-      </button>
+      <div className="flex flex-col items-end gap-1">
+        <button
+          type="button"
+          className="btn-primary"
+          disabled={!injected}
+          aria-busy={isPending}
+          aria-label={isPending ? "Connecting CELO wallet…" : "Connect CELO wallet"}
+          onClick={() => {
+            if (isPending) { reset(); return; }
+            injected && connect({ connector: injected });
+          }}
+        >
+          {isPending ? "Connecting… (click to cancel)" : "Connect Wallet"}
+        </button>
+        {isPending && (
+          <p className="text-xs text-slate-400">
+            Check your wallet extension for a pending request.
+          </p>
+        )}
+        {error && !isPending && (
+          <p className="text-xs text-red-400" role="alert">
+            {error.message.includes("User rejected") ? "Connection rejected." : error.message}
+          </p>
+        )}
+      </div>
     );
   }
 
