@@ -198,7 +198,13 @@ export function loadSecret(
   if (!raw) return null;
   try {
     const parsed = JSON.parse(raw);
-    return { move: Number(parsed.move) as Move, salt: parsed.salt as Hex };
+    const move = Number(parsed.move) as Move;
+    const salt = parsed.salt;
+    // Corrupt/edited storage must not surface as a broken reveal tx later:
+    // treat anything that isn't a real move + 32-byte hex salt as absent.
+    if (move !== Move.Rock && move !== Move.Paper && move !== Move.Scissors) return null;
+    if (typeof salt !== "string" || !/^0x[0-9a-fA-F]{64}$/.test(salt)) return null;
+    return { move, salt: salt as Hex };
   } catch {
     return null;
   }
