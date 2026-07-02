@@ -115,10 +115,13 @@ export function ScoutPanel({ opponent }: { opponent: Address }) {
 
           <p className="text-[11px] leading-snug text-slate-500">
             Read the CELO pattern, then pick the move that beats their habit — or bluff
-            against it.{moveLabel(MOVES[dominantMove(s.moveCount)]?.value ?? 0)}
-            {dominantMove(s.moveCount) >= 0
-              ? ` ${moveEmoji(MOVES[dominantMove(s.moveCount)].value)} is their favorite throw overall.`
-              : ""}
+            against it.
+            {(() => {
+              const dom = dominantMove(s.moveCount);
+              if (dom < 0) return null;
+              const fav = MOVES[dom];
+              return ` ${moveEmoji(fav.value)} ${moveLabel(fav.value)} is their favorite throw overall.`;
+            })()}
           </p>
         </div>
       )}
