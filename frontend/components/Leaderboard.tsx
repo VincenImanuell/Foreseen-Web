@@ -29,11 +29,21 @@ async function buildLeaderboard(): Promise<Row[]> {
   const next = await foreseen.nextMatchId();
   const players = new Set<string>();
 
-  let scanned = 0;
-  for (let id = next - 1n; id >= 0n && scanned < SCAN_LIMIT; id--, scanned++) {
-    const m = await foreseen.getMatch(id);
-    for (const p of [m.playerA, m.playerB]) {
-      if (p && p.toLowerCase() !== ZERO) players.add(getAddress(p));
+  const count = Number(next < BigInt(SCAN_LIMIT) ? next : BigInt(SCAN_LIMIT));
+  const ids = Array.from({ length: count }, (_, i) => next - 1n - BigInt(i));
+
+  // Fetch in small concurrent batches: one match at a time made the CELO
+  // leaderboard crawl (80 sequential RPC round-trips), while firing all 80
+  // at once trips public CELO RPC rate limits.
+  const BATCH = 10;
+  for (let i = 0; i < ids.length; i += BATCH) {
+    const matches = await Promise.all(
+      ids.slice(i, i + BATCH).map((id) => foreseen.getMatch(id)),
+    );
+    for (const m of matches) {
+      for (const p of [m.playerA, m.playerB]) {
+        if (p && p.toLowerCase() !== ZERO) players.add(getAddress(p));
+      }
     }
   }
 
