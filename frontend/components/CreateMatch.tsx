@@ -9,6 +9,23 @@ import { shortError, StatusBanner, type TxStatus } from "./Status";
 
 const BET_PRESETS = ["0.01", "0.05", "0.1", "0.5"];
 
+/**
+ * Validate a CELO bet amount before handing it to parseEther.
+ * Returns an error message, or null when the value is safe to submit.
+ * parseEther throws on exponent notation ("1e-3") and on more than
+ * 18 decimals — catch those here so the user sees plain copy instead
+ * of a raw viem error after signing.
+ */
+function betError(bet: string): string | null {
+  const trimmed = bet.trim();
+  if (trimmed === "") return null; // empty input: just disable submit, no error copy
+  if (!/^\d+(\.\d+)?$/.test(trimmed)) return "Enter the CELO amount as a plain number, e.g. 0.05.";
+  const [, decimals] = trimmed.split(".");
+  if (decimals && decimals.length > 18) return "CELO supports at most 18 decimal places.";
+  if (Number(trimmed) === 0) return "Bet must be more than 0 CELO.";
+  return null;
+}
+
 const MODE_HELP: Record<Mode, string> = {
   [Mode.Casual]: "Casual CELO matches keep the pressure low — no rank movement on CELO.",
   [Mode.Ranked]: "Ranked CELO matches can move your soulbound rank on CELO mainnet (chainId 42220).",
@@ -24,7 +41,9 @@ export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
   const [status, setStatus] = useState<TxStatus>({ kind: "idle" });
 
   const busy = status.kind === "pending";
-  const canSubmit = isConnected && Number(bet) > 0 && !busy && !!publicClient;
+  const invalidBet = betError(bet);
+  const canSubmit =
+    isConnected && bet.trim() !== "" && !invalidBet && !busy && !!publicClient;
 
   async function handleCreate() {
     if (!address || !publicClient) return;
@@ -68,8 +87,14 @@ export function CreateMatch({ onChanged }: { onChanged?: () => void }) {
             placeholder="0.01"
             value={bet}
             aria-label="Bet amount in CELO"
+            aria-invalid={!!invalidBet}
             onChange={(e) => setBet(e.target.value)}
           />
+          {invalidBet && (
+            <p role="alert" className="mt-1 text-[11px] text-rose-300">
+              {invalidBet}
+            </p>
+          )}
           <div className="mt-2 flex gap-1.5">
             {BET_PRESETS.map((preset) => (
               <button
