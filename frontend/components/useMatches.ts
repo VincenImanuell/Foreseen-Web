@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useCallback, useMemo } from "react";
 import { useReadContract, useReadContracts } from "wagmi";
 import { rpsCore } from "@/lib/contracts";
 import { toRpsMatch, type RpsMatch } from "@/lib/rps";
@@ -58,10 +58,12 @@ export function useMatches() {
     return out.reverse();
   }, [data, ids]);
 
-  const refetch = () => {
+  // Stable identity: this lands as onChanged on every CELO MatchCard, so a
+  // fresh function each render would defeat any memoization below it.
+  const refetch = useCallback(() => {
     refetchNext();
     refetchMatches();
-  };
+  }, [refetchNext, refetchMatches]);
 
   return { entries, refetch, isLoading: loadingNext || loadingMatches };
 }
