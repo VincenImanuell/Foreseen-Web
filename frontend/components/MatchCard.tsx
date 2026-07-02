@@ -183,8 +183,25 @@ export function MatchCard({
     if (!address) return;
     const secret = loadSecret(chainId, id, address);
     const move = secret?.move ?? manualMove;
-    const salt = (secret?.salt ?? manualSalt) as Hex;
+    const salt = (secret?.salt ?? manualSalt.trim()) as Hex;
     if (move === null || move === undefined || !salt) return;
+    if (!/^0x[0-9a-fA-F]{64}$/.test(salt)) {
+      setStatus({
+        kind: "error",
+        msg: "Salt must be a 0x-prefixed 32-byte hex string.",
+      });
+      return;
+    }
+    // Recompute the commit locally; a mismatched move/salt would revert
+    // on-chain and burn CELO gas for nothing.
+    const myCommit = isA ? match.commitA : match.commitB;
+    if (computeCommit(address, move, salt) !== myCommit) {
+      setStatus({
+        kind: "error",
+        msg: "Move + salt don't match your sealed commit — check both and try again.",
+      });
+      return;
+    }
     run("Reveal CELO", () =>
       writeContractAsync({
         ...rpsCore,
