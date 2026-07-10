@@ -11,11 +11,12 @@ export const metadata = {
   keywords: ["CELO", "scouting report", "foreseen", "CELO mainnet", "chainId 42220", "@foreseen/sdk", "commit-reveal"],
 };
 
-export default function PlayerPage({
+export default async function PlayerPage({
   params,
 }: {
-  params: { address: string };
+  params: Promise<{ address: string }>;
 }) {
+  const { address } = await params;
   return (
     <main aria-label="CELO player scouting report — CELO mainnet">
       <Header />
@@ -37,7 +38,7 @@ export default function PlayerPage({
           chips={["Move distribution", "Win/loss tells", "Suggested counter", "CELO mainnet · chainId 42220"]}
         />
 
-        <ScoutCard address={params.address} />
+        <ScoutCard address={address} />
       </div>
 
       <SiteFooter />
