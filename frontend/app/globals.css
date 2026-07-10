@@ -1,6 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+/*
+ * Tailwind v4 no longer resolves a plain `@layer components` class as an
+ * applyable utility (`.btn-primary { @apply btn ... }` errors "unknown
+ * utility class `btn`"). Base classes that other classes compose via
+ * `@apply` must be declared with `@utility` instead, top-level, outside
+ * `@layer components`.
+ */
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5
+         text-sm font-semibold transition disabled:cursor-not-allowed
+         disabled:opacity-40 focus-visible:outline-none focus-visible:ring-2
+         focus-visible:ring-oracle-cyan/70 focus-visible:ring-offset-2
+         focus-visible:ring-offset-void;
+}
+
+@utility badge {
+  @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium;
+}
+
+@utility mono-value {
+  @apply font-mono text-sm tabular-nums text-slate-200;
+}
 
 :root {
   color-scheme: dark;
@@ -37,6 +59,12 @@ body {
 }
 
 @layer components {
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2
+           focus-visible:ring-oracle-cyan/70 focus-visible:ring-offset-2
+           focus-visible:ring-offset-void;
+  }
+
   .card {
     @apply rounded-2xl border border-white/10 bg-panel/80 p-5 backdrop-blur transition-colors hover:border-white/20;
   }
@@ -51,12 +79,6 @@ body {
 
   .surface-glow {
     @apply rounded-2xl border border-oracle-purple/20 bg-oracle-purple/[0.04] backdrop-blur shadow-glow;
-  }
-
-  .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5
-           text-sm font-semibold transition disabled:cursor-not-allowed
-           disabled:opacity-40 focus-ring;
   }
 
   .btn-primary {
@@ -92,10 +114,6 @@ body {
            text-sm outline-none transition focus:border-oracle-purple/70;
   }
 
-  .badge {
-    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium;
-  }
-
   .badge-success {
     @apply badge bg-emerald-500/15 text-emerald-300;
   }
@@ -125,26 +143,19 @@ body {
     @apply rounded-2xl border border-white/10 bg-white/[0.04] p-4;
   }
 
-  .focus-ring {
-    @apply focus-visible:outline-none focus-visible:ring-2
-           focus-visible:ring-oracle-cyan/70 focus-visible:ring-offset-2
-           focus-visible:ring-offset-void;
-  }
-
   .text-muted {
     @apply text-slate-400;
   }
 
   .link {
-    @apply text-oracle-cyan transition-colors hover:text-oracle-cyan/80 focus-ring rounded;
+    @apply text-oracle-cyan transition-colors hover:text-oracle-cyan/80 rounded
+           focus-visible:outline-none focus-visible:ring-2
+           focus-visible:ring-oracle-cyan/70 focus-visible:ring-offset-2
+           focus-visible:ring-offset-void;
   }
 
   .skeleton {
     @apply animate-pulse rounded-xl bg-white/[0.06];
-  }
-
-  .mono-value {
-    @apply font-mono text-sm tabular-nums text-slate-200;
   }
 
   .celo-amount {
