@@ -1,5 +1,7 @@
 # Foreseen 👁️
 
+🏆 **Top 26 of 314 projects — Celo Proof of Ship (Games & Interactive)**
+
 > *"See the move before it's made."*
 
 **Foreseen is a competitive mind sport** — a game of reading, predicting, and outplaying the person across from you — built on-chain on the **Celo** network and played through **MiniPay**.
